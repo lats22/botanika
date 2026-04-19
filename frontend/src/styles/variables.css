@@ -1,1 +1,37 @@
-/* CSS variables placeholder */
+:root {
+  /* Brand Colors */
+  --color-deep-green: #1B5E3A;
+  --color-gold: #8B7355;
+  --color-cream: #F5F5F0;
+  --color-dark-green: #0D3320;
+  --color-white: #FFFFFF;
+  --color-light-green: #E8F0E8;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 4rem;
+
+  /* Borders */
+  --border-radius: 8px;
+  --border-radius-lg: 16px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+  /* Container */
+  --container-max-width: 1200px;
+}
