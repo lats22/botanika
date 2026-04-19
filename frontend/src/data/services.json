@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": { "en": "Foot Reflexology", "th": "นวดเท้า" },
+    "description": {
+      "en": "Pressure to reflex areas promotes health through energetic pathways. Improves circulation. (With Tiger Balm)",
+      "th": "การกดจุดสะท้อนช่วยส่งเสริมสุขภาพผ่านเส้นทางพลังงาน ช่วยเพิ่มการไหลเวียนโลหิต (พร้อมยาหม่อง)"
+    },
+    "durations": [60, 90, 120],
+    "image": "foot-massage.jpg",
+    "animation": "foot-massage"
+  },
+  {
+    "id": 2,
+    "name": { "en": "Head, Shoulder & Back Massage", "th": "นวดหัวและหลัง" },
+    "description": {
+      "en": "Relieves tension in head, face, neck, temples and forehead. (With Tiger Balm)",
+      "th": "บรรเทาความตึงเครียดที่ศีรษะ ใบหน้า คอ ขมับ และหน้าผาก (พร้อมยาหม่อง)"
+    },
+    "durations": [60, 90, 120],
+    "image": "head-shoulder.jpg",
+    "animation": "head-shoulder"
+  },
+  {
+    "id": 3,
+    "name": { "en": "Traditional Thai Massage", "th": "นวดไทย" },
+    "description": {
+      "en": "Practitioner guides client through postures while massaging along body's energy lines and pressure points.",
+      "th": "ผู้นวดนำลูกค้าผ่านท่าทางต่างๆ ขณะนวดตามเส้นพลังงานและจุดกดของร่างกาย"
+    },
+    "durations": [60, 90, 120],
+    "image": "thai-massage.jpg",
+    "animation": "thai-massage"
+  },
+  {
+    "id": 4,
+    "name": { "en": "Four Hands Aromatic Oil Massage", "th": "นวดอโรม่าสี่มือ" },
+    "description": {
+      "en": "Two therapists working simultaneously with BOTANIKA signature aromatic oil.",
+      "th": "นักนวดสองคนทำงานพร้อมกันด้วยน้ำมันอโรม่าซิกเนเจอร์ของ BOTANIKA"
+    },
+    "durations": [60, 90, 120],
+    "image": "four-hand.jpg",
+    "animation": "oil-massage"
+  },
+  {
+    "id": 5,
+    "name": { "en": "Oil Massage", "th": "นวดออย" },
+    "description": {
+      "en": "Whole-body massage using oil to relax and relieve aching muscles. Nourishes the skin.",
+      "th": "นวดทั้งตัวด้วยน้ำมันเพื่อผ่อนคลายและบรรเทาอาการปวดกล้ามเนื้อ บำรุงผิว"
+    },
+    "durations": [60, 90, 120],
+    "image": "oil-massage.jpg",
+    "animation": "oil-massage"
+  },
+  {
+    "id": 6,
+    "name": { "en": "Botanika Aroma Therapy", "th": "นวดอโรม่า" },
+    "description": {
+      "en": "100% Natural Essential Oil massage to reduce tension, soothe sore muscles, and stimulate circulation.",
+      "th": "นวดด้วยน้ำมันหอมระเหย 100% ช่วยลดความตึงเครียด ผ่อนคลายกล้ามเนื้อ และกระตุ้นการไหลเวียน"
+    },
+    "durations": [60, 90, 120],
+    "image": "aroma-massage.jpg",
+    "animation": "oil-massage"
+  },
+  {
+    "id": 7,
+    "name": { "en": "Sports Massage / Deep Tissue", "th": "นวดรีดเส้น, กดจุด" },
+    "description": {
+      "en": "Focuses on realigning deeper layers of muscles and connective tissue. Releases chronic aches and pains.",
+      "th": "มุ่งเน้นการจัดเรียงชั้นลึกของกล้ามเนื้อและเนื้อเยื่อเกี่ยวพัน บรรเทาอาการปวดเรื้อรัง"
+    },
+    "durations": [60, 90, 120],
+    "image": "sports-massage.jpg",
+    "animation": "thai-massage"
+  },
+  {
+    "id": 8,
+    "name": { "en": "Organic Coconut Oil Massage", "th": "นวดน้ำมันมะพร้าว" },
+    "description": {
+      "en": "Virgin Cold-Press coconut oil heals the skin, nourishes, and makes your skin softer. Delays ageing.",
+      "th": "น้ำมันมะพร้าวสกัดเย็นบริสุทธิ์ช่วยรักษาผิว บำรุง และทำให้ผิวนุ่มขึ้น ชะลอวัย"
+    },
+    "durations": [60, 90, 120],
+    "image": "coconut-oil.png",
+    "animation": "oil-massage"
+  },
+  {
+    "id": 9,
+    "name": { "en": "Warm Aromatic Oil Massage", "th": "นวดอโรม่าอุ่น" },
+    "description": {
+      "en": "Heated aromatic warm oil helps soften and expand muscle tissues for deep relaxation.",
+      "th": "น้ำมันอโรม่าอุ่นช่วยให้เนื้อเยื่อกล้ามเนื้อนุ่มและขยายตัว เพื่อการผ่อนคลายอย่างล้ำลึก"
+    },
+    "durations": [60, 90, 120],
+    "image": "warm-oil.jpg",
+    "animation": "oil-massage"
+  },
+  {
+    "id": 10,
+    "name": { "en": "Botanika Aromatic Body Scrub", "th": "ขัดผิว" },
+    "description": {
+      "en": "Exfoliates dead skin cells with Botanicals, essential oils, Jojoba oil and Vitamin E. Ideal for dry skin.",
+      "th": "ขัดผิวเซลล์ผิวที่ตายแล้วด้วยพฤกษศาสตร์ น้ำมันหอมระเหย โจโจ้บาออยล์ และวิตามินอี เหมาะสำหรับผิวแห้ง"
+    },
+    "durations": [60, 90, 120],
+    "image": "body-scrub.jpg",
+    "animation": "spa-facial"
+  },
+  {
+    "id": 11,
+    "name": { "en": "Aromatic Herbal Compress", "th": "นวดอโรม่าประคบ" },
+    "description": {
+      "en": "Warm compress of natural Thai herbs opens pores, eliminates toxins, followed by deep tissue massage.",
+      "th": "ประคบสมุนไพรไทยอุ่นเปิดรูขุมขน กำจัดสารพิษ ตามด้วยการนวดเนื้อเยื่อลึก"
+    },
+    "durations": [60, 90, 120],
+    "image": "herbal-compress.jpg",
+    "animation": "spa-facial"
+  },
+  {
+    "id": 12,
+    "name": { "en": "Aromatic Hot Stone Therapy", "th": "นวดหินร้อน" },
+    "description": {
+      "en": "Warm Basalt stones with aromatic oil relieve stress, activate detoxification, and decrease cellulite.",
+      "th": "หินบะซอลต์อุ่นพร้อมน้ำมันอโรม่าช่วยบรรเทาความเครียด กระตุ้นการขับสารพิษ และลดเซลลูไลท์"
+    },
+    "durations": [60, 90, 120],
+    "image": "hot-stone.jpg",
+    "animation": "hot-stone"
+  }
+]

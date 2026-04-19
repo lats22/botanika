@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "name": { "en": "Tension Release", "th": "ผ่อนคลายความตึงเครียด" },
+    "duration": 90,
+    "includes": [
+      { "en": "30 min Back, Head & Shoulder Massage", "th": "นวดหลัง ศีรษะ และไหล่ 30 นาที" },
+      { "en": "60 min Foot Massage", "th": "นวดเท้า 60 นาที" }
+    ],
+    "animation": "spa-facial"
+  },
+  {
+    "id": 2,
+    "name": { "en": "Mini Beauty", "th": "มินิบิวตี้" },
+    "duration": 90,
+    "includes": [
+      { "en": "30 min Body Scrub", "th": "ขัดผิว 30 นาที" },
+      { "en": "60 min Aromatic Oil Massage", "th": "นวดอโรม่า 60 นาที" }
+    ],
+    "animation": "spa-facial"
+  },
+  {
+    "id": 3,
+    "name": { "en": "Athlete's Heaven", "th": "สวรรค์ของนักกีฬา" },
+    "duration": 90,
+    "includes": [
+      { "en": "60 min Sports Massage (Deep Tissue)", "th": "นวดสปอร์ต (ดีพทิชชู่) 60 นาที" },
+      { "en": "30 min Aromatic Herbal Compress", "th": "ประคบสมุนไพรอโรม่า 30 นาที" }
+    ],
+    "animation": "thai-massage"
+  },
+  {
+    "id": 4,
+    "name": { "en": "Beauty Complete", "th": "บิวตี้คอมพลีท" },
+    "duration": 180,
+    "includes": [
+      { "en": "60 min Body Scrub", "th": "ขัดผิว 60 นาที" },
+      { "en": "60 min Aromatic Oil Massage", "th": "นวดอโรม่า 60 นาที" },
+      { "en": "60 min Facial Treatment", "th": "ทรีตเมนต์ใบหน้า 60 นาที" }
+    ],
+    "animation": "spa-facial"
+  },
+  {
+    "id": 5,
+    "name": { "en": "Completely Relax", "th": "ผ่อนคลายสุดๆ" },
+    "duration": 120,
+    "includes": [
+      { "en": "30 min Foot Massage", "th": "นวดเท้า 30 นาที" },
+      { "en": "90 min Aromatic Hot Stone Massage", "th": "นวดหินร้อนอโรม่า 90 นาที" }
+    ],
+    "animation": "hot-stone"
+  },
+  {
+    "id": 6,
+    "name": { "en": "Oriental Delight", "th": "ความสุขแบบตะวันออก" },
+    "duration": 120,
+    "includes": [
+      { "en": "60 min Body Scrub", "th": "ขัดผิว 60 นาที" },
+      { "en": "60 min Aromatic Oil Massage", "th": "นวดอโรม่า 60 นาที" }
+    ],
+    "animation": "spa-facial"
+  }
+]

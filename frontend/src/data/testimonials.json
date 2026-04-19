@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "en": "Best massage in Bangkok!",
+      "th": "นวดดีที่สุดในกรุงเทพ!"
+    },
+    "author": "TripAdvisor Review",
+    "rating": 5,
+    "platform": "tripadvisor"
+  },
+  {
+    "id": 2,
+    "text": {
+      "en": "5 Star in both service and decor. A must place to visit if you are in Bangkok and looking for a GREAT Massage.",
+      "th": "5 ดาวทั้งบริการและการตกแต่ง ต้องมาถ้าคุณอยู่กรุงเทพและต้องการนวดที่ยอดเยี่ยม"
+    },
+    "author": "TripAdvisor Review",
+    "rating": 5,
+    "platform": "tripadvisor"
+  },
+  {
+    "id": 3,
+    "text": {
+      "en": "This beautiful salon offers such a calm and clean massage experience. Everything is impeccably clean!",
+      "th": "ร้านสวยแห่งนี้ให้ประสบการณ์นวดที่สงบและสะอาด ทุกอย่างสะอาดหมดจด!"
+    },
+    "author": "TripAdvisor Review",
+    "rating": 5,
+    "platform": "tripadvisor"
+  },
+  {
+    "id": 4,
+    "text": {
+      "en": "I have visited many massage centres in Bangkok, Koh Samui and Phuket. But this place is in my top five.",
+      "th": "ฉันไปนวดหลายที่ในกรุงเทพ เกาะสมุย และภูเก็ต แต่ที่นี่ติดอันดับห้าของฉัน"
+    },
+    "author": "TripAdvisor Review",
+    "rating": 5,
+    "platform": "tripadvisor"
+  },
+  {
+    "id": 5,
+    "text": {
+      "en": "90% recommend this place. Excellent service and friendly staff!",
+      "th": "90% แนะนำที่นี่ บริการเยี่ยมและพนักงานเป็นกันเอง!"
+    },
+    "author": "Facebook Review",
+    "rating": 5,
+    "platform": "facebook"
+  }
+]
