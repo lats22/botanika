@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "services": "服务",
+    "packages": "套餐",
+    "locations": "分店",
+    "contact": "联系"
+  },
+  "hero": {
+    "tagline": "放松 焕新 重生",
+    "viewServices": "查看服务",
+    "contactUs": "联系我们"
+  },
+  "services": {
+    "title": "我们的服务",
+    "duration": "时长",
+    "minutes": "分钟"
+  },
+  "packages": {
+    "title": "特惠套餐",
+    "includes": "包含"
+  },
+  "testimonials": {
+    "title": "客户评价"
+  },
+  "branches": {
+    "title": "分店地址",
+    "hours": "每日营业",
+    "directions": "获取路线"
+  },
+  "contact": {
+    "title": "联系我们",
+    "name": "您的姓名",
+    "email": "电子邮箱",
+    "phone": "电话号码",
+    "message": "您的留言",
+    "send": "发送消息",
+    "success": "消息发送成功！",
+    "error": "发送失败，请重试。"
+  },
+  "footer": {
+    "copyright": "© 2026 Botanika Massage & Spa 版权所有"
+  }
+}

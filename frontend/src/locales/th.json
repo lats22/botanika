@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "services": "บริการ",
+    "packages": "แพ็คเกจ",
+    "locations": "สาขา",
+    "contact": "ติดต่อ"
+  },
+  "hero": {
+    "tagline": "ผ่อนคลาย สดชื่น ฟื้นฟู",
+    "viewServices": "ดูบริการ",
+    "contactUs": "ติดต่อเรา"
+  },
+  "services": {
+    "title": "บริการของเรา",
+    "duration": "ระยะเวลา",
+    "minutes": "นาที"
+  },
+  "packages": {
+    "title": "แพ็คเกจพิเศษ",
+    "includes": "รวม"
+  },
+  "testimonials": {
+    "title": "ลูกค้าพูดถึงเรา"
+  },
+  "branches": {
+    "title": "สาขาของเรา",
+    "hours": "เปิดทุกวัน",
+    "directions": "ดูแผนที่"
+  },
+  "contact": {
+    "title": "ติดต่อเรา",
+    "name": "ชื่อของคุณ",
+    "email": "อีเมล",
+    "phone": "เบอร์โทร",
+    "message": "ข้อความ",
+    "send": "ส่งข้อความ",
+    "success": "ส่งข้อความสำเร็จ!",
+    "error": "ส่งข้อความไม่สำเร็จ กรุณาลองใหม่"
+  },
+  "footer": {
+    "copyright": "© 2026 Botanika Massage & Spa สงวนลิขสิทธิ์"
+  }
+}

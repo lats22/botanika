@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "services": "Services",
+    "packages": "Forfaits",
+    "locations": "Nos Adresses",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Détendez-vous. Rafraîchissez. Rajeunissez.",
+    "viewServices": "Voir les Services",
+    "contactUs": "Nous Contacter"
+  },
+  "services": {
+    "title": "Nos Services",
+    "duration": "Durée",
+    "minutes": "min"
+  },
+  "packages": {
+    "title": "Forfaits Spéciaux",
+    "includes": "Comprend"
+  },
+  "testimonials": {
+    "title": "Témoignages Clients"
+  },
+  "branches": {
+    "title": "Nos Adresses",
+    "hours": "Ouvert tous les jours",
+    "directions": "Itinéraire"
+  },
+  "contact": {
+    "title": "Nous Contacter",
+    "name": "Votre Nom",
+    "email": "Adresse Email",
+    "phone": "Téléphone",
+    "message": "Votre Message",
+    "send": "Envoyer",
+    "success": "Message envoyé avec succès!",
+    "error": "Échec de l'envoi. Veuillez réessayer."
+  },
+  "footer": {
+    "copyright": "© 2026 Botanika Massage & Spa. Tous droits réservés."
+  }
+}

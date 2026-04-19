@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "services": "서비스",
+    "packages": "패키지",
+    "locations": "위치",
+    "contact": "연락처"
+  },
+  "hero": {
+    "tagline": "휴식. 상쾌함. 재충전.",
+    "viewServices": "서비스 보기",
+    "contactUs": "문의하기"
+  },
+  "services": {
+    "title": "서비스 안내",
+    "duration": "소요시간",
+    "minutes": "분"
+  },
+  "packages": {
+    "title": "스페셜 패키지",
+    "includes": "포함"
+  },
+  "testimonials": {
+    "title": "고객 후기"
+  },
+  "branches": {
+    "title": "지점 안내",
+    "hours": "매일 영업",
+    "directions": "길찾기"
+  },
+  "contact": {
+    "title": "문의하기",
+    "name": "성함",
+    "email": "이메일",
+    "phone": "전화번호",
+    "message": "메시지",
+    "send": "보내기",
+    "success": "메시지가 전송되었습니다!",
+    "error": "전송 실패. 다시 시도해주세요."
+  },
+  "footer": {
+    "copyright": "© 2026 Botanika Massage & Spa. 모든 권리 보유."
+  }
+}
