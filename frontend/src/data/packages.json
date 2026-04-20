@@ -1,62 +1,195 @@
 [
   {
     "id": 1,
-    "name": { "en": "Tension Release", "th": "ผ่อนคลายความตึงเครียด" },
+    "name": {
+      "en": "Tension Release",
+      "th": "ผ่อนคลายความตึงเครียด",
+      "fr": "Libération des Tensions",
+      "es": "Liberación de Tensión",
+      "zh": "舒缓紧张",
+      "ko": "긴장 완화"
+    },
     "duration": 90,
     "includes": [
-      { "en": "30 min Back, Head & Shoulder Massage", "th": "นวดหลัง ศีรษะ และไหล่ 30 นาที" },
-      { "en": "60 min Foot Massage", "th": "นวดเท้า 60 นาที" }
+      {
+        "en": "30 min Back, Head & Shoulder Massage",
+        "th": "นวดหลัง ศีรษะ และไหล่ 30 นาที",
+        "fr": "Massage Dos, Tête et Épaules 30 min",
+        "es": "Masaje de Espalda, Cabeza y Hombros 30 min",
+        "zh": "背部、头部和肩部按摩 30 分钟",
+        "ko": "등, 머리 및 어깨 마사지 30분"
+      },
+      {
+        "en": "60 min Foot Massage",
+        "th": "นวดเท้า 60 นาที",
+        "fr": "Massage des Pieds 60 min",
+        "es": "Masaje de Pies 60 min",
+        "zh": "足部按摩 60 分钟",
+        "ko": "발 마사지 60분"
+      }
     ],
     "animation": "spa-facial"
   },
   {
     "id": 2,
-    "name": { "en": "Mini Beauty", "th": "มินิบิวตี้" },
+    "name": {
+      "en": "Mini Beauty",
+      "th": "มินิบิวตี้",
+      "fr": "Mini Beauté",
+      "es": "Mini Belleza",
+      "zh": "迷你美容",
+      "ko": "미니 뷰티"
+    },
     "duration": 90,
     "includes": [
-      { "en": "30 min Body Scrub", "th": "ขัดผิว 30 นาที" },
-      { "en": "60 min Aromatic Oil Massage", "th": "นวดอโรม่า 60 นาที" }
+      {
+        "en": "30 min Body Scrub",
+        "th": "ขัดผิว 30 นาที",
+        "fr": "Gommage Corporel 30 min",
+        "es": "Exfoliación Corporal 30 min",
+        "zh": "身体磨砂 30 分钟",
+        "ko": "바디 스크럽 30분"
+      },
+      {
+        "en": "60 min Aromatic Oil Massage",
+        "th": "นวดอโรม่า 60 นาที",
+        "fr": "Massage aux Huiles Aromatiques 60 min",
+        "es": "Masaje con Aceites Aromáticos 60 min",
+        "zh": "芳香精油按摩 60 分钟",
+        "ko": "아로마 오일 마사지 60분"
+      }
     ],
     "animation": "spa-facial"
   },
   {
     "id": 3,
-    "name": { "en": "Athlete's Heaven", "th": "สวรรค์ของนักกีฬา" },
+    "name": {
+      "en": "Athlete's Heaven",
+      "th": "สวรรค์ของนักกีฬา",
+      "fr": "Paradis de l'Athlète",
+      "es": "Paraíso del Atleta",
+      "zh": "运动员天堂",
+      "ko": "운동선수의 천국"
+    },
     "duration": 90,
     "includes": [
-      { "en": "60 min Sports Massage (Deep Tissue)", "th": "นวดสปอร์ต (ดีพทิชชู่) 60 นาที" },
-      { "en": "30 min Aromatic Herbal Compress", "th": "ประคบสมุนไพรอโรม่า 30 นาที" }
+      {
+        "en": "60 min Sports Massage (Deep Tissue)",
+        "th": "นวดสปอร์ต (ดีพทิชชู่) 60 นาที",
+        "fr": "Massage Sportif (Tissus Profonds) 60 min",
+        "es": "Masaje Deportivo (Tejido Profundo) 60 min",
+        "zh": "运动按摩（深层组织）60 分钟",
+        "ko": "스포츠 마사지 (딥티슈) 60분"
+      },
+      {
+        "en": "30 min Aromatic Herbal Compress",
+        "th": "ประคบสมุนไพรอโรม่า 30 นาที",
+        "fr": "Compresse aux Herbes Aromatiques 30 min",
+        "es": "Compresa de Hierbas Aromáticas 30 min",
+        "zh": "芳香草药热敷 30 分钟",
+        "ko": "아로마 허브 찜질 30분"
+      }
     ],
     "animation": "thai-massage"
   },
   {
     "id": 4,
-    "name": { "en": "Beauty Complete", "th": "บิวตี้คอมพลีท" },
+    "name": {
+      "en": "Beauty Complete",
+      "th": "บิวตี้คอมพลีท",
+      "fr": "Beauté Complète",
+      "es": "Belleza Completa",
+      "zh": "完美美容",
+      "ko": "뷰티 컴플리트"
+    },
     "duration": 180,
     "includes": [
-      { "en": "60 min Body Scrub", "th": "ขัดผิว 60 นาที" },
-      { "en": "60 min Aromatic Oil Massage", "th": "นวดอโรม่า 60 นาที" },
-      { "en": "60 min Facial Treatment", "th": "ทรีตเมนต์ใบหน้า 60 นาที" }
+      {
+        "en": "60 min Body Scrub",
+        "th": "ขัดผิว 60 นาที",
+        "fr": "Gommage Corporel 60 min",
+        "es": "Exfoliación Corporal 60 min",
+        "zh": "身体磨砂 60 分钟",
+        "ko": "바디 스크럽 60분"
+      },
+      {
+        "en": "60 min Aromatic Oil Massage",
+        "th": "นวดอโรม่า 60 นาที",
+        "fr": "Massage aux Huiles Aromatiques 60 min",
+        "es": "Masaje con Aceites Aromáticos 60 min",
+        "zh": "芳香精油按摩 60 分钟",
+        "ko": "아로마 오일 마사지 60분"
+      },
+      {
+        "en": "60 min Facial Treatment",
+        "th": "ทรีตเมนต์ใบหน้า 60 นาที",
+        "fr": "Soin du Visage 60 min",
+        "es": "Tratamiento Facial 60 min",
+        "zh": "面部护理 60 分钟",
+        "ko": "페이셜 트리트먼트 60분"
+      }
     ],
     "animation": "spa-facial"
   },
   {
     "id": 5,
-    "name": { "en": "Completely Relax", "th": "ผ่อนคลายสุดๆ" },
+    "name": {
+      "en": "Completely Relax",
+      "th": "ผ่อนคลายสุดๆ",
+      "fr": "Relaxation Totale",
+      "es": "Relajación Total",
+      "zh": "完全放松",
+      "ko": "완전한 휴식"
+    },
     "duration": 120,
     "includes": [
-      { "en": "30 min Foot Massage", "th": "นวดเท้า 30 นาที" },
-      { "en": "90 min Aromatic Hot Stone Massage", "th": "นวดหินร้อนอโรม่า 90 นาที" }
+      {
+        "en": "30 min Foot Massage",
+        "th": "นวดเท้า 30 นาที",
+        "fr": "Massage des Pieds 30 min",
+        "es": "Masaje de Pies 30 min",
+        "zh": "足部按摩 30 分钟",
+        "ko": "발 마사지 30분"
+      },
+      {
+        "en": "90 min Aromatic Hot Stone Massage",
+        "th": "นวดหินร้อนอโรม่า 90 นาที",
+        "fr": "Massage aux Pierres Chaudes Aromatiques 90 min",
+        "es": "Masaje con Piedras Calientes Aromáticas 90 min",
+        "zh": "芳香热石按摩 90 分钟",
+        "ko": "아로마 핫스톤 마사지 90분"
+      }
     ],
     "animation": "hot-stone"
   },
   {
     "id": 6,
-    "name": { "en": "Oriental Delight", "th": "ความสุขแบบตะวันออก" },
+    "name": {
+      "en": "Oriental Delight",
+      "th": "ความสุขแบบตะวันออก",
+      "fr": "Délice Oriental",
+      "es": "Deleite Oriental",
+      "zh": "东方之乐",
+      "ko": "오리엔탈 딜라이트"
+    },
     "duration": 120,
     "includes": [
-      { "en": "60 min Body Scrub", "th": "ขัดผิว 60 นาที" },
-      { "en": "60 min Aromatic Oil Massage", "th": "นวดอโรม่า 60 นาที" }
+      {
+        "en": "60 min Body Scrub",
+        "th": "ขัดผิว 60 นาที",
+        "fr": "Gommage Corporel 60 min",
+        "es": "Exfoliación Corporal 60 min",
+        "zh": "身体磨砂 60 分钟",
+        "ko": "바디 스크럽 60분"
+      },
+      {
+        "en": "60 min Aromatic Oil Massage",
+        "th": "นวดอโรม่า 60 นาที",
+        "fr": "Massage aux Huiles Aromatiques 60 min",
+        "es": "Masaje con Aceites Aromáticos 60 min",
+        "zh": "芳香精油按摩 60 分钟",
+        "ko": "아로마 오일 마사지 60분"
+      }
     ],
     "animation": "spa-facial"
   }

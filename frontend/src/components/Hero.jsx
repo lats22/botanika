@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import './Hero.css'
 
 function Hero() {
   const { t } = useTranslation()
   const [videoError, setVideoError] = useState(false)
+  const [videoReady, setVideoReady] = useState(false)
+  const videoRef = useRef(null)
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
@@ -13,21 +15,25 @@ function Hero() {
     }
   }
 
+  const handleVideoReady = () => {
+    setVideoReady(true)
+  }
+
   return (
     <section className="hero">
       <div className="hero__video-container">
         {!videoError ? (
           <video
-            className="hero__video"
+            ref={videoRef}
+            className={`hero__video ${videoReady ? 'hero__video--ready' : ''}`}
             autoPlay
             muted
             loop
             playsInline
-            poster="/images/hero-fallback.jpg"
+            onCanPlay={handleVideoReady}
             onError={() => setVideoError(true)}
           >
             <source src="/video/Silom13.mp4" type="video/mp4" />
-            <source src="/video/hero.webm" type="video/webm" />
           </video>
         ) : (
           <img

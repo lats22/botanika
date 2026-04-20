@@ -19,7 +19,11 @@ function LanguageSelector() {
   const langCode = i18n.language?.split('-')[0] || 'en'
   const currentLang = languages.find(l => l.code === langCode) || languages[0]
 
-  const changeLanguage = (code) => {
+  const changeLanguage = (e, code) => {
+    e.preventDefault()
+    e.stopPropagation()
+    // Explicitly set localStorage first to ensure persistence
+    localStorage.setItem('i18nextLng', code)
     i18n.changeLanguage(code)
     setIsOpen(false)
   }
@@ -39,7 +43,7 @@ function LanguageSelector() {
           {languages.map(lang => (
             <li key={lang.code}>
               <button
-                onClick={() => changeLanguage(lang.code)}
+                onClick={(e) => changeLanguage(e, lang.code)}
                 className={lang.code === langCode ? 'active' : ''}
               >
                 <span>{lang.label}</span>

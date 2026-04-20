@@ -3,7 +3,11 @@
     "id": 1,
     "text": {
       "en": "Best massage in Bangkok!",
-      "th": "นวดดีที่สุดในกรุงเทพ!"
+      "th": "นวดดีที่สุดในกรุงเทพ!",
+      "fr": "Le meilleur massage à Bangkok!",
+      "es": "¡El mejor masaje en Bangkok!",
+      "zh": "曼谷最好的按摩！",
+      "ko": "방콕 최고의 마사지!"
     },
     "author": "TripAdvisor Review",
     "rating": 5,
@@ -13,7 +17,11 @@
     "id": 2,
     "text": {
       "en": "5 Star in both service and decor. A must place to visit if you are in Bangkok and looking for a GREAT Massage.",
-      "th": "5 ดาวทั้งบริการและการตกแต่ง ต้องมาถ้าคุณอยู่กรุงเทพและต้องการนวดที่ยอดเยี่ยม"
+      "th": "5 ดาวทั้งบริการและการตกแต่ง ต้องมาถ้าคุณอยู่กรุงเทพและต้องการนวดที่ยอดเยี่ยม",
+      "fr": "5 étoiles pour le service et la décoration. Un endroit incontournable si vous êtes à Bangkok et cherchez un EXCELLENT massage.",
+      "es": "5 estrellas en servicio y decoración. Un lugar imprescindible si estás en Bangkok y buscas un GRAN masaje.",
+      "zh": "服务和装饰都是5星级。如果您在曼谷寻找优质按摩，这是必去之地。",
+      "ko": "서비스와 인테리어 모두 5성급. 방콕에서 훌륭한 마사지를 찾고 계시다면 꼭 방문해야 할 곳입니다."
     },
     "author": "TripAdvisor Review",
     "rating": 5,
@@ -23,7 +31,11 @@
     "id": 3,
     "text": {
       "en": "This beautiful salon offers such a calm and clean massage experience. Everything is impeccably clean!",
-      "th": "ร้านสวยแห่งนี้ให้ประสบการณ์นวดที่สงบและสะอาด ทุกอย่างสะอาดหมดจด!"
+      "th": "ร้านสวยแห่งนี้ให้ประสบการณ์นวดที่สงบและสะอาด ทุกอย่างสะอาดหมดจด!",
+      "fr": "Ce beau salon offre une expérience de massage calme et propre. Tout est impeccablement propre!",
+      "es": "Este hermoso salón ofrece una experiencia de masaje tranquila y limpia. ¡Todo está impecablemente limpio!",
+      "zh": "这家美丽的沙龙提供平静而干净的按摩体验。一切都干净无比！",
+      "ko": "이 아름다운 살롱은 차분하고 깨끗한 마사지 경험을 제공합니다. 모든 것이 완벽하게 깨끗합니다!"
     },
     "author": "TripAdvisor Review",
     "rating": 5,
@@ -33,7 +45,11 @@
     "id": 4,
     "text": {
       "en": "I have visited many massage centres in Bangkok, Koh Samui and Phuket. But this place is in my top five.",
-      "th": "ฉันไปนวดหลายที่ในกรุงเทพ เกาะสมุย และภูเก็ต แต่ที่นี่ติดอันดับห้าของฉัน"
+      "th": "ฉันไปนวดหลายที่ในกรุงเทพ เกาะสมุย และภูเก็ต แต่ที่นี่ติดอันดับห้าของฉัน",
+      "fr": "J'ai visité de nombreux centres de massage à Bangkok, Koh Samui et Phuket. Mais cet endroit est dans mon top cinq.",
+      "es": "He visitado muchos centros de masaje en Bangkok, Koh Samui y Phuket. Pero este lugar está en mi top cinco.",
+      "zh": "我去过曼谷、苏梅岛和普吉岛的许多按摩中心。但这个地方是我的前五名。",
+      "ko": "저는 방콕, 코사무이, 푸켓의 많은 마사지 센터를 방문했습니다. 하지만 이곳은 제 톱5 안에 듭니다."
     },
     "author": "TripAdvisor Review",
     "rating": 5,
@@ -43,7 +59,11 @@
     "id": 5,
     "text": {
       "en": "90% recommend this place. Excellent service and friendly staff!",
-      "th": "90% แนะนำที่นี่ บริการเยี่ยมและพนักงานเป็นกันเอง!"
+      "th": "90% แนะนำที่นี่ บริการเยี่ยมและพนักงานเป็นกันเอง!",
+      "fr": "90% recommandent cet endroit. Excellent service et personnel sympathique!",
+      "es": "90% recomienda este lugar. ¡Excelente servicio y personal amable!",
+      "zh": "90%的人推荐这个地方。服务优秀，员工友好！",
+      "ko": "90%가 이곳을 추천합니다. 훌륭한 서비스와 친절한 직원!"
     },
     "author": "Facebook Review",
     "rating": 5,

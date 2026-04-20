@@ -1,10 +1,21 @@
 [
   {
     "id": 1,
-    "name": { "en": "Foot Reflexology", "th": "นวดเท้า" },
+    "name": {
+      "en": "Foot Reflexology",
+      "th": "นวดเท้า",
+      "fr": "Réflexologie Plantaire",
+      "es": "Reflexología Podal",
+      "zh": "足部反射疗法",
+      "ko": "발 반사 요법"
+    },
     "description": {
       "en": "Pressure to reflex areas promotes health through energetic pathways. Improves circulation. (With Tiger Balm)",
-      "th": "การกดจุดสะท้อนช่วยส่งเสริมสุขภาพผ่านเส้นทางพลังงาน ช่วยเพิ่มการไหลเวียนโลหิต (พร้อมยาหม่อง)"
+      "th": "การกดจุดสะท้อนช่วยส่งเสริมสุขภาพผ่านเส้นทางพลังงาน ช่วยเพิ่มการไหลเวียนโลหิต (พร้อมยาหม่อง)",
+      "fr": "La pression sur les zones réflexes favorise la santé par les voies énergétiques. Améliore la circulation. (Avec Baume du Tigre)",
+      "es": "La presión en las zonas reflejas promueve la salud a través de vías energéticas. Mejora la circulación. (Con Bálsamo de Tigre)",
+      "zh": "通过能量通道对反射区施压促进健康。改善血液循环。（含虎标万金油）",
+      "ko": "반사 부위에 압력을 가해 에너지 경로를 통해 건강을 증진합니다. 혈액순환을 개선합니다. (타이거 밤 포함)"
     },
     "durations": [60, 90, 120],
     "image": "Foot Massage.jpg",
@@ -12,10 +23,21 @@
   },
   {
     "id": 2,
-    "name": { "en": "Head, Shoulder & Back Massage", "th": "นวดหัวและหลัง" },
+    "name": {
+      "en": "Head, Shoulder & Back Massage",
+      "th": "นวดหัวและหลัง",
+      "fr": "Massage Tête, Épaules et Dos",
+      "es": "Masaje de Cabeza, Hombros y Espalda",
+      "zh": "头肩背部按摩",
+      "ko": "머리, 어깨 및 등 마사지"
+    },
     "description": {
       "en": "Relieves tension in head, face, neck, temples and forehead. (With Tiger Balm)",
-      "th": "บรรเทาความตึงเครียดที่ศีรษะ ใบหน้า คอ ขมับ และหน้าผาก (พร้อมยาหม่อง)"
+      "th": "บรรเทาความตึงเครียดที่ศีรษะ ใบหน้า คอ ขมับ และหน้าผาก (พร้อมยาหม่อง)",
+      "fr": "Soulage les tensions de la tête, du visage, du cou, des tempes et du front. (Avec Baume du Tigre)",
+      "es": "Alivia la tensión en la cabeza, cara, cuello, sienes y frente. (Con Bálsamo de Tigre)",
+      "zh": "缓解头部、面部、颈部、太阳穴和前额的紧张。（含虎标万金油）",
+      "ko": "머리, 얼굴, 목, 관자놀이 및 이마의 긴장을 완화합니다. (타이거 밤 포함)"
     },
     "durations": [60, 90, 120],
     "image": "Head and shoulder Massage.jpg",
@@ -23,10 +45,21 @@
   },
   {
     "id": 3,
-    "name": { "en": "Traditional Thai Massage", "th": "นวดไทย" },
+    "name": {
+      "en": "Traditional Thai Massage",
+      "th": "นวดไทย",
+      "fr": "Massage Thaï Traditionnel",
+      "es": "Masaje Tailandés Tradicional",
+      "zh": "传统泰式按摩",
+      "ko": "전통 타이 마사지"
+    },
     "description": {
       "en": "Practitioner guides client through postures while massaging along body's energy lines and pressure points.",
-      "th": "ผู้นวดนำลูกค้าผ่านท่าทางต่างๆ ขณะนวดตามเส้นพลังงานและจุดกดของร่างกาย"
+      "th": "ผู้นวดนำลูกค้าผ่านท่าทางต่างๆ ขณะนวดตามเส้นพลังงานและจุดกดของร่างกาย",
+      "fr": "Le praticien guide le client à travers des postures tout en massant le long des lignes d'énergie et des points de pression du corps.",
+      "es": "El terapeuta guía al cliente a través de posturas mientras masajea a lo largo de las líneas de energía y puntos de presión del cuerpo.",
+      "zh": "按摩师引导客户做各种姿势，同时沿身体能量线和穴位进行按摩。",
+      "ko": "시술사가 고객을 다양한 자세로 안내하면서 신체의 에너지 라인과 압력점을 따라 마사지합니다."
     },
     "durations": [60, 90, 120],
     "image": "thai Massage.jpg",
@@ -34,10 +67,21 @@
   },
   {
     "id": 4,
-    "name": { "en": "Four Hands Aromatic Oil Massage", "th": "นวดอโรม่าสี่มือ" },
+    "name": {
+      "en": "Four Hands Aromatic Oil Massage",
+      "th": "นวดอโรม่าสี่มือ",
+      "fr": "Massage à Quatre Mains aux Huiles Aromatiques",
+      "es": "Masaje a Cuatro Manos con Aceite Aromático",
+      "zh": "四手芳香精油按摩",
+      "ko": "포핸드 아로마 오일 마사지"
+    },
     "description": {
       "en": "Two therapists working simultaneously with BOTANIKA signature aromatic oil.",
-      "th": "นักนวดสองคนทำงานพร้อมกันด้วยน้ำมันอโรม่าซิกเนเจอร์ของ BOTANIKA"
+      "th": "นักนวดสองคนทำงานพร้อมกันด้วยน้ำมันอโรม่าซิกเนเจอร์ของ BOTANIKA",
+      "fr": "Deux thérapeutes travaillent simultanément avec l'huile aromatique signature de BOTANIKA.",
+      "es": "Dos terapeutas trabajando simultáneamente con el aceite aromático exclusivo de BOTANIKA.",
+      "zh": "两位按摩师同时使用BOTANIKA招牌芳香精油进行按摩。",
+      "ko": "두 명의 테라피스트가 BOTANIKA 시그니처 아로마 오일로 동시에 시술합니다."
     },
     "durations": [60, 90, 120],
     "image": "Four hand Massage.jpg",
@@ -45,10 +89,21 @@
   },
   {
     "id": 5,
-    "name": { "en": "Oil Massage", "th": "นวดออย" },
+    "name": {
+      "en": "Oil Massage",
+      "th": "นวดออย",
+      "fr": "Massage à l'Huile",
+      "es": "Masaje con Aceite",
+      "zh": "精油按摩",
+      "ko": "오일 마사지"
+    },
     "description": {
       "en": "Whole-body massage using oil to relax and relieve aching muscles. Nourishes the skin.",
-      "th": "นวดทั้งตัวด้วยน้ำมันเพื่อผ่อนคลายและบรรเทาอาการปวดกล้ามเนื้อ บำรุงผิว"
+      "th": "นวดทั้งตัวด้วยน้ำมันเพื่อผ่อนคลายและบรรเทาอาการปวดกล้ามเนื้อ บำรุงผิว",
+      "fr": "Massage du corps entier à l'huile pour détendre et soulager les muscles douloureux. Nourrit la peau.",
+      "es": "Masaje de cuerpo completo con aceite para relajar y aliviar los músculos adoloridos. Nutre la piel.",
+      "zh": "全身精油按摩，放松并缓解肌肉酸痛。滋养肌肤。",
+      "ko": "오일을 사용한 전신 마사지로 근육을 이완하고 통증을 완화합니다. 피부에 영양을 공급합니다."
     },
     "durations": [60, 90, 120],
     "image": "oil Massage.jpg",
@@ -56,10 +111,21 @@
   },
   {
     "id": 6,
-    "name": { "en": "Botanika Aroma Therapy", "th": "นวดอโรม่า" },
+    "name": {
+      "en": "Botanika Aroma Therapy",
+      "th": "นวดอโรม่า",
+      "fr": "Aromathérapie Botanika",
+      "es": "Aromaterapia Botanika",
+      "zh": "Botanika芳香疗法",
+      "ko": "보타니카 아로마 테라피"
+    },
     "description": {
       "en": "100% Natural Essential Oil massage to reduce tension, soothe sore muscles, and stimulate circulation.",
-      "th": "นวดด้วยน้ำมันหอมระเหย 100% ช่วยลดความตึงเครียด ผ่อนคลายกล้ามเนื้อ และกระตุ้นการไหลเวียน"
+      "th": "นวดด้วยน้ำมันหอมระเหย 100% ช่วยลดความตึงเครียด ผ่อนคลายกล้ามเนื้อ และกระตุ้นการไหลเวียน",
+      "fr": "Massage aux huiles essentielles 100% naturelles pour réduire les tensions, apaiser les muscles endoloris et stimuler la circulation.",
+      "es": "Masaje con aceites esenciales 100% naturales para reducir la tensión, aliviar los músculos adoloridos y estimular la circulación.",
+      "zh": "100%天然精油按摩，减轻紧张，舒缓肌肉酸痛，促进血液循环。",
+      "ko": "100% 천연 에센셜 오일 마사지로 긴장을 완화하고, 아픈 근육을 진정시키며, 혈액순환을 촉진합니다."
     },
     "durations": [60, 90, 120],
     "image": "Aroma Swedish Massage.jpg",
@@ -67,10 +133,21 @@
   },
   {
     "id": 7,
-    "name": { "en": "Sports Massage / Deep Tissue", "th": "นวดรีดเส้น, กดจุด" },
+    "name": {
+      "en": "Sports Massage / Deep Tissue",
+      "th": "นวดรีดเส้น, กดจุด",
+      "fr": "Massage Sportif / Tissus Profonds",
+      "es": "Masaje Deportivo / Tejido Profundo",
+      "zh": "运动按摩 / 深层组织按摩",
+      "ko": "스포츠 마사지 / 딥티슈"
+    },
     "description": {
       "en": "Focuses on realigning deeper layers of muscles and connective tissue. Releases chronic aches and pains.",
-      "th": "มุ่งเน้นการจัดเรียงชั้นลึกของกล้ามเนื้อและเนื้อเยื่อเกี่ยวพัน บรรเทาอาการปวดเรื้อรัง"
+      "th": "มุ่งเน้นการจัดเรียงชั้นลึกของกล้ามเนื้อและเนื้อเยื่อเกี่ยวพัน บรรเทาอาการปวดเรื้อรัง",
+      "fr": "Se concentre sur le réalignement des couches profondes des muscles et des tissus conjonctifs. Libère les douleurs chroniques.",
+      "es": "Se enfoca en realinear las capas profundas de músculos y tejido conectivo. Libera dolores crónicos.",
+      "zh": "专注于重新调整深层肌肉和结缔组织。释放慢性疼痛。",
+      "ko": "근육과 결합 조직의 깊은 층을 재정렬하는 데 중점을 둡니다. 만성 통증을 완화합니다."
     },
     "durations": [60, 90, 120],
     "image": "Sports Masage.jpg",
@@ -78,10 +155,21 @@
   },
   {
     "id": 8,
-    "name": { "en": "Organic Coconut Oil Massage", "th": "นวดน้ำมันมะพร้าว" },
+    "name": {
+      "en": "Organic Coconut Oil Massage",
+      "th": "นวดน้ำมันมะพร้าว",
+      "fr": "Massage à l'Huile de Coco Biologique",
+      "es": "Masaje con Aceite de Coco Orgánico",
+      "zh": "有机椰子油按摩",
+      "ko": "유기농 코코넛 오일 마사지"
+    },
     "description": {
       "en": "Virgin Cold-Press coconut oil heals the skin, nourishes, and makes your skin softer. Delays ageing.",
-      "th": "น้ำมันมะพร้าวสกัดเย็นบริสุทธิ์ช่วยรักษาผิว บำรุง และทำให้ผิวนุ่มขึ้น ชะลอวัย"
+      "th": "น้ำมันมะพร้าวสกัดเย็นบริสุทธิ์ช่วยรักษาผิว บำรุง และทำให้ผิวนุ่มขึ้น ชะลอวัย",
+      "fr": "L'huile de coco vierge pressée à froid guérit la peau, nourrit et adoucit votre peau. Retarde le vieillissement.",
+      "es": "El aceite de coco virgen prensado en frío sana la piel, nutre y suaviza tu piel. Retrasa el envejecimiento.",
+      "zh": "冷榨初榨椰子油修复肌肤，滋养并使皮肤更加柔软。延缓衰老。",
+      "ko": "버진 콜드프레스 코코넛 오일이 피부를 치유하고, 영양을 공급하며, 피부를 부드럽게 만듭니다. 노화를 지연시킵니다."
     },
     "durations": [60, 90, 120],
     "image": "Coconut Oil Massage.png",
@@ -89,10 +177,21 @@
   },
   {
     "id": 9,
-    "name": { "en": "Warm Aromatic Oil Massage", "th": "นวดอโรม่าอุ่น" },
+    "name": {
+      "en": "Warm Aromatic Oil Massage",
+      "th": "นวดอโรม่าอุ่น",
+      "fr": "Massage à l'Huile Aromatique Chaude",
+      "es": "Masaje con Aceite Aromático Tibio",
+      "zh": "温热芳香精油按摩",
+      "ko": "온열 아로마 오일 마사지"
+    },
     "description": {
       "en": "Heated aromatic warm oil helps soften and expand muscle tissues for deep relaxation.",
-      "th": "น้ำมันอโรม่าอุ่นช่วยให้เนื้อเยื่อกล้ามเนื้อนุ่มและขยายตัว เพื่อการผ่อนคลายอย่างล้ำลึก"
+      "th": "น้ำมันอโรม่าอุ่นช่วยให้เนื้อเยื่อกล้ามเนื้อนุ่มและขยายตัว เพื่อการผ่อนคลายอย่างล้ำลึก",
+      "fr": "L'huile aromatique chauffée aide à assouplir et détendre les tissus musculaires pour une relaxation profonde.",
+      "es": "El aceite aromático tibio ayuda a suavizar y expandir los tejidos musculares para una relajación profunda.",
+      "zh": "温热的芳香精油有助于软化和舒展肌肉组织，带来深度放松。",
+      "ko": "가열된 아로마 오일이 근육 조직을 부드럽게 하고 이완시켜 깊은 휴식을 제공합니다."
     },
     "durations": [60, 90, 120],
     "image": "Warm Candle.png",
@@ -100,10 +199,21 @@
   },
   {
     "id": 10,
-    "name": { "en": "Botanika Aromatic Body Scrub", "th": "ขัดผิว" },
+    "name": {
+      "en": "Botanika Aromatic Body Scrub",
+      "th": "ขัดผิว",
+      "fr": "Gommage Corporel Aromatique Botanika",
+      "es": "Exfoliación Corporal Aromática Botanika",
+      "zh": "Botanika芳香身体磨砂",
+      "ko": "보타니카 아로마틱 바디 스크럽"
+    },
     "description": {
       "en": "Exfoliates dead skin cells with Botanicals, essential oils, Jojoba oil and Vitamin E. Ideal for dry skin.",
-      "th": "ขัดผิวเซลล์ผิวที่ตายแล้วด้วยพฤกษศาสตร์ น้ำมันหอมระเหย โจโจ้บาออยล์ และวิตามินอี เหมาะสำหรับผิวแห้ง"
+      "th": "ขัดผิวเซลล์ผิวที่ตายแล้วด้วยพฤกษศาสตร์ น้ำมันหอมระเหย โจโจ้บาออยล์ และวิตามินอี เหมาะสำหรับผิวแห้ง",
+      "fr": "Exfolie les cellules mortes avec des extraits botaniques, des huiles essentielles, de l'huile de jojoba et de la vitamine E. Idéal pour les peaux sèches.",
+      "es": "Exfolia las células muertas con botánicos, aceites esenciales, aceite de jojoba y vitamina E. Ideal para piel seca.",
+      "zh": "使用植物精华、精油、荷荷巴油和维生素E去除死皮细胞。适合干性皮肤。",
+      "ko": "식물 추출물, 에센셜 오일, 호호바 오일, 비타민 E로 각질을 제거합니다. 건성 피부에 이상적입니다."
     },
     "durations": [60, 90, 120],
     "image": "Body Scrub.jpg",
@@ -111,10 +221,21 @@
   },
   {
     "id": 11,
-    "name": { "en": "Aromatic Herbal Compress", "th": "นวดอโรม่าประคบ" },
+    "name": {
+      "en": "Aromatic Herbal Compress",
+      "th": "นวดอโรม่าประคบ",
+      "fr": "Compresse aux Herbes Aromatiques",
+      "es": "Compresa Herbal Aromática",
+      "zh": "芳香草药热敷",
+      "ko": "아로마틱 허벌 컴프레스"
+    },
     "description": {
       "en": "Warm compress of natural Thai herbs opens pores, eliminates toxins, followed by deep tissue massage.",
-      "th": "ประคบสมุนไพรไทยอุ่นเปิดรูขุมขน กำจัดสารพิษ ตามด้วยการนวดเนื้อเยื่อลึก"
+      "th": "ประคบสมุนไพรไทยอุ่นเปิดรูขุมขน กำจัดสารพิษ ตามด้วยการนวดเนื้อเยื่อลึก",
+      "fr": "Une compresse chaude d'herbes thaïlandaises naturelles ouvre les pores, élimine les toxines, suivie d'un massage des tissus profonds.",
+      "es": "La compresa caliente de hierbas tailandesas naturales abre los poros, elimina toxinas, seguida de un masaje de tejido profundo.",
+      "zh": "天然泰国草药热敷打开毛孔，排除毒素，随后进行深层组织按摩。",
+      "ko": "천연 태국 허브 온찜질로 모공을 열고 독소를 제거한 후 딥티슈 마사지를 진행합니다."
     },
     "durations": [60, 90, 120],
     "image": "Herbal balls.jpg",
@@ -122,10 +243,21 @@
   },
   {
     "id": 12,
-    "name": { "en": "Aromatic Hot Stone Therapy", "th": "นวดหินร้อน" },
+    "name": {
+      "en": "Aromatic Hot Stone Therapy",
+      "th": "นวดหินร้อน",
+      "fr": "Thérapie aux Pierres Chaudes Aromatiques",
+      "es": "Terapia con Piedras Calientes Aromáticas",
+      "zh": "芳香热石疗法",
+      "ko": "아로마틱 핫스톤 테라피"
+    },
     "description": {
       "en": "Warm Basalt stones with aromatic oil relieve stress, activate detoxification, and decrease cellulite.",
-      "th": "หินบะซอลต์อุ่นพร้อมน้ำมันอโรม่าช่วยบรรเทาความเครียด กระตุ้นการขับสารพิษ และลดเซลลูไลท์"
+      "th": "หินบะซอลต์อุ่นพร้อมน้ำมันอโรม่าช่วยบรรเทาความเครียด กระตุ้นการขับสารพิษ และลดเซลลูไลท์",
+      "fr": "Les pierres de basalte chaudes avec huile aromatique soulagent le stress, activent la détoxification et réduisent la cellulite.",
+      "es": "Las piedras de basalto calientes con aceite aromático alivian el estrés, activan la desintoxicación y reducen la celulitis.",
+      "zh": "温热玄武岩配合芳香精油缓解压力，促进排毒，减少橘皮组织。",
+      "ko": "아로마 오일을 바른 따뜻한 현무암 돌이 스트레스를 완화하고, 해독을 촉진하며, 셀룰라이트를 감소시킵니다."
     },
     "durations": [60, 90, 120],
     "image": "Hot Stone.jpg",
