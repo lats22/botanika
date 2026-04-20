@@ -6,7 +6,7 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "3000:80"
+      - "3002:80"
     depends_on:
       - backend
     networks:
@@ -17,7 +17,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     ports:
-      - "5000:5000"
+      - "5002:5000"
     environment:
       - NODE_ENV=production
       - LINE_NOTIFY_TOKEN=${LINE_NOTIFY_TOKEN}

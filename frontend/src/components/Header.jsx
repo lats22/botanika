@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import LanguageSelector from './LanguageSelector'
 import './Header.css'
@@ -7,14 +7,54 @@ function Header() {
   const { t } = useTranslation()
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const navRef = useRef(null)
+  const toggleRef = useRef(null)
+  const timeoutRef = useRef(null)
 
+  // Auto-hide menu after 5 seconds of inactivity
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      timeoutRef.current = setTimeout(() => {
+        setIsMobileMenuOpen(false)
+      }, 5000)
+    }
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+    }
+  }, [isMobileMenuOpen])
+
+  // Close menu on scroll
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
+      setIsMobileMenuOpen(false)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  // Close menu on click outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        isMobileMenuOpen &&
+        navRef.current &&
+        !navRef.current.contains(event.target) &&
+        toggleRef.current &&
+        !toggleRef.current.contains(event.target)
+      ) {
+        setIsMobileMenuOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    document.addEventListener('touchstart', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('touchstart', handleClickOutside)
+    }
+  }, [isMobileMenuOpen])
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
@@ -32,6 +72,7 @@ function Header() {
         </a>
 
         <button
+          ref={toggleRef}
           className="header__mobile-toggle"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
@@ -41,7 +82,7 @@ function Header() {
           <span></span>
         </button>
 
-        <nav className={`header__nav ${isMobileMenuOpen ? 'header__nav--open' : ''}`}>
+        <nav ref={navRef} className={`header__nav ${isMobileMenuOpen ? 'header__nav--open' : ''}`}>
           <button onClick={() => scrollToSection('services')}>{t('nav.services')}</button>
           <button onClick={() => scrollToSection('packages')}>{t('nav.packages')}</button>
           <button onClick={() => scrollToSection('branches')}>{t('nav.locations')}</button>

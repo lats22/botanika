@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import './LanguageSelector.css'
 
@@ -14,10 +14,33 @@ const languages = [
 function LanguageSelector() {
   const { i18n } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
+  const selectorRef = useRef(null)
 
   // Handle both 'en' and 'en-US' style codes
   const langCode = i18n.language?.split('-')[0] || 'en'
   const currentLang = languages.find(l => l.code === langCode) || languages[0]
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (selectorRef.current && !selectorRef.current.contains(e.target)) {
+        setIsOpen(false)
+      }
+    }
+
+    // Close on scroll
+    const handleScroll = () => {
+      setIsOpen(false)
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   const changeLanguage = (e, code) => {
     e.preventDefault()
@@ -29,7 +52,7 @@ function LanguageSelector() {
   }
 
   return (
-    <div className="language-selector">
+    <div className="language-selector" ref={selectorRef}>
       <button
         className="language-selector__toggle"
         onClick={() => setIsOpen(!isOpen)}

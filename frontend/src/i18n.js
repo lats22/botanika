@@ -21,6 +21,7 @@ i18n
       es: { translation: es },
       ko: { translation: ko }
     },
+    lng: localStorage.getItem('i18nextLng') || 'en',
     fallbackLng: 'en',
     supportedLngs: ['en', 'th', 'zh', 'fr', 'es', 'ko'],
     load: 'languageOnly',
@@ -28,7 +29,7 @@ i18n
       escapeValue: false
     },
     detection: {
-      order: ['localStorage', 'navigator'],
+      order: ['localStorage'],
       lookupLocalStorage: 'i18nextLng',
       caches: ['localStorage']
     }
