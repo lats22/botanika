@@ -1,0 +1,60 @@
+.branch-card {
+  background: var(--ios-bg-primary);
+  backdrop-filter: var(--ios-blur-light);
+  -webkit-backdrop-filter: var(--ios-blur-light);
+  border-radius: var(--border-radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  text-align: center;
+}
+
+.branch-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: var(--shadow-lg);
+}
+
+.branch-card__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-deep-green);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid rgba(139, 115, 85, 0.3);
+  letter-spacing: -0.02em;
+}
+
+.branch-card__info {
+  margin-bottom: var(--spacing-lg);
+}
+
+.branch-card__row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  text-align: left;
+  padding: 10px 14px;
+  background: rgba(27, 94, 58, 0.04);
+  border-radius: var(--border-radius-sm);
+}
+
+.branch-card__icon {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.branch-card__phone {
+  color: var(--color-deep-green);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.branch-card__phone:hover {
+  color: var(--color-gold);
+}
+
+.branch-card__btn {
+  width: 100%;
+}

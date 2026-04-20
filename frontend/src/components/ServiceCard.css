@@ -1,0 +1,88 @@
+.service-card {
+  background: var(--ios-bg-primary);
+  backdrop-filter: var(--ios-blur-light);
+  -webkit-backdrop-filter: var(--ios-blur-light);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.service-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+.service-card__image {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.service-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.service-card:hover .service-card__image img {
+  transform: scale(1.05);
+}
+
+.service-card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 94, 58, 0.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.service-card:hover .service-card__overlay {
+  opacity: 1;
+}
+
+.service-card__overlay span {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--border-radius-full);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  letter-spacing: -0.01em;
+}
+
+.service-card__content {
+  padding: var(--spacing-md);
+}
+
+.service-card__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-deep-green);
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+.service-card__name-th {
+  font-size: 0.8125rem;
+  color: var(--color-gold);
+  font-weight: 500;
+}

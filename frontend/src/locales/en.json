@@ -13,7 +13,8 @@
   "services": {
     "title": "Our Services",
     "duration": "Duration",
-    "minutes": "min"
+    "minutes": "min",
+    "viewDetails": "View Details"
   },
   "packages": {
     "title": "Special Packages",
@@ -38,6 +39,6 @@
     "error": "Failed to send message. Please try again."
   },
   "footer": {
-    "copyright": "© 2026 Botanika Massage & Spa. All rights reserved."
+    "copyright": "© 2026 Botanika Massage. All rights reserved."
   }
 }

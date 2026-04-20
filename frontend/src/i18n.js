@@ -22,8 +22,14 @@ i18n
       ko: { translation: ko }
     },
     fallbackLng: 'en',
+    supportedLngs: ['en', 'th', 'zh', 'fr', 'es', 'ko'],
+    load: 'languageOnly',
     interpolation: {
       escapeValue: false
+    },
+    detection: {
+      order: ['localStorage', 'navigator'],
+      caches: ['localStorage']
     }
   })
 

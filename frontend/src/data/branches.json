@@ -15,43 +15,43 @@
     "name": "Silom 13",
     "phone": "095-812-2788",
     "address": {
-      "en": "TBD",
-      "th": "TBD"
+      "en": "711 Si Lom Rd, Si Lom, Bang Rak, Bangkok 10500",
+      "th": "711 ถ.สีลม สีลม บางรัก กรุงเทพฯ 10500"
     },
     "hours": "10:00 - 01:00",
-    "mapsUrl": ""
+    "mapsUrl": "https://maps.google.com/?q=711+Si+Lom+Rd+Si+Lom+Bang+Rak+Bangkok"
   },
   {
     "id": 3,
     "name": "Decho",
     "phone": "02-115-0288",
     "address": {
-      "en": "TBD",
-      "th": "TBD"
+      "en": "174/3 Silom Rd, Suriya Wong, Bang Rak, Bangkok 10500",
+      "th": "174/3 ถ.สีลม สุริยวงศ์ บางรัก กรุงเทพฯ 10500"
     },
     "hours": "10:00 - 01:00",
-    "mapsUrl": ""
+    "mapsUrl": "https://maps.google.com/?q=174/3+Silom+Rd+Suriya+Wong+Bang+Rak+Bangkok"
   },
   {
     "id": 4,
     "name": "Sala Daeng",
     "phone": "02-115-9698",
     "address": {
-      "en": "8 Thanon Surawong, Si Phraya, Bang Rak, Bangkok 10500",
+      "en": "8 Surawong Rd, Si Phraya, Bang Rak, Bangkok 10500",
       "th": "8 ถ.สุรวงศ์ สี่พระยา บางรัก กรุงเทพฯ 10500"
     },
     "hours": "10:00 - 01:00",
-    "mapsUrl": ""
+    "mapsUrl": "https://maps.google.com/?q=8+Surawong+Rd+Si+Phraya+Bang+Rak+Bangkok"
   },
   {
     "id": 5,
     "name": "Patpong",
     "phone": "02-115-7388",
     "address": {
-      "en": "TBD",
-      "th": "TBD"
+      "en": "18 Surawong Rd, Suriya Wong, Bang Rak, Bangkok 10500",
+      "th": "18 ถ.สุรวงศ์ สุริยวงศ์ บางรัก กรุงเทพฯ 10500"
     },
     "hours": "10:00 - 01:00",
-    "mapsUrl": ""
+    "mapsUrl": "https://maps.google.com/?q=18+Surawong+Rd+Suriya+Wong+Bang+Rak+Bangkok"
   }
 ]

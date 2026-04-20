@@ -1,0 +1,91 @@
+.package-card {
+  background: var(--ios-bg-primary);
+  backdrop-filter: var(--ios-blur-light);
+  -webkit-backdrop-filter: var(--ios-blur-light);
+  border-radius: var(--border-radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.package-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(139, 115, 85, 0.3);
+}
+
+.package-card__header {
+  background: linear-gradient(135deg, var(--color-deep-green) 0%, var(--color-dark-green) 100%);
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+}
+
+.package-card__name {
+  color: var(--color-white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.02em;
+}
+
+.package-card__duration {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--color-white);
+  padding: 8px 18px;
+  border-radius: var(--border-radius-full);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.package-card__content {
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.package-card__label {
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gold);
+  margin-bottom: var(--spacing-sm);
+}
+
+.package-card__includes {
+  list-style: none;
+  padding: 0;
+}
+
+.package-card__includes li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 0.9375rem;
+  color: var(--color-dark-green);
+}
+
+.package-card__includes li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  background: rgba(27, 94, 58, 0.1);
+  border-radius: var(--border-radius-full);
+}
+
+.package-card__includes li::after {
+  content: '\2713';
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-deep-green);
+}

@@ -7,7 +7,7 @@
       "th": "การกดจุดสะท้อนช่วยส่งเสริมสุขภาพผ่านเส้นทางพลังงาน ช่วยเพิ่มการไหลเวียนโลหิต (พร้อมยาหม่อง)"
     },
     "durations": [60, 90, 120],
-    "image": "foot-massage.jpg",
+    "image": "Foot Massage.jpg",
     "animation": "foot-massage"
   },
   {
@@ -18,7 +18,7 @@
       "th": "บรรเทาความตึงเครียดที่ศีรษะ ใบหน้า คอ ขมับ และหน้าผาก (พร้อมยาหม่อง)"
     },
     "durations": [60, 90, 120],
-    "image": "head-shoulder.jpg",
+    "image": "Head and shoulder Massage.jpg",
     "animation": "head-shoulder"
   },
   {
@@ -29,7 +29,7 @@
       "th": "ผู้นวดนำลูกค้าผ่านท่าทางต่างๆ ขณะนวดตามเส้นพลังงานและจุดกดของร่างกาย"
     },
     "durations": [60, 90, 120],
-    "image": "thai-massage.jpg",
+    "image": "thai Massage.jpg",
     "animation": "thai-massage"
   },
   {
@@ -40,7 +40,7 @@
       "th": "นักนวดสองคนทำงานพร้อมกันด้วยน้ำมันอโรม่าซิกเนเจอร์ของ BOTANIKA"
     },
     "durations": [60, 90, 120],
-    "image": "four-hand.jpg",
+    "image": "Four hand Massage.jpg",
     "animation": "oil-massage"
   },
   {
@@ -51,7 +51,7 @@
       "th": "นวดทั้งตัวด้วยน้ำมันเพื่อผ่อนคลายและบรรเทาอาการปวดกล้ามเนื้อ บำรุงผิว"
     },
     "durations": [60, 90, 120],
-    "image": "oil-massage.jpg",
+    "image": "oil Massage.jpg",
     "animation": "oil-massage"
   },
   {
@@ -62,7 +62,7 @@
       "th": "นวดด้วยน้ำมันหอมระเหย 100% ช่วยลดความตึงเครียด ผ่อนคลายกล้ามเนื้อ และกระตุ้นการไหลเวียน"
     },
     "durations": [60, 90, 120],
-    "image": "aroma-massage.jpg",
+    "image": "Aroma Swedish Massage.jpg",
     "animation": "oil-massage"
   },
   {
@@ -73,7 +73,7 @@
       "th": "มุ่งเน้นการจัดเรียงชั้นลึกของกล้ามเนื้อและเนื้อเยื่อเกี่ยวพัน บรรเทาอาการปวดเรื้อรัง"
     },
     "durations": [60, 90, 120],
-    "image": "sports-massage.jpg",
+    "image": "Sports Masage.jpg",
     "animation": "thai-massage"
   },
   {
@@ -84,7 +84,7 @@
       "th": "น้ำมันมะพร้าวสกัดเย็นบริสุทธิ์ช่วยรักษาผิว บำรุง และทำให้ผิวนุ่มขึ้น ชะลอวัย"
     },
     "durations": [60, 90, 120],
-    "image": "coconut-oil.png",
+    "image": "Coconut Oil Massage.png",
     "animation": "oil-massage"
   },
   {
@@ -95,7 +95,7 @@
       "th": "น้ำมันอโรม่าอุ่นช่วยให้เนื้อเยื่อกล้ามเนื้อนุ่มและขยายตัว เพื่อการผ่อนคลายอย่างล้ำลึก"
     },
     "durations": [60, 90, 120],
-    "image": "warm-oil.jpg",
+    "image": "Warm Candle.png",
     "animation": "oil-massage"
   },
   {
@@ -106,7 +106,7 @@
       "th": "ขัดผิวเซลล์ผิวที่ตายแล้วด้วยพฤกษศาสตร์ น้ำมันหอมระเหย โจโจ้บาออยล์ และวิตามินอี เหมาะสำหรับผิวแห้ง"
     },
     "durations": [60, 90, 120],
-    "image": "body-scrub.jpg",
+    "image": "Body Scrub.jpg",
     "animation": "spa-facial"
   },
   {
@@ -117,7 +117,7 @@
       "th": "ประคบสมุนไพรไทยอุ่นเปิดรูขุมขน กำจัดสารพิษ ตามด้วยการนวดเนื้อเยื่อลึก"
     },
     "durations": [60, 90, 120],
-    "image": "herbal-compress.jpg",
+    "image": "Herbal balls.jpg",
     "animation": "spa-facial"
   },
   {
@@ -128,7 +128,7 @@
       "th": "หินบะซอลต์อุ่นพร้อมน้ำมันอโรม่าช่วยบรรเทาความเครียด กระตุ้นการขับสารพิษ และลดเซลลูไลท์"
     },
     "durations": [60, 90, 120],
-    "image": "hot-stone.jpg",
+    "image": "Hot Stone.jpg",
     "animation": "hot-stone"
   }
 ]

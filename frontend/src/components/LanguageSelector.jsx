@@ -3,19 +3,21 @@ import { useTranslation } from 'react-i18next'
 import './LanguageSelector.css'
 
 const languages = [
-  { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'th', name: 'ไทย', flag: '🇹🇭' },
-  { code: 'zh', name: '中文', flag: '🇨🇳' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷' },
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'ko', name: '한국어', flag: '🇰🇷' }
+  { code: 'en', label: 'EN' },
+  { code: 'th', label: 'ไทย' },
+  { code: 'zh', label: '中文' },
+  { code: 'fr', label: 'FR' },
+  { code: 'es', label: 'ES' },
+  { code: 'ko', label: '한국' }
 ]
 
 function LanguageSelector() {
   const { i18n } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
 
-  const currentLang = languages.find(l => l.code === i18n.language) || languages[0]
+  // Handle both 'en' and 'en-US' style codes
+  const langCode = i18n.language?.split('-')[0] || 'en'
+  const currentLang = languages.find(l => l.code === langCode) || languages[0]
 
   const changeLanguage = (code) => {
     i18n.changeLanguage(code)
@@ -29,8 +31,7 @@ function LanguageSelector() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Select language"
       >
-        <span className="language-selector__flag">{currentLang.flag}</span>
-        <span className="language-selector__code">{currentLang.code.toUpperCase()}</span>
+        <span className="language-selector__code">{currentLang.label}</span>
       </button>
 
       {isOpen && (
@@ -39,10 +40,9 @@ function LanguageSelector() {
             <li key={lang.code}>
               <button
                 onClick={() => changeLanguage(lang.code)}
-                className={lang.code === i18n.language ? 'active' : ''}
+                className={lang.code === langCode ? 'active' : ''}
               >
-                <span className="language-selector__flag">{lang.flag}</span>
-                <span>{lang.name}</span>
+                <span>{lang.label}</span>
               </button>
             </li>
           ))}
