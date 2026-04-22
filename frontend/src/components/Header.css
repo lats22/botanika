@@ -25,8 +25,12 @@
 .header__logo img {
   height: 50px;
   width: auto;
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-sm);
   transition: all var(--transition-normal);
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .header--scrolled .header__logo img {

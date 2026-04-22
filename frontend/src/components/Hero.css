@@ -64,8 +64,10 @@
   height: auto;
   margin-bottom: var(--spacing-lg);
   border-radius: var(--border-radius-xl);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  background-color: #FFFFFF !important;
+  padding: var(--spacing-sm);
   transition: transform var(--transition-spring);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .hero__logo:hover {

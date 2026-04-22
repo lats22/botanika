@@ -15,6 +15,10 @@
 .footer__logo img {
   height: 80px;
   width: auto;
+  border-radius: var(--border-radius-sm);
+  background-color: #FFFFFF !important;
+  padding: 6px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
 
 .footer__social {

@@ -68,7 +68,7 @@ function Header() {
     <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
       <div className="container header__container">
         <a href="#" className="header__logo">
-          <img src="/images/logo.png" alt="Botanika Massage" />
+          <img src="/images/logo.jpg" alt="Botanika Massage" />
         </a>
 
         <button

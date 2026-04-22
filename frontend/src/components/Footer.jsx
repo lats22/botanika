@@ -9,7 +9,7 @@ function Footer() {
     <footer className="footer">
       <div className="container footer__container">
         <div className="footer__logo">
-          <img src="/images/logo.png" alt="Botanika Massage" />
+          <img src="/images/logo.jpg" alt="Botanika Massage" />
         </div>
 
         <div className="footer__social">

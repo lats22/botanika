@@ -47,7 +47,7 @@ function Hero() {
 
       <div className="hero__content">
         <img
-          src="/images/logo.png"
+          src="/images/logo.jpg"
           alt="Botanika Massage"
           className="hero__logo"
         />
