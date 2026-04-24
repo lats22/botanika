@@ -17,6 +17,10 @@
 - [x] #7 Update bot to include website health in report
 - [x] #11 Upload project to GitHub repository
 - [x] #12 Validate dev/prod environment sync (Sync-Tom created)
+- [x] #8 Update logo with new one
+- [x] #13 Update QR code in branch location cards
+- [x] #14 Update favicon to monstera leaf only (cropped from logo, no text)
+- [x] #15 Validate dev/prod sync after favicon update
 
 ---
 
@@ -50,28 +54,6 @@
 **Options:**
 - Lottie animations (.json) - lightweight, scalable
 - Video files (.mp4) - actual massage footage
-
----
-
-### #5 Add price by location
-**Status:** Pending
-**Description:** Add pricing information for each branch. Different branches may have different prices.
-
-**Action:** Provide price list per branch, then update:
-- `branches.json` - add prices field
-- `BranchCard.jsx` - display prices
-
----
-
-### #8 Update logo with new one
-**Status:** Pending
-**Description:** Replace current Botanika logo with new version.
-
-**Action:** Share new logo file path when ready.
-
-**Files to update:**
-- `/public/images/logo.png`
-- `/public/favicon.png`
 
 ---
 
