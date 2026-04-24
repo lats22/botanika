@@ -31,6 +31,30 @@ function BranchCard({ branch }) {
         </div>
       </div>
 
+      {/* QR Code Section */}
+      {branch.qrCode && branch.mapsUrl && (
+        <div className="branch-card__qr-section">
+          <a
+            href={branch.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="branch-card__qr-link"
+          >
+            <div className="branch-card__qr-frame">
+              <img
+                src={branch.qrCode}
+                alt={`QR code for ${branch.name} directions`}
+                className="branch-card__qr-image"
+                loading="lazy"
+              />
+            </div>
+            <span className="branch-card__qr-label">
+              {t('branches.scanForDirections', 'Scan for directions')}
+            </span>
+          </a>
+        </div>
+      )}
+
       {branch.mapsUrl && (
         <a
           href={branch.mapsUrl}

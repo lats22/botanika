@@ -58,3 +58,111 @@
 .branch-card__btn {
   width: 100%;
 }
+
+/* QR Code Section - Elegant Spa Style */
+.branch-card__qr-section {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-md) 0;
+  border-top: 1px solid rgba(139, 115, 85, 0.15);
+  border-bottom: 1px solid rgba(139, 115, 85, 0.15);
+}
+
+.branch-card__qr-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  text-decoration: none;
+  transition: transform var(--transition-normal);
+}
+
+.branch-card__qr-link:hover {
+  transform: scale(1.02);
+}
+
+.branch-card__qr-link:hover .branch-card__qr-frame {
+  box-shadow:
+    0 8px 24px rgba(27, 94, 58, 0.15),
+    0 4px 12px rgba(139, 115, 85, 0.1);
+}
+
+.branch-card__qr-frame {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  padding: 8px;
+  background: #ffffff;
+  border-radius: var(--border-radius-md);
+  box-shadow:
+    0 4px 16px rgba(27, 94, 58, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow var(--transition-normal);
+  overflow: hidden;
+}
+
+/* Subtle botanical corner accents */
+.branch-card__qr-frame::before,
+.branch-card__qr-frame::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(27, 94, 58, 0.2);
+  pointer-events: none;
+}
+
+.branch-card__qr-frame::before {
+  top: 4px;
+  left: 4px;
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: 6px;
+}
+
+.branch-card__qr-frame::after {
+  bottom: 4px;
+  right: 4px;
+  border-left: none;
+  border-top: none;
+  border-bottom-right-radius: 6px;
+}
+
+.branch-card__qr-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.branch-card__qr-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-deep-green);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+}
+
+.branch-card__qr-link:hover .branch-card__qr-label {
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .branch-card__qr-frame {
+    width: 100px;
+    height: 100px;
+    padding: 6px;
+  }
+
+  .branch-card__qr-frame::before,
+  .branch-card__qr-frame::after {
+    width: 16px;
+    height: 16px;
+  }
+
+  .branch-card__qr-label {
+    font-size: 0.7rem;
+  }
+}

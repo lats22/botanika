@@ -8,7 +8,8 @@
       "th": "316/8 ถ.สีลม สุริยวงศ์ บางรัก กรุงเทพฯ 10500"
     },
     "hours": "10:00 - 01:00",
-    "mapsUrl": "https://maps.app.goo.gl/EWmkcupd7vamwVuK6"
+    "mapsUrl": "https://www.google.com/maps/place/Botanika+Massage+-+Silom/@13.7233072,100.5163592,17z/data=!3m1!4b1!4m6!3m5!1s0x30e29931f34d7ef7:0x17e81b36923e331f!8m2!3d13.723302!4d100.5189341!16s%2Fg%2F11h3cjqkbs",
+    "qrCode": "/images/qr/print/white-bg/qr-silom.png"
   },
   {
     "id": 2,
@@ -18,8 +19,9 @@
       "en": "711 Si Lom Rd, Si Lom, Bang Rak, Bangkok 10500",
       "th": "711 ถ.สีลม สีลม บางรัก กรุงเทพฯ 10500"
     },
-    "hours": "10:00 - 01:00",
-    "mapsUrl": "https://maps.google.com/?q=711+Si+Lom+Rd+Si+Lom+Bang+Rak+Bangkok"
+    "hours": "10:00 - 01:30",
+    "mapsUrl": "https://www.google.com/maps/place/Botanika+Massage-Silom13/@13.7248107,100.5217457,17z/data=!3m1!4b1!4m6!3m5!1s0x30e299d34ae81e39:0x9f52d390dbefb0a2!8m2!3d13.7248055!4d100.5243206!16s%2Fg%2F11n4cqh33t",
+    "qrCode": "/images/qr/print/white-bg/qr-silom-13.png"
   },
   {
     "id": 3,
@@ -29,8 +31,9 @@
       "en": "174/3 Silom Rd, Suriya Wong, Bang Rak, Bangkok 10500",
       "th": "174/3 ถ.สีลม สุริยวงศ์ บางรัก กรุงเทพฯ 10500"
     },
-    "hours": "10:00 - 01:00",
-    "mapsUrl": "https://maps.google.com/?q=174/3+Silom+Rd+Suriya+Wong+Bang+Rak+Bangkok"
+    "hours": "10:00 - 01:30",
+    "mapsUrl": "https://www.google.com/maps/place/Botanika+Massage+-+Decho/@13.72568,100.523154,17z/data=!3m1!4b1!4m6!3m5!1s0x30e29f58393c0e67:0x54271c2db5ab09b4!8m2!3d13.7256748!4d100.5257289!16s%2Fg%2F11t30w1ddh",
+    "qrCode": "/images/qr/print/white-bg/qr-decho.png"
   },
   {
     "id": 4,
@@ -40,8 +43,9 @@
       "en": "8 Surawong Rd, Si Phraya, Bang Rak, Bangkok 10500",
       "th": "8 ถ.สุรวงศ์ สี่พระยา บางรัก กรุงเทพฯ 10500"
     },
-    "hours": "10:00 - 01:00",
-    "mapsUrl": "https://maps.google.com/?q=8+Surawong+Rd+Si+Phraya+Bang+Rak+Bangkok"
+    "hours": "10:00 - 04:00",
+    "mapsUrl": "https://www.google.com/maps/place/Botanika+Massage+-+Sala+Daeng/@13.7305095,100.5305506,17z/data=!3m1!4b1!4m6!3m5!1s0x30e29f6c00c7b0dd:0x18d4cc32b10438ed!8m2!3d13.7305043!4d100.5331255!16s%2Fg%2F11n31mgbw_",
+    "qrCode": "/images/qr/print/white-bg/qr-sala-daeng.png"
   },
   {
     "id": 5,
@@ -52,6 +56,7 @@
       "th": "18 ถ.สุรวงศ์ สุริยวงศ์ บางรัก กรุงเทพฯ 10500"
     },
     "hours": "10:00 - 01:00",
-    "mapsUrl": "https://maps.google.com/?q=18+Surawong+Rd+Suriya+Wong+Bang+Rak+Bangkok"
+    "mapsUrl": "https://www.google.com/maps/place/Botanika+Massage+-+Patpong/@13.7297281,100.528696,17z/data=!3m1!4b1!4m6!3m5!1s0x30e29f0063fb3c29:0x75f4614c7f1ba717!8m2!3d13.7297229!4d100.5312709!16s%2Fg%2F11whfcgc51",
+    "qrCode": "/images/qr/print/white-bg/qr-patpong.png"
   }
 ]
