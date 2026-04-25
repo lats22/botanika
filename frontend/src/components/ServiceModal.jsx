@@ -61,7 +61,11 @@ function ServiceModal({ service, onClose, animationData }) {
           className="btn btn-primary service-modal__cta"
           onClick={() => {
             onClose()
-            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+            const number = import.meta.env.VITE_WHATSAPP_NUMBER
+            if (number) {
+              const message = t('whatsapp.prefillMessage')
+              window.open(`https://wa.me/${number}?text=${encodeURIComponent(message)}`, '_blank')
+            }
           }}
         >
           {t('hero.contactUs')}

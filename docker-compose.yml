@@ -21,6 +21,8 @@ services:
     environment:
       - NODE_ENV=production
       - LINE_NOTIFY_TOKEN=${LINE_NOTIFY_TOKEN}
+      - EMAIL_USER=${EMAIL_USER}
+      - EMAIL_PASS=${EMAIL_PASS}
     networks:
       - botanika-network
 

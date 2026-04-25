@@ -7,7 +7,6 @@ import ServiceModal from '../components/ServiceModal'
 import PackageCard from '../components/PackageCard'
 import TestimonialCarousel from '../components/TestimonialCarousel'
 import BranchCard from '../components/BranchCard'
-import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 import services from '../data/services.json'
 import packages from '../data/packages.json'
@@ -69,14 +68,6 @@ function Home() {
               <BranchCard key={branch.id} branch={branch} />
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="section section--light">
-        <div className="container">
-          <h2 className="section-title">{t('contact.title')}</h2>
-          <ContactForm />
         </div>
       </section>
 

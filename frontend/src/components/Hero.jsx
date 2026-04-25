@@ -15,6 +15,14 @@ function Hero() {
     }
   }
 
+  const openWhatsApp = () => {
+    const number = import.meta.env.VITE_WHATSAPP_NUMBER
+    if (number) {
+      const message = t('whatsapp.prefillMessage')
+      window.open(`https://wa.me/${number}?text=${encodeURIComponent(message)}`, '_blank')
+    }
+  }
+
   const handleVideoReady = () => {
     setVideoReady(true)
   }
@@ -61,7 +69,7 @@ function Hero() {
           </button>
           <button
             className="btn btn-secondary"
-            onClick={() => scrollToSection('contact')}
+            onClick={openWhatsApp}
           >
             {t('hero.contactUs')}
           </button>
