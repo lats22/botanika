@@ -39,5 +39,9 @@
   },
   "footer": {
     "copyright": "© 2026 Botanika Massage สงวนลิขสิทธิ์"
+  },
+  "whatsapp": {
+    "label": "แชทกับเรา",
+    "prefillMessage": "สวัสดีค่ะ Botanika ต้องการจองนวดค่ะ"
   }
 }

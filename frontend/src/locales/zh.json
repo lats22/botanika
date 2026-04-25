@@ -39,5 +39,9 @@
   },
   "footer": {
     "copyright": "© 2026 Botanika Massage 版权所有"
+  },
+  "whatsapp": {
+    "label": "联系我们",
+    "prefillMessage": "你好 Botanika，我想预订按摩。"
   }
 }

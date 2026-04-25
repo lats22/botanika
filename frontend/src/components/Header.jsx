@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import LanguageSelector from './LanguageSelector'
+import WhatsAppButton from './WhatsAppButton'
 import './Header.css'
 
 function Header() {
@@ -88,6 +89,8 @@ function Header() {
           <button onClick={() => scrollToSection('branches')}>{t('nav.locations')}</button>
           <button onClick={() => scrollToSection('contact')}>{t('nav.contact')}</button>
         </nav>
+
+        <WhatsAppButton />
 
         <LanguageSelector />
       </div>

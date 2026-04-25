@@ -40,5 +40,9 @@
   },
   "footer": {
     "copyright": "© 2026 Botanika Massage. All rights reserved."
+  },
+  "whatsapp": {
+    "label": "Chat with us",
+    "prefillMessage": "Hi Botanika, I'd like to make a reservation."
   }
 }

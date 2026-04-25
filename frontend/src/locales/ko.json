@@ -39,5 +39,9 @@
   },
   "footer": {
     "copyright": "© 2026 Botanika Massage. 모든 권리 보유."
+  },
+  "whatsapp": {
+    "label": "채팅하기",
+    "prefillMessage": "안녕하세요 Botanika, 마사지를 예약하고 싶습니다."
   }
 }
