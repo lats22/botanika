@@ -33,7 +33,14 @@
     },
     "hours": "10:00 - 01:30",
     "mapsUrl": "https://www.google.com/maps/place/Botanika+Massage+-+Decho/@13.72568,100.523154,17z/data=!3m1!4b1!4m6!3m5!1s0x30e29f58393c0e67:0x54271c2db5ab09b4!8m2!3d13.7256748!4d100.5257289!16s%2Fg%2F11t30w1ddh",
-    "qrCode": "/images/qr/print/white-bg/qr-decho.png"
+    "qrCode": "/images/qr/print/white-bg/qr-decho.png",
+    "images": [
+      "/images/branches/decho/Front.jpg",
+      "/images/branches/decho/Reception.jpg",
+      "/images/branches/decho/Foot Washing.jpg",
+      "/images/branches/decho/Foot Massage.jpg",
+      "/images/branches/decho/Thai Massage.jpg"
+    ]
   },
   {
     "id": 4,
