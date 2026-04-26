@@ -166,3 +166,27 @@
     font-size: 0.7rem;
   }
 }
+
+/* Branch card with gallery */
+.branch-card:has(.branch-gallery) {
+  padding: 0;
+  overflow: hidden;
+}
+
+.branch-card:has(.branch-gallery) .branch-card__name {
+  padding: var(--spacing-md) var(--spacing-lg) var(--spacing-sm);
+  margin-bottom: 0;
+}
+
+.branch-card:has(.branch-gallery) .branch-card__info {
+  padding: 0 var(--spacing-lg);
+}
+
+.branch-card:has(.branch-gallery) .branch-card__qr-section {
+  margin: var(--spacing-md) var(--spacing-lg);
+}
+
+.branch-card:has(.branch-gallery) .branch-card__btn {
+  margin: 0 var(--spacing-lg) var(--spacing-lg);
+  width: calc(100% - var(--spacing-lg) * 2);
+}
