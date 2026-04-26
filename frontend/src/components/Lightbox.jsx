@@ -1,21 +1,21 @@
-import React, { useEffect, useCallback } from "react"
-import "./Lightbox.css"
+import React, { useEffect, useCallback } from 'react'
+import './Lightbox.css'
 
 function Lightbox({ isOpen, imageSrc, imageAlt, onClose }) {
   const handleKeyDown = useCallback((e) => {
-    if (e.key === "Escape") {
+    if (e.key === 'Escape') {
       onClose()
     }
   }, [onClose])
 
   useEffect(() => {
     if (isOpen) {
-      document.addEventListener("keydown", handleKeyDown)
-      document.body.style.overflow = "hidden"
+      document.addEventListener('keydown', handleKeyDown)
+      document.body.style.overflow = 'hidden'
     }
     return () => {
-      document.removeEventListener("keydown", handleKeyDown)
-      document.body.style.overflow = ""
+      document.removeEventListener('keydown', handleKeyDown)
+      document.body.style.overflow = ''
     }
   }, [isOpen, handleKeyDown])
 
@@ -27,18 +27,18 @@ function Lightbox({ isOpen, imageSrc, imageAlt, onClose }) {
 
   return (
     <div
-      className={`lightbox ${isOpen ? "lightbox--open" : ""}`}
+      className={`lightbox ${isOpen ? 'lightbox--open' : ''}`}
       onClick={handleBackdropClick}
     >
       <div className="lightbox__content">
         <button className="lightbox__close" onClick={onClose} aria-label="Close">
-          ×
+          Ã—
         </button>
         {imageSrc && (
           <img
             className="lightbox__image"
             src={imageSrc}
-            alt={imageAlt || "Lightbox image"}
+            alt={imageAlt || 'Lightbox image'}
           />
         )}
       </div>
