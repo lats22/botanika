@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import BranchGallery from './BranchGallery'
 import './BranchCard.css'
 
 function BranchCard({ branch }) {
@@ -10,6 +11,9 @@ function BranchCard({ branch }) {
 
   return (
     <article className="branch-card">
+      {branch.images && branch.images.length > 0 && (
+        <BranchGallery images={branch.images} branchName={branch.name} />
+      )}
       <h3 className="branch-card__name">{branch.name}</h3>
 
       <div className="branch-card__info">
