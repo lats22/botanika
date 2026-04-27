@@ -20,6 +20,9 @@
     "title": "스페셜 패키지",
     "includes": "포함"
   },
+  "products": {
+    "title": "제품 소개"
+  },
   "testimonials": {
     "title": "고객 후기"
   },

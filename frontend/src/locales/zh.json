@@ -20,6 +20,9 @@
     "title": "特惠套餐",
     "includes": "包含"
   },
+  "products": {
+    "title": "我们的产品"
+  },
   "testimonials": {
     "title": "客户评价"
   },

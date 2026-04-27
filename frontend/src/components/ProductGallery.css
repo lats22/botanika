@@ -1,0 +1,105 @@
+.product-gallery {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.product-gallery__scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  gap: 16px;
+  padding: 16px;
+  cursor: grab;
+}
+
+.product-gallery__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.product-gallery__scroll:active {
+  cursor: grabbing;
+}
+
+.product-gallery__image-wrapper {
+  flex: 0 0 auto;
+  width: 260px;
+  height: 260px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(27, 94, 58, 0.2), 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  background: var(--color-cream);
+}
+
+.product-gallery__image-wrapper:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(27, 94, 58, 0.3), 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform var(--transition-normal);
+}
+
+.product-gallery__image:hover {
+  transform: scale(1.05);
+}
+
+/* Progress bar */
+.product-gallery__progress {
+  height: 3px;
+  background: rgba(27, 94, 58, 0.1);
+  position: relative;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.product-gallery__progress-fill {
+  height: 100%;
+  background: var(--color-deep-green);
+  transition: width 0.3s ease, left 0.3s ease;
+  position: absolute;
+}
+
+/* Fade edges */
+.product-gallery::before,
+.product-gallery::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 30px;
+  width: 30px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.product-gallery::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), transparent);
+}
+
+.product-gallery::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.9), transparent);
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .product-gallery__image-wrapper {
+    width: 220px;
+    height: 220px;
+  }
+
+  .product-gallery__scroll {
+    gap: 12px;
+    padding: 12px;
+  }
+}

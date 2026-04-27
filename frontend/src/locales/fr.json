@@ -20,6 +20,9 @@
     "title": "Forfaits Spéciaux",
     "includes": "Comprend"
   },
+  "products": {
+    "title": "Nos Produits"
+  },
   "testimonials": {
     "title": "Témoignages Clients"
   },

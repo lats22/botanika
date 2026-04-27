@@ -20,6 +20,9 @@
     "title": "Special Packages",
     "includes": "Includes"
   },
+  "products": {
+    "title": "Our Products"
+  },
   "testimonials": {
     "title": "What Our Clients Say"
   },

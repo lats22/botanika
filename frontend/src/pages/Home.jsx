@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import ServiceCard from '../components/ServiceCard'
 import ServiceModal from '../components/ServiceModal'
 import PackageCard from '../components/PackageCard'
+import ProductGallery from '../components/ProductGallery'
 import TestimonialCarousel from '../components/TestimonialCarousel'
 import BranchCard from '../components/BranchCard'
 import Footer from '../components/Footer'
@@ -48,6 +49,14 @@ function Home() {
               <PackageCard key={pkg.id} pkg={pkg} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section id="products" className="section section--light">
+        <div className="container">
+          <h2 className="section-title">{t('products.title')}</h2>
+          <ProductGallery />
         </div>
       </section>
 
