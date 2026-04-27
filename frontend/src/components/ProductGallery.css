@@ -224,6 +224,11 @@
     overflow: visible;
   }
 
+  /* Hide dots on desktop since all cards are visible */
+  .product-gallery__dots {
+    display: none;
+  }
+
   .product-gallery__scroll {
     justify-content: center;
     overflow-x: visible;
