@@ -9,7 +9,17 @@
     },
     "hours": "10:00 - 01:00",
     "mapsUrl": "https://www.google.com/maps/place/Botanika+Massage+-+Silom/@13.7233072,100.5163592,17z/data=!3m1!4b1!4m6!3m5!1s0x30e29931f34d7ef7:0x17e81b36923e331f!8m2!3d13.723302!4d100.5189341!16s%2Fg%2F11h3cjqkbs",
-    "qrCode": "/images/qr/print/white-bg/qr-silom.png"
+    "qrCode": "/images/qr/print/white-bg/qr-silom.png",
+    "images": [
+      "/images/branches/silom/1.jpg",
+      "/images/branches/silom/2.png",
+      "/images/branches/silom/3.jpg",
+      "/images/branches/silom/4.jpg",
+      "/images/branches/silom/5.jpg",
+      "/images/branches/silom/6.jpg",
+      "/images/branches/silom/7.jpg",
+      "/images/branches/silom/8.jpg"
+    ]
   },
   {
     "id": 2,
@@ -21,7 +31,14 @@
     },
     "hours": "10:00 - 01:30",
     "mapsUrl": "https://www.google.com/maps/place/Botanika+Massage-Silom13/@13.7248107,100.5217457,17z/data=!3m1!4b1!4m6!3m5!1s0x30e299d34ae81e39:0x9f52d390dbefb0a2!8m2!3d13.7248055!4d100.5243206!16s%2Fg%2F11n4cqh33t",
-    "qrCode": "/images/qr/print/white-bg/qr-silom-13.png"
+    "qrCode": "/images/qr/print/white-bg/qr-silom-13.png",
+    "images": [
+      "/images/branches/silom-13/1.jpg",
+      "/images/branches/silom-13/2.jpg",
+      "/images/branches/silom-13/3.jpg",
+      "/images/branches/silom-13/4.jpg",
+      "/images/branches/silom-13/5.jpg"
+    ]
   },
   {
     "id": 3,
@@ -52,7 +69,16 @@
     },
     "hours": "10:00 - 04:00",
     "mapsUrl": "https://www.google.com/maps/place/Botanika+Massage+-+Sala+Daeng/@13.7305095,100.5305506,17z/data=!3m1!4b1!4m6!3m5!1s0x30e29f6c00c7b0dd:0x18d4cc32b10438ed!8m2!3d13.7305043!4d100.5331255!16s%2Fg%2F11n31mgbw_",
-    "qrCode": "/images/qr/print/white-bg/qr-sala-daeng.png"
+    "qrCode": "/images/qr/print/white-bg/qr-sala-daeng.png",
+    "images": [
+      "/images/branches/sala-daeng/1.jpg",
+      "/images/branches/sala-daeng/2.jpg",
+      "/images/branches/sala-daeng/3.jpg",
+      "/images/branches/sala-daeng/4.jpg",
+      "/images/branches/sala-daeng/5.jpg",
+      "/images/branches/sala-daeng/6.jpg",
+      "/images/branches/sala-daeng/7.jpg"
+    ]
   },
   {
     "id": 5,
@@ -64,6 +90,16 @@
     },
     "hours": "10:00 - 01:00",
     "mapsUrl": "https://www.google.com/maps/place/Botanika+Massage+-+Patpong/@13.7297281,100.528696,17z/data=!3m1!4b1!4m6!3m5!1s0x30e29f0063fb3c29:0x75f4614c7f1ba717!8m2!3d13.7297229!4d100.5312709!16s%2Fg%2F11whfcgc51",
-    "qrCode": "/images/qr/print/white-bg/qr-patpong.png"
+    "qrCode": "/images/qr/print/white-bg/qr-patpong.png",
+    "images": [
+      "/images/branches/patpong/1.jpg",
+      "/images/branches/patpong/2.jpg",
+      "/images/branches/patpong/3.jpg",
+      "/images/branches/patpong/4.jpg",
+      "/images/branches/patpong/5.jpg",
+      "/images/branches/patpong/6.jpg",
+      "/images/branches/patpong/7.jpg",
+      "/images/branches/patpong/8.jpg"
+    ]
   }
 ]
