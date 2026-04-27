@@ -23,7 +23,9 @@
   },
   "products": {
     "title": "Botanika Arôme Collection",
-    "subtitle": "Body Scrub Cream · Natural Intensive Moisturizing",
+    "subtitleLine1": "Body Scrub Cream",
+    "subtitleLine2": "Natural Intensive Moisturizing",
+    "availableForPurchase": "Available for Purchase",
     "availableAtAllBranches": "Available at all branches",
     "skinBenefits": "Skin Benefits",
     "jasmineRice": {

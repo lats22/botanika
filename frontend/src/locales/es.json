@@ -23,7 +23,9 @@
   },
   "products": {
     "title": "Botanika Arôme Collection",
-    "subtitle": "Crema Exfoliante Corporal · Hidratación Intensiva Natural",
+    "subtitleLine1": "Crema Exfoliante Corporal",
+    "subtitleLine2": "Hidratación Intensiva Natural",
+    "availableForPurchase": "Disponible para Compra",
     "availableAtAllBranches": "Disponible en todas las sucursales",
     "skinBenefits": "Beneficios para la Piel",
     "jasmineRice": {

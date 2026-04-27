@@ -23,7 +23,9 @@
   },
   "products": {
     "title": "Botanika Arôme Collection",
-    "subtitle": "身体磨砂膏 · 天然深层保湿",
+    "subtitleLine1": "身体磨砂膏",
+    "subtitleLine2": "天然深层保湿",
+    "availableForPurchase": "可购买",
     "availableAtAllBranches": "所有分店均有售",
     "skinBenefits": "肌肤功效",
     "jasmineRice": {

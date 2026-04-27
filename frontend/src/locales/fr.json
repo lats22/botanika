@@ -23,7 +23,9 @@
   },
   "products": {
     "title": "Botanika Arôme Collection",
-    "subtitle": "Crème Gommage Corps · Hydratation Intensive Naturelle",
+    "subtitleLine1": "Crème Gommage Corps",
+    "subtitleLine2": "Hydratation Intensive Naturelle",
+    "availableForPurchase": "Disponible à l'Achat",
     "availableAtAllBranches": "Disponible dans toutes nos adresses",
     "skinBenefits": "Bienfaits pour la Peau",
     "jasmineRice": {

@@ -32,10 +32,15 @@ const products = [
 function ProductLightbox({ product, onClose, t }) {
   const lightboxRef = useRef(null)
   const closeButtonRef = useRef(null)
+  const [isZoomed, setIsZoomed] = useState(false)
 
   const handleKeyDown = useCallback((e) => {
     if (e.key === 'Escape') {
-      onClose()
+      if (isZoomed) {
+        setIsZoomed(false)
+      } else {
+        onClose()
+      }
     }
     if (e.key === 'Tab') {
       const focusableElements = lightboxRef.current?.querySelectorAll(
@@ -54,7 +59,7 @@ function ProductLightbox({ product, onClose, t }) {
         }
       }
     }
-  }, [onClose])
+  }, [onClose, isZoomed])
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown)
@@ -71,6 +76,15 @@ function ProductLightbox({ product, onClose, t }) {
     if (e.target === e.currentTarget) {
       onClose()
     }
+  }
+
+  const handleImageClick = (e) => {
+    e.stopPropagation()
+    setIsZoomed(true)
+  }
+
+  const handleZoomClose = () => {
+    setIsZoomed(false)
   }
 
   const productName = t(`products.${product.id}.name`)
@@ -100,7 +114,14 @@ function ProductLightbox({ product, onClose, t }) {
         </button>
 
         <div className="product-lightbox__grid">
-          <div className="product-lightbox__image-container">
+          <div
+            className="product-lightbox__image-container product-lightbox__image-container--zoomable"
+            onClick={handleImageClick}
+            role="button"
+            tabIndex={0}
+            aria-label="Click to zoom image"
+            onKeyDown={(e) => e.key === 'Enter' && handleImageClick(e)}
+          >
             <div
               className="product-lightbox__image-bg"
               style={{ backgroundColor: product.accentColor }}
@@ -110,6 +131,15 @@ function ProductLightbox({ product, onClose, t }) {
               src={product.image}
               alt={productName}
             />
+            <div className="product-lightbox__zoom-hint">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+              <span>Click to zoom</span>
+            </div>
           </div>
 
           <div className="product-lightbox__details">
@@ -145,6 +175,38 @@ function ProductLightbox({ product, onClose, t }) {
             </div>
           </div>
         </div>
+
+        {/* Zoom Overlay */}
+        {isZoomed && (
+          <div
+            className="product-lightbox__zoom-overlay"
+            onClick={handleZoomClose}
+            role="button"
+            tabIndex={0}
+            aria-label="Close zoomed image"
+            onKeyDown={(e) => e.key === 'Enter' && handleZoomClose()}
+          >
+            <img
+              className="product-lightbox__zoom-image"
+              src={product.image}
+              alt={`${productName} - Zoomed view`}
+              onClick={(e) => e.stopPropagation()}
+            />
+            <button
+              className="product-lightbox__zoom-close"
+              onClick={handleZoomClose}
+              aria-label="Close zoom"
+            >
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+            <div className="product-lightbox__zoom-instruction">
+              Click anywhere or press ESC to close
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )

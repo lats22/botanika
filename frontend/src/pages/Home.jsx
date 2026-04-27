@@ -56,7 +56,11 @@ function Home() {
       <section id="products" className="section section--arome">
         <div className="container">
           <h2 className="section-title section-title--arome">{t('products.title')}</h2>
-          <p className="section-subtitle">{t('products.subtitle')}</p>
+          <span className="section-badge">{t('products.availableForPurchase')}</span>
+          <div className="section-subtitle-wrapper">
+            <p className="section-subtitle">{t('products.subtitleLine1')}</p>
+            <p className="section-subtitle">{t('products.subtitleLine2')}</p>
+          </div>
           <ProductGallery />
         </div>
       </section>

@@ -23,7 +23,9 @@
   },
   "products": {
     "title": "Botanika Arôme Collection",
-    "subtitle": "บอดี้สครับครีม · บำรุงผิวอย่างเข้มข้นจากธรรมชาติ",
+    "subtitleLine1": "บอดี้สครับครีม",
+    "subtitleLine2": "บำรุงผิวอย่างเข้มข้นจากธรรมชาติ",
+    "availableForPurchase": "พร้อมจำหน่าย",
     "availableAtAllBranches": "มีจำหน่ายทุกสาขา",
     "skinBenefits": "ประโยชน์ต่อผิว",
     "jasmineRice": {

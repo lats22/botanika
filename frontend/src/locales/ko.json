@@ -23,7 +23,9 @@
   },
   "products": {
     "title": "Botanika Arôme Collection",
-    "subtitle": "바디 스크럽 크림 · 천연 집중 보습",
+    "subtitleLine1": "바디 스크럽 크림",
+    "subtitleLine2": "천연 집중 보습",
+    "availableForPurchase": "구매 가능",
     "availableAtAllBranches": "모든 지점에서 구매 가능",
     "skinBenefits": "피부 효능",
     "jasmineRice": {
