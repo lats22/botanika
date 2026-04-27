@@ -13,7 +13,8 @@
   "services": {
     "title": "บริการของเรา",
     "duration": "ระยะเวลา",
-    "minutes": "นาที"
+    "minutes": "นาที",
+    "viewDetails": "ดูรายละเอียด"
   },
   "packages": {
     "title": "แพ็คเกจพิเศษ",

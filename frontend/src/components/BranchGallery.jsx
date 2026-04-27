@@ -139,7 +139,11 @@ function BranchGallery({ images, branchName }) {
   const progressLeft = (currentIndex / images.length) * 100
 
   return (
-    <div className="branch-gallery">
+    <div
+      className="branch-gallery"
+      role="region"
+      aria-label={`${branchName} photo gallery`}
+    >
       <div
         ref={scrollRef}
         className="branch-gallery__scroll"
@@ -149,9 +153,10 @@ function BranchGallery({ images, branchName }) {
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
         onTouchStart={handleTouchStart}
+        aria-live="polite"
       >
         {images.map((src, index) => (
-          <div key={index} className="branch-gallery__image-wrapper">
+          <div key={src} className="branch-gallery__image-wrapper">
             <img
               className="branch-gallery__image"
               src={src}
