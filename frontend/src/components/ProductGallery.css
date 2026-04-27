@@ -218,7 +218,97 @@
   background: linear-gradient(to left, rgba(250, 248, 245, 0.95), transparent);
 }
 
+/* Desktop - fit all 4 cards properly */
+@media (min-width: 1024px) {
+  .product-gallery {
+    overflow: visible;
+  }
+
+  .product-gallery__scroll {
+    justify-content: center;
+    overflow-x: visible;
+    padding: 24px 40px 32px;
+    gap: 20px;
+  }
+
+  .product-card {
+    /* Calculate width to fit 4 cards with gaps: (100% - 3*20px gaps - 2*40px padding) / 4 */
+    width: calc((100vw - 80px - 60px) / 4);
+    max-width: 280px;
+    min-width: 200px;
+  }
+
+  .product-card__image-wrapper {
+    height: 240px;
+  }
+
+  /* Hide edge fade gradients on desktop when cards fit */
+  .product-gallery::before,
+  .product-gallery::after {
+    display: none;
+  }
+}
+
+/* Large desktop - fixed max widths */
+@media (min-width: 1280px) {
+  .product-gallery__scroll {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 20px 32px;
+    gap: 24px;
+  }
+
+  .product-card {
+    width: 260px;
+    max-width: 260px;
+  }
+
+  .product-card__image-wrapper {
+    height: 260px;
+  }
+}
+
+/* Tablet - 3 cards visible with scroll hint */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .product-gallery__scroll {
+    padding: 24px 32px 32px;
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 260px;
+  }
+
+  .product-card__image-wrapper {
+    height: 240px;
+  }
+}
+
 /* Mobile adjustments */
+@media (max-width: 767px) {
+  .product-card {
+    width: 260px;
+  }
+
+  .product-card__image-wrapper {
+    height: 240px;
+  }
+
+  .product-gallery__scroll {
+    gap: 16px;
+    padding: 20px 20px 28px;
+  }
+
+  .product-card__name {
+    font-size: 1.15rem;
+  }
+
+  .product-card__content {
+    padding: 18px 22px 22px;
+  }
+}
+
+/* Small mobile */
 @media (max-width: 576px) {
   .product-card {
     width: 240px;
