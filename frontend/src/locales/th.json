@@ -25,7 +25,8 @@
   "branches": {
     "title": "สาขาของเรา",
     "hours": "เปิดทุกวัน",
-    "directions": "ดูแผนที่"
+    "directions": "ดูแผนที่",
+    "scanForDirections": "สแกนหรือคลิกเพื่อดูเส้นทาง"
   },
   "contact": {
     "title": "ติดต่อเรา",

@@ -26,7 +26,8 @@
   "branches": {
     "title": "Our Locations",
     "hours": "Open Daily",
-    "directions": "Get Directions"
+    "directions": "Get Directions",
+    "scanForDirections": "SCAN OR CLICK FOR DIRECTIONS"
   },
   "contact": {
     "title": "Contact Us",

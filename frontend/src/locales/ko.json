@@ -25,7 +25,8 @@
   "branches": {
     "title": "지점 안내",
     "hours": "매일 영업",
-    "directions": "길찾기"
+    "directions": "길찾기",
+    "scanForDirections": "스캔하거나 클릭하여 길찾기"
   },
   "contact": {
     "title": "문의하기",

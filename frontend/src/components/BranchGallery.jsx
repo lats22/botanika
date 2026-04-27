@@ -171,11 +171,6 @@ function BranchGallery({ images, branchName }) {
         />
       </div>
 
-      <div className={`branch-gallery__indicator ${isPaused ? 'branch-gallery__indicator--paused' : ''}`}>
-        <span className="branch-gallery__indicator-dot" />
-        <span>{isPaused ? 'Paused' : 'Auto-scrolling'}</span>
-      </div>
-
       <Lightbox
         isOpen={lightboxOpen}
         imageSrc={lightboxImage}

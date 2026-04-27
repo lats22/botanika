@@ -25,7 +25,8 @@
   "branches": {
     "title": "分店地址",
     "hours": "每日营业",
-    "directions": "获取路线"
+    "directions": "获取路线",
+    "scanForDirections": "扫描或点击获取路线"
   },
   "contact": {
     "title": "联系我们",

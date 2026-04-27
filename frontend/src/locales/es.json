@@ -25,7 +25,8 @@
   "branches": {
     "title": "Nuestras Ubicaciones",
     "hours": "Abierto todos los días",
-    "directions": "Cómo llegar"
+    "directions": "Cómo llegar",
+    "scanForDirections": "ESCANEA O HAZ CLIC PARA DIRECCIONES"
   },
   "contact": {
     "title": "Contáctenos",

@@ -1,11 +1,11 @@
 .branch-card {
-  background: var(--ios-bg-primary);
+  background: #ffffff;
   backdrop-filter: var(--ios-blur-light);
   -webkit-backdrop-filter: var(--ios-blur-light);
   border-radius: var(--border-radius-xl);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(27, 94, 58, 0.15);
   padding: var(--spacing-lg);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(27, 94, 58, 0.06);
   transition: all var(--transition-normal);
   text-align: center;
 }
@@ -167,26 +167,13 @@
   }
 }
 
-/* Branch card with gallery */
+/* Branch card with gallery at bottom */
 .branch-card:has(.branch-gallery) {
-  padding: 0;
+  padding-bottom: 0;
   overflow: hidden;
 }
 
-.branch-card:has(.branch-gallery) .branch-card__name {
-  padding: var(--spacing-md) var(--spacing-lg) var(--spacing-sm);
-  margin-bottom: 0;
-}
-
-.branch-card:has(.branch-gallery) .branch-card__info {
-  padding: 0 var(--spacing-lg);
-}
-
 .branch-card:has(.branch-gallery) .branch-card__qr-section {
-  margin: var(--spacing-md) var(--spacing-lg);
-}
-
-.branch-card:has(.branch-gallery) .branch-card__btn {
-  margin: 0 var(--spacing-lg) var(--spacing-lg);
-  width: calc(100% - var(--spacing-lg) * 2);
+  border-bottom: none;
+  margin-bottom: 0;
 }

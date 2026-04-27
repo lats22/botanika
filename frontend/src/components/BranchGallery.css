@@ -62,36 +62,6 @@
   position: absolute;
 }
 
-/* Auto-scroll indicator */
-.branch-gallery__indicator {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 8px;
-  font-size: 0.7rem;
-  color: var(--color-gold);
-  opacity: 0.7;
-}
-
-.branch-gallery__indicator-dot {
-  width: 6px;
-  height: 6px;
-  background: var(--color-gold);
-  border-radius: 50%;
-  animation: pulse 3s infinite;
-}
-
-.branch-gallery__indicator--paused .branch-gallery__indicator-dot {
-  animation: none;
-  opacity: 0.4;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.8); }
-}
-
 /* Fade edges */
 .branch-gallery::before,
 .branch-gallery::after {

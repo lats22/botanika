@@ -25,7 +25,8 @@
   "branches": {
     "title": "Nos Adresses",
     "hours": "Ouvert tous les jours",
-    "directions": "Itinéraire"
+    "directions": "Itinéraire",
+    "scanForDirections": "SCANNEZ OU CLIQUEZ POUR L'ITINÉRAIRE"
   },
   "contact": {
     "title": "Nous Contacter",
