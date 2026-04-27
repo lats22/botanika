@@ -1,4 +1,5 @@
 import React, { useEffect, useCallback } from 'react'
+import { createPortal } from 'react-dom'
 import './Lightbox.css'
 
 function Lightbox({ isOpen, imageSrc, imageAlt, onClose }) {
@@ -25,9 +26,12 @@ function Lightbox({ isOpen, imageSrc, imageAlt, onClose }) {
     }
   }
 
-  return (
+  // Don't render anything when closed
+  if (!isOpen) return null
+
+  const lightboxContent = (
     <div
-      className={`lightbox ${isOpen ? 'lightbox--open' : ''}`}
+      className="lightbox lightbox--open"
       onClick={handleBackdropClick}
     >
       <div className="lightbox__content">
@@ -44,6 +48,8 @@ function Lightbox({ isOpen, imageSrc, imageAlt, onClose }) {
       </div>
     </div>
   )
+
+  return createPortal(lightboxContent, document.body)
 }
 
 export default Lightbox

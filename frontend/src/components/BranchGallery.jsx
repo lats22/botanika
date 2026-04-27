@@ -18,13 +18,23 @@ function BranchGallery({ images, branchName }) {
   const startXRef = useRef(0)
   const scrollLeftRef = useRef(0)
 
+  // Get actual image width dynamically (handles mobile responsiveness)
+  const getImageWidth = useCallback(() => {
+    if (!scrollRef.current) return 248
+    const firstImage = scrollRef.current.querySelector('.branch-gallery__image-wrapper')
+    if (!firstImage) return 248
+    const style = window.getComputedStyle(scrollRef.current)
+    const gap = parseFloat(style.gap) || 8
+    return firstImage.offsetWidth + gap
+  }, [])
+
   const scrollToIndex = useCallback((index) => {
     if (!scrollRef.current) return
     const container = scrollRef.current
-    const imageWidth = 248 // 240px + 8px gap
+    const imageWidth = getImageWidth()
     const targetScroll = index * imageWidth
     container.scrollTo({ left: targetScroll, behavior: 'smooth' })
-  }, [])
+  }, [getImageWidth])
 
   const nextImage = useCallback(() => {
     const nextIndex = (currentIndex + 1) % images.length
@@ -63,12 +73,12 @@ function BranchGallery({ images, branchName }) {
   const handleScroll = useCallback(() => {
     if (!scrollRef.current) return
     const scrollPos = scrollRef.current.scrollLeft
-    const imageWidth = 248
+    const imageWidth = getImageWidth()
     const newIndex = Math.round(scrollPos / imageWidth)
     if (newIndex !== currentIndex && newIndex >= 0 && newIndex < images.length) {
       setCurrentIndex(newIndex)
     }
-  }, [currentIndex, images.length])
+  }, [currentIndex, images.length, getImageWidth])
 
   // Mouse drag handlers
   const handleMouseDown = (e) => {
@@ -119,6 +129,11 @@ function BranchGallery({ images, branchName }) {
     setTimeout(() => startAutoScroll(), 500)
   }
 
+  // Handle broken images gracefully
+  const handleImageError = (e) => {
+    e.target.style.display = 'none'
+  }
+
   // Progress bar calculation
   const progressWidth = 100 / images.length
   const progressLeft = (currentIndex / images.length) * 100
@@ -143,6 +158,7 @@ function BranchGallery({ images, branchName }) {
               alt={`${branchName} - Image ${index + 1}`}
               loading="lazy"
               onClick={() => handleImageClick(src)}
+              onError={handleImageError}
             />
           </div>
         ))}

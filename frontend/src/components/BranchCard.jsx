@@ -11,9 +11,6 @@ function BranchCard({ branch }) {
 
   return (
     <article className="branch-card">
-      {branch.images && branch.images.length > 0 && (
-        <BranchGallery images={branch.images} branchName={branch.name} />
-      )}
       <h3 className="branch-card__name">{branch.name}</h3>
 
       <div className="branch-card__info">
@@ -59,15 +56,9 @@ function BranchCard({ branch }) {
         </div>
       )}
 
-      {branch.mapsUrl && (
-        <a
-          href={branch.mapsUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-secondary branch-card__btn"
-        >
-          {t('branches.directions')}
-        </a>
+      {/* Image Gallery at bottom */}
+      {branch.images && branch.images.length > 0 && (
+        <BranchGallery images={branch.images} branchName={branch.name} />
       )}
     </article>
   )
