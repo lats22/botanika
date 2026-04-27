@@ -3,6 +3,7 @@
     "services": "Services",
     "packages": "Packages",
     "locations": "Locations",
+    "aromeCollection": "Arome Collection",
     "contact": "Contact"
   },
   "hero": {
@@ -21,7 +22,34 @@
     "includes": "Includes"
   },
   "products": {
-    "title": "Our Products"
+    "title": "Botanika Arome Collection",
+    "subtitle": "Body Scrub Cream - Natural Intensive Moisturizing",
+    "availableAtAllBranches": "Available at all branches",
+    "skinBenefits": "Skin Benefits",
+    "jasmineRice": {
+      "name": "Jasmine Rice Body Scrub Cream",
+      "tagline": "Brightens & Moisturizes",
+      "description": "Enriched with Thai jasmine rice extract, known for centuries in Asian beauty rituals.",
+      "benefits": ["Brightens skin tone", "Deeply moisturizes", "Softens rough skin", "Rich in vitamins B & E"]
+    },
+    "rose": {
+      "name": "Rose Body Scrub Cream",
+      "tagline": "Hydrates & Tones",
+      "description": "Infused with natural rose essence for a luxurious aromatic experience.",
+      "benefits": ["Hydrates and tones skin", "Reduces redness", "Anti-aging properties", "Leaves skin silky smooth"]
+    },
+    "tamarind": {
+      "name": "Tamarind Body Scrub Cream",
+      "tagline": "Exfoliates & Glows",
+      "description": "Contains tamarind extract, a traditional Thai ingredient for radiant skin.",
+      "benefits": ["Natural AHA for gentle exfoliation", "Evens skin tone", "Removes dead skin cells", "Adds natural glow"]
+    },
+    "turmeric": {
+      "name": "Turmeric Body Scrub Cream",
+      "tagline": "Heals & Rejuvenates",
+      "description": "Blended with turmeric known for its healing properties in Ayurvedic tradition.",
+      "benefits": ["Anti-inflammatory", "Reduces dark spots", "Fights signs of aging", "Gives healthy golden glow"]
+    }
   },
   "testimonials": {
     "title": "What Our Clients Say"

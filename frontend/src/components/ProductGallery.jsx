@@ -1,25 +1,161 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
-import Lightbox from './Lightbox'
+import { createPortal } from 'react-dom'
 import './ProductGallery.css'
 
-const AUTO_SCROLL_INTERVAL = 3000
-const RESUME_DELAY = 3000
+const AUTO_SCROLL_INTERVAL = 4000
+const RESUME_DELAY = 5000
 
 const products = [
-  { id: 1, name: 'Jasmine Rice Body Scrub Cream', image: '/images/products/jasmine-rice.jpg' },
-  { id: 2, name: 'Rose Body Scrub Cream', image: '/images/products/rose.jpg' },
-  { id: 3, name: 'Tamarind Body Scrub Cream', image: '/images/products/tamarind.jpg' },
-  { id: 4, name: 'Turmeric Body Scrub Cream', image: '/images/products/turmeric.jpg' },
+  {
+    id: 'jasmineRice',
+    image: '/images/products/jasmine-rice.jpg',
+    accentColor: '#F5E6D3'
+  },
+  {
+    id: 'rose',
+    image: '/images/products/rose.jpg',
+    accentColor: '#F8E1E4'
+  },
+  {
+    id: 'tamarind',
+    image: '/images/products/tamarind.jpg',
+    accentColor: '#E8DDD0'
+  },
+  {
+    id: 'turmeric',
+    image: '/images/products/turmeric.jpg',
+    accentColor: '#F5E8C8'
+  },
 ]
+
+function ProductLightbox({ product, onClose, t }) {
+  const lightboxRef = useRef(null)
+  const closeButtonRef = useRef(null)
+
+  const handleKeyDown = useCallback((e) => {
+    if (e.key === 'Escape') {
+      onClose()
+    }
+    if (e.key === 'Tab') {
+      const focusableElements = lightboxRef.current?.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      )
+      if (focusableElements && focusableElements.length > 0) {
+        const firstElement = focusableElements[0]
+        const lastElement = focusableElements[focusableElements.length - 1]
+
+        if (e.shiftKey && document.activeElement === firstElement) {
+          e.preventDefault()
+          lastElement.focus()
+        } else if (!e.shiftKey && document.activeElement === lastElement) {
+          e.preventDefault()
+          firstElement.focus()
+        }
+      }
+    }
+  }, [onClose])
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyDown)
+    document.body.style.overflow = 'hidden'
+    setTimeout(() => closeButtonRef.current?.focus(), 0)
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+      document.body.style.overflow = ''
+    }
+  }, [handleKeyDown])
+
+  const handleBackdropClick = (e) => {
+    if (e.target === e.currentTarget) {
+      onClose()
+    }
+  }
+
+  const productName = t(`products.${product.id}.name`)
+  const productDescription = t(`products.${product.id}.description`)
+  const productBenefits = t(`products.${product.id}.benefits`, { returnObjects: true })
+
+  const lightboxContent = (
+    <div
+      ref={lightboxRef}
+      className="product-lightbox product-lightbox--open"
+      onClick={handleBackdropClick}
+      role="dialog"
+      aria-modal="true"
+      aria-label={productName}
+    >
+      <div className="product-lightbox__content">
+        <button
+          ref={closeButtonRef}
+          className="product-lightbox__close"
+          onClick={onClose}
+          aria-label="Close"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div className="product-lightbox__grid">
+          <div className="product-lightbox__image-container">
+            <div
+              className="product-lightbox__image-bg"
+              style={{ backgroundColor: product.accentColor }}
+            />
+            <img
+              className="product-lightbox__image"
+              src={product.image}
+              alt={productName}
+            />
+          </div>
+
+          <div className="product-lightbox__details">
+            <h3 className="product-lightbox__name">{productName}</h3>
+            <p className="product-lightbox__description">{productDescription}</p>
+
+            <div className="product-lightbox__benefits">
+              <h4 className="product-lightbox__benefits-title">
+                {t('products.skinBenefits')}
+              </h4>
+              <ul className="product-lightbox__benefits-list">
+                {Array.isArray(productBenefits) && productBenefits.map((benefit, index) => (
+                  <li key={index} className="product-lightbox__benefit">
+                    <span className="product-lightbox__benefit-icon">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm3.7 6.3l-4 4c-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-2-2c-.4-.4-.4-1 0-1.4s1-.4 1.4 0L7 8.2l3.3-3.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4z"/>
+                      </svg>
+                    </span>
+                    {benefit}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="product-lightbox__badge">
+              <span className="product-lightbox__badge-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </span>
+              {t('products.availableAtAllBranches')}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+
+  return createPortal(lightboxContent, document.body)
+}
 
 function ProductGallery() {
   const { t } = useTranslation()
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [isPaused, setIsPaused] = useState(false)
-  const [lightboxOpen, setLightboxOpen] = useState(false)
-  const [lightboxImage, setLightboxImage] = useState(null)
-  const [lightboxAlt, setLightboxAlt] = useState('')
+  const [selectedProduct, setSelectedProduct] = useState(null)
 
   const scrollRef = useRef(null)
   const autoScrollRef = useRef(null)
@@ -28,14 +164,13 @@ function ProductGallery() {
   const startXRef = useRef(0)
   const scrollLeftRef = useRef(0)
 
-  // Get actual image width dynamically (handles mobile responsiveness)
   const getImageWidth = useCallback(() => {
-    if (!scrollRef.current) return 280
-    const firstImage = scrollRef.current.querySelector('.product-gallery__image-wrapper')
-    if (!firstImage) return 280
+    if (!scrollRef.current) return 300
+    const firstCard = scrollRef.current.querySelector('.product-card')
+    if (!firstCard) return 300
     const style = window.getComputedStyle(scrollRef.current)
-    const gap = parseFloat(style.gap) || 16
-    return firstImage.offsetWidth + gap
+    const gap = parseFloat(style.gap) || 24
+    return firstCard.offsetWidth + gap
   }, [])
 
   const scrollToIndex = useCallback((index) => {
@@ -53,7 +188,6 @@ function ProductGallery() {
   }, [currentIndex, scrollToIndex])
 
   const startAutoScroll = useCallback(() => {
-    setIsPaused(false)
     clearInterval(autoScrollRef.current)
     autoScrollRef.current = setInterval(() => {
       nextImage()
@@ -61,7 +195,6 @@ function ProductGallery() {
   }, [nextImage])
 
   const pauseAutoScroll = useCallback(() => {
-    setIsPaused(true)
     clearInterval(autoScrollRef.current)
     clearTimeout(resumeTimeoutRef.current)
 
@@ -70,7 +203,6 @@ function ProductGallery() {
     }, RESUME_DELAY)
   }, [startAutoScroll])
 
-  // Initialize auto-scroll
   useEffect(() => {
     startAutoScroll()
     return () => {
@@ -79,7 +211,6 @@ function ProductGallery() {
     }
   }, [startAutoScroll])
 
-  // Track scroll position to update current index
   const handleScroll = useCallback(() => {
     if (!scrollRef.current) return
     const scrollPos = scrollRef.current.scrollLeft
@@ -90,7 +221,6 @@ function ProductGallery() {
     }
   }, [currentIndex, getImageWidth])
 
-  // Mouse drag handlers
   const handleMouseDown = (e) => {
     isDownRef.current = true
     scrollRef.current.style.cursor = 'grabbing'
@@ -121,34 +251,29 @@ function ProductGallery() {
     scrollRef.current.scrollLeft = scrollLeftRef.current - walk
   }
 
-  // Touch handler
   const handleTouchStart = () => {
     pauseAutoScroll()
   }
 
-  // Image click handler
-  const handleImageClick = (product) => {
+  const handleCardClick = (product) => {
     pauseAutoScroll()
-    setLightboxImage(product.image)
-    setLightboxAlt(product.name)
-    setLightboxOpen(true)
+    setSelectedProduct(product)
   }
 
   const handleLightboxClose = () => {
-    setLightboxOpen(false)
-    setLightboxImage(null)
-    setLightboxAlt('')
+    setSelectedProduct(null)
     setTimeout(() => startAutoScroll(), 500)
   }
 
-  // Handle broken images gracefully
   const handleImageError = (e) => {
-    e.target.style.display = 'none'
+    e.target.style.opacity = '0.5'
   }
 
-  // Progress bar calculation
-  const progressWidth = 100 / products.length
-  const progressLeft = (currentIndex / products.length) * 100
+  const goToSlide = (index) => {
+    setCurrentIndex(index)
+    scrollToIndex(index)
+    pauseAutoScroll()
+  }
 
   return (
     <div
@@ -168,32 +293,52 @@ function ProductGallery() {
         aria-live="polite"
       >
         {products.map((product, index) => (
-          <div key={product.id} className="product-gallery__image-wrapper">
-            <img
-              className="product-gallery__image"
-              src={product.image}
-              alt={product.name}
-              loading="lazy"
-              onClick={() => handleImageClick(product)}
-              onError={handleImageError}
-            />
+          <div
+            key={product.id}
+            className={`product-card ${index === currentIndex ? 'product-card--active' : ''}`}
+            onClick={() => handleCardClick(product)}
+            style={{ '--accent-color': product.accentColor }}
+          >
+            <div className="product-card__image-wrapper">
+              <div className="product-card__float-effect">
+                <img
+                  className="product-card__image"
+                  src={product.image}
+                  alt={t(`products.${product.id}.name`)}
+                  loading="lazy"
+                  onError={handleImageError}
+                />
+              </div>
+            </div>
+            <div className="product-card__content">
+              <h3 className="product-card__name">
+                {t(`products.${product.id}.name`).replace(' Body Scrub Cream', '')}
+              </h3>
+              <p className="product-card__tagline">{t(`products.${product.id}.tagline`)}</p>
+            </div>
           </div>
         ))}
       </div>
 
-      <div className="product-gallery__progress">
-        <div
-          className="product-gallery__progress-fill"
-          style={{ width: `${progressWidth}%`, left: `${progressLeft}%` }}
-        />
+      {/* Dot indicators */}
+      <div className="product-gallery__dots">
+        {products.map((product, index) => (
+          <button
+            key={product.id}
+            className={`product-gallery__dot ${index === currentIndex ? 'product-gallery__dot--active' : ''}`}
+            onClick={() => goToSlide(index)}
+            aria-label={`Go to ${t(`products.${product.id}.name`)}`}
+          />
+        ))}
       </div>
 
-      <Lightbox
-        isOpen={lightboxOpen}
-        imageSrc={lightboxImage}
-        imageAlt={lightboxAlt}
-        onClose={handleLightboxClose}
-      />
+      {selectedProduct && (
+        <ProductLightbox
+          product={selectedProduct}
+          onClose={handleLightboxClose}
+          t={t}
+        />
+      )}
     </div>
   )
 }

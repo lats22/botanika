@@ -6,6 +6,61 @@
   background: linear-gradient(180deg, rgba(232, 240, 232, 0.5) 0%, rgba(232, 240, 232, 0.8) 100%);
 }
 
+/* Arome Collection Section */
+.section--arome {
+  background: linear-gradient(
+    135deg,
+    rgba(250, 248, 245, 1) 0%,
+    rgba(245, 240, 235, 1) 25%,
+    rgba(240, 235, 225, 1) 50%,
+    rgba(235, 230, 220, 1) 75%,
+    rgba(245, 240, 230, 1) 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.section--arome::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 20%, rgba(27, 94, 58, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(139, 90, 43, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.section-title--arome {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-dark-green);
+  position: relative;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-dark-green);
+  opacity: 0.75;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+}
+
+@media (max-width: 576px) {
+  .section-subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+  }
+}
+
 /* Services Grid */
 .services-grid {
   display: grid;

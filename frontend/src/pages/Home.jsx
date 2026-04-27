@@ -52,10 +52,11 @@ function Home() {
         </div>
       </section>
 
-      {/* Products Section */}
-      <section id="products" className="section section--light">
+      {/* Arome Collection Products Section */}
+      <section id="products" className="section section--arome">
         <div className="container">
-          <h2 className="section-title">{t('products.title')}</h2>
+          <h2 className="section-title section-title--arome">{t('products.title')}</h2>
+          <p className="section-subtitle">{t('products.subtitle')}</p>
           <ProductGallery />
         </div>
       </section>

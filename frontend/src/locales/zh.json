@@ -3,6 +3,7 @@
     "services": "服务",
     "packages": "套餐",
     "locations": "分店",
+    "aromeCollection": "香氛系列",
     "contact": "联系"
   },
   "hero": {
@@ -21,7 +22,34 @@
     "includes": "包含"
   },
   "products": {
-    "title": "我们的产品"
+    "title": "Botanika Arome Collection",
+    "subtitle": "身体磨砂膏 - 天然深层保湿",
+    "availableAtAllBranches": "所有分店均有售",
+    "skinBenefits": "肌肤功效",
+    "jasmineRice": {
+      "name": "茉莉香米身体磨砂膏",
+      "tagline": "提亮保湿",
+      "description": "富含泰国茉莉香米精华，数百年来一直用于亚洲美容仪式。",
+      "benefits": ["提亮肤色", "深层保湿", "软化粗糙肌肤", "富含维生素B和E"]
+    },
+    "rose": {
+      "name": "玫瑰身体磨砂膏",
+      "tagline": "水润紧致",
+      "description": "注入天然玫瑰精华，带来奢华芳香体验。",
+      "benefits": ["滋润紧致肌肤", "减少泛红", "抗衰老功效", "令肌肤丝滑柔嫩"]
+    },
+    "tamarind": {
+      "name": "罗望子身体磨砂膏",
+      "tagline": "去角质焕亮",
+      "description": "含有罗望子精华，这是泰国传统的护肤成分，让肌肤焕发光彩。",
+      "benefits": ["天然AHA温和去角质", "均匀肤色", "去除死皮细胞", "增添自然光泽"]
+    },
+    "turmeric": {
+      "name": "姜黄身体磨砂膏",
+      "tagline": "修护焕新",
+      "description": "融合姜黄，以阿育吠陀传统中的疗愈功效闻名。",
+      "benefits": ["消炎作用", "淡化色斑", "对抗衰老迹象", "呈现健康金色光泽"]
+    }
   },
   "testimonials": {
     "title": "客户评价"

@@ -3,6 +3,7 @@
     "services": "서비스",
     "packages": "패키지",
     "locations": "위치",
+    "aromeCollection": "아로메 컬렉션",
     "contact": "연락처"
   },
   "hero": {
@@ -21,7 +22,34 @@
     "includes": "포함"
   },
   "products": {
-    "title": "제품 소개"
+    "title": "Botanika Arome Collection",
+    "subtitle": "바디 스크럽 크림 - 천연 집중 보습",
+    "availableAtAllBranches": "모든 지점에서 구매 가능",
+    "skinBenefits": "피부 효능",
+    "jasmineRice": {
+      "name": "자스민 라이스 바디 스크럽 크림",
+      "tagline": "밝고 촉촉하게",
+      "description": "아시아 뷰티 의식에서 수세기 동안 사용된 태국 자스민 쌀 추출물이 풍부합니다.",
+      "benefits": ["피부 톤을 밝게", "깊은 보습", "거친 피부를 부드럽게", "비타민 B & E 풍부"]
+    },
+    "rose": {
+      "name": "로즈 바디 스크럽 크림",
+      "tagline": "촉촉하고 탄력있게",
+      "description": "고급스러운 아로마 경험을 위한 천연 장미 에센스가 함유되어 있습니다.",
+      "benefits": ["피부를 촉촉하고 탄력있게", "붉은기 감소", "안티에이징 효과", "실크처럼 매끄러운 피부"]
+    },
+    "tamarind": {
+      "name": "타마린드 바디 스크럽 크림",
+      "tagline": "각질제거 & 광채",
+      "description": "빛나는 피부를 위한 태국 전통 재료인 타마린드 추출물이 함유되어 있습니다.",
+      "benefits": ["천연 AHA로 부드러운 각질제거", "피부 톤 균일화", "죽은 세포 제거", "자연스러운 광채 부여"]
+    },
+    "turmeric": {
+      "name": "터메릭 바디 스크럽 크림",
+      "tagline": "치유와 회복",
+      "description": "아유르베다 전통에서 치유력으로 알려진 강황이 함유되어 있습니다.",
+      "benefits": ["항염 작용", "다크 스팟 감소", "노화 징후 완화", "건강한 황금빛 광채"]
+    }
   },
   "testimonials": {
     "title": "고객 후기"

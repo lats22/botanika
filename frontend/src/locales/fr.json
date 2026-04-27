@@ -3,6 +3,7 @@
     "services": "Services",
     "packages": "Forfaits",
     "locations": "Nos Adresses",
+    "aromeCollection": "Collection Arome",
     "contact": "Contact"
   },
   "hero": {
@@ -21,7 +22,34 @@
     "includes": "Comprend"
   },
   "products": {
-    "title": "Nos Produits"
+    "title": "Botanika Arome Collection",
+    "subtitle": "Creme Gommage Corps - Hydratation Intensive Naturelle",
+    "availableAtAllBranches": "Disponible dans toutes nos adresses",
+    "skinBenefits": "Bienfaits pour la Peau",
+    "jasmineRice": {
+      "name": "Creme Gommage au Riz Jasmin",
+      "tagline": "Eclaire et Hydrate",
+      "description": "Enrichie d'extrait de riz au jasmin thailandais, connu depuis des siecles dans les rituels de beaute asiatiques.",
+      "benefits": ["Eclaire le teint", "Hydrate en profondeur", "Adoucit la peau rugueuse", "Riche en vitamines B et E"]
+    },
+    "rose": {
+      "name": "Creme Gommage a la Rose",
+      "tagline": "Hydrate et Tonifie",
+      "description": "Infusee d'essence naturelle de rose pour une experience aromatique luxueuse.",
+      "benefits": ["Hydrate et tonifie la peau", "Reduit les rougeurs", "Proprietes anti-age", "Laisse la peau soyeuse"]
+    },
+    "tamarind": {
+      "name": "Creme Gommage au Tamarin",
+      "tagline": "Exfolie et Illumine",
+      "description": "Contient de l'extrait de tamarin, un ingredient traditionnel thailandais pour une peau eclatante.",
+      "benefits": ["AHA naturel pour une exfoliation douce", "Unifie le teint", "Elimine les cellules mortes", "Ajoute un eclat naturel"]
+    },
+    "turmeric": {
+      "name": "Creme Gommage au Curcuma",
+      "tagline": "Guerit et Rajeunit",
+      "description": "Melangee avec du curcuma connu pour ses proprietes curatives dans la tradition ayurvedique.",
+      "benefits": ["Anti-inflammatoire", "Reduit les taches sombres", "Combat les signes du vieillissement", "Donne un eclat dore sain"]
+    }
   },
   "testimonials": {
     "title": "Témoignages Clients"

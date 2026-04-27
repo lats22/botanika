@@ -3,6 +3,7 @@
     "services": "Servicios",
     "packages": "Paquetes",
     "locations": "Ubicaciones",
+    "aromeCollection": "Coleccion Arome",
     "contact": "Contacto"
   },
   "hero": {
@@ -21,7 +22,34 @@
     "includes": "Incluye"
   },
   "products": {
-    "title": "Nuestros Productos"
+    "title": "Botanika Arome Collection",
+    "subtitle": "Crema Exfoliante Corporal - Hidratacion Intensiva Natural",
+    "availableAtAllBranches": "Disponible en todas las sucursales",
+    "skinBenefits": "Beneficios para la Piel",
+    "jasmineRice": {
+      "name": "Crema Exfoliante de Arroz Jazmin",
+      "tagline": "Ilumina e Hidrata",
+      "description": "Enriquecido con extracto de arroz jazmin tailandes, conocido durante siglos en rituales de belleza asiaticos.",
+      "benefits": ["Ilumina el tono de piel", "Hidrata profundamente", "Suaviza la piel aspera", "Rico en vitaminas B y E"]
+    },
+    "rose": {
+      "name": "Crema Exfoliante de Rosa",
+      "tagline": "Hidrata y Tonifica",
+      "description": "Infusionada con esencia natural de rosa para una experiencia aromatica lujosa.",
+      "benefits": ["Hidrata y tonifica la piel", "Reduce el enrojecimiento", "Propiedades anti-edad", "Deja la piel sedosa"]
+    },
+    "tamarind": {
+      "name": "Crema Exfoliante de Tamarindo",
+      "tagline": "Exfolia e Ilumina",
+      "description": "Contiene extracto de tamarindo, un ingrediente tradicional tailandes para una piel radiante.",
+      "benefits": ["AHA natural para exfoliacion suave", "Unifica el tono de piel", "Elimina celulas muertas", "Agrega brillo natural"]
+    },
+    "turmeric": {
+      "name": "Crema Exfoliante de Curcuma",
+      "tagline": "Sana y Rejuvenece",
+      "description": "Mezclado con curcuma conocida por sus propiedades curativas en la tradicion ayurvedica.",
+      "benefits": ["Antiinflamatorio", "Reduce manchas oscuras", "Combate signos de envejecimiento", "Da un brillo dorado saludable"]
+    }
   },
   "testimonials": {
     "title": "Lo Que Dicen Nuestros Clientes"
