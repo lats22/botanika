@@ -3,7 +3,7 @@
     "services": "Services",
     "packages": "Forfaits",
     "locations": "Nos Adresses",
-    "aromeCollection": "Collection Arome",
+    "aromeCollection": "Collection Arôme",
     "contact": "Contact"
   },
   "hero": {
@@ -22,8 +22,8 @@
     "includes": "Comprend"
   },
   "products": {
-    "title": "Botanika Arome Collection",
-    "subtitle": "Creme Gommage Corps - Hydratation Intensive Naturelle",
+    "title": "Botanika Arôme Collection",
+    "subtitle": "Crème Gommage Corps · Hydratation Intensive Naturelle",
     "availableAtAllBranches": "Disponible dans toutes nos adresses",
     "skinBenefits": "Bienfaits pour la Peau",
     "jasmineRice": {

@@ -3,7 +3,7 @@
     "services": "Services",
     "packages": "Packages",
     "locations": "Locations",
-    "aromeCollection": "Arome Collection",
+    "aromeCollection": "Arôme Collection",
     "contact": "Contact"
   },
   "hero": {
@@ -22,8 +22,8 @@
     "includes": "Includes"
   },
   "products": {
-    "title": "Botanika Arome Collection",
-    "subtitle": "Body Scrub Cream - Natural Intensive Moisturizing",
+    "title": "Botanika Arôme Collection",
+    "subtitle": "Body Scrub Cream · Natural Intensive Moisturizing",
     "availableAtAllBranches": "Available at all branches",
     "skinBenefits": "Skin Benefits",
     "jasmineRice": {

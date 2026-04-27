@@ -3,7 +3,7 @@
     "services": "Servicios",
     "packages": "Paquetes",
     "locations": "Ubicaciones",
-    "aromeCollection": "Coleccion Arome",
+    "aromeCollection": "Colección Arôme",
     "contact": "Contacto"
   },
   "hero": {
@@ -22,8 +22,8 @@
     "includes": "Incluye"
   },
   "products": {
-    "title": "Botanika Arome Collection",
-    "subtitle": "Crema Exfoliante Corporal - Hidratacion Intensiva Natural",
+    "title": "Botanika Arôme Collection",
+    "subtitle": "Crema Exfoliante Corporal · Hidratación Intensiva Natural",
     "availableAtAllBranches": "Disponible en todas las sucursales",
     "skinBenefits": "Beneficios para la Piel",
     "jasmineRice": {

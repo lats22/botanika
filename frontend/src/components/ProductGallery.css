@@ -103,6 +103,11 @@
 .product-card__float-effect {
   animation: floatGentle 6s ease-in-out infinite;
   transform-origin: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .product-card:nth-child(1) .product-card__float-effect { animation-delay: 0s; }
@@ -331,8 +336,9 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 320px;
+  max-width: 420px;
   height: auto;
+  max-height: 500px;
   object-fit: contain;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
   animation: lightboxFloat 4s ease-in-out infinite;
@@ -451,7 +457,8 @@
   }
 
   .product-lightbox__image {
-    max-width: 220px;
+    max-width: 280px;
+    max-height: 350px;
   }
 
   .product-lightbox__details {
