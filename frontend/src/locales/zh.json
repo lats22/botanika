@@ -43,7 +43,7 @@
     "copyright": "© 2026 Botanika Massage 版权所有"
   },
   "whatsapp": {
-    "label": "与我们聊天",
-    "prefillMessage": "你好 Botanika，我想预约。"
+    "label": "Chat with us",
+    "prefillMessage": "Hi Botanika, I'd like to make a reservation."
   }
 }
