@@ -38,3 +38,4 @@ coverage/
 # Cache
 .cache/
 .parcel-cache/
+docker-compose.yml.bak-2026-05-04

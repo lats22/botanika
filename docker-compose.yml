@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   frontend:
+    restart: unless-stopped
     build:
       context: ./frontend
       dockerfile: Dockerfile
@@ -13,6 +14,7 @@ services:
       - botanika-network
 
   backend:
+    restart: unless-stopped
     build:
       context: ./backend
       dockerfile: Dockerfile
