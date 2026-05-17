@@ -5,6 +5,7 @@
     "locations": "위치",
     "aromeCollection": "아로메 컬렉션",
     "nailStudio": "네일 스튜디오",
+    "waxing": "왁싱",
     "contact": "연락처"
   },
   "hero": {
@@ -65,11 +66,15 @@
       "description": "클래식 핸드 & 풋 케어 — 큐티클 정리, 스크럽, 마스크, 크림, Spa QTICA 및 Footlogix 트리트먼트.",
       "services": [
         "베이직 매니큐어",
-        "페디큐어",
+        "베이직 페디큐어",
         "베이비 풋 스크럽",
         "Spa QTICA (매니큐어 / 페디큐어 / 세트)",
-        "Spa Footlogix"
-      ]
+        "Spa Footlogix",
+        "일반 오가닉 네일 폴리시",
+        "오가닉 / O.P.I 네일 — 손",
+        "오가닉 / O.P.I 네일 — 발"
+      ],
+      "helperBasicPedicure": "발뒤꿈치 다듬기 미포함 — 발뒤꿈치 케어는 Baby Foot Scrub 또는 Spa Footlogix 참조"
     },
     "gelPolish": {
       "name": "젤 폴리시",
@@ -110,6 +115,70 @@
         "Gel Art",
         "French Tip Color",
         "추가 젤 컬러"
+      ]
+    },
+    "gelPolishRemoval": {
+      "name": "젤 폴리시 제거",
+      "tagline": "안전하고 잔여물 없이",
+      "description": "전동 e-파일 드릴을 사용한 전문 젤 폴리시 제거 — 자연 손톱에 부드럽고, 담그지 않아도 됩니다.",
+      "services": [
+        "젤 폴리시 제거 (손)",
+        "젤 폴리시 제거 (발)"
+      ]
+    }
+  },
+  "waxing": {
+    "title": "보타니카 왁싱",
+    "subtitle": "페이셜 · 바디 · 팔 · 다리 · 비키니",
+    "availableAtSelectBranches": "실롬, 실롬 13, 팟퐁 지점에서 이용 가능",
+    "servicesIncluded": "서비스",
+    "facial": {
+      "name": "페이셜 왁싱",
+      "tagline": "정교한 눈썹 & 입술 셰이핑",
+      "description": "정교한 눈썹 및 입술 셰이핑으로 깔끔하고 또렷한 마무리.",
+      "services": [
+        "눈썹",
+        "윗입술"
+      ]
+    },
+    "body": {
+      "name": "바디 왁싱",
+      "tagline": "매끈한 가슴, 등, 겨드랑이",
+      "description": "가슴, 등, 복부, 배꼽, 겨드랑이를 위한 매끈한 피부.",
+      "services": [
+        "가슴",
+        "복부",
+        "배꼽",
+        "전체 등",
+        "겨드랑이"
+      ]
+    },
+    "arm": {
+      "name": "팔 왁싱",
+      "tagline": "빠르고 깔끔 — 전체 팔 또는 반 팔",
+      "description": "빠르고 깔끔 — 전체 팔 또는 반 팔을 선택하세요.",
+      "services": [
+        "전체 팔",
+        "반 팔"
+      ]
+    },
+    "legs": {
+      "name": "다리 왁싱",
+      "tagline": "살롱 수준의 매끈한 다리",
+      "description": "살롱 수준의 매끈한 다리 — 전체 다리 또는 반 다리.",
+      "services": [
+        "전체 다리",
+        "반 다리"
+      ]
+    },
+    "bikini": {
+      "name": "비키니 왁싱",
+      "tagline": "프라이빗하고 위생적 — 세 가지 스타일",
+      "description": "프라이빗하고 위생적 — 세 가지 스타일에서 선택하세요.",
+      "services": [
+        "Hollywood",
+        "Bikini Line",
+        "Brazilian"
       ]
     }
   },

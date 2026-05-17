@@ -1,7 +1,8 @@
-/* Nail Gallery - Botanika Nail Studio
-   Mirrors ProductGallery structure; uniquely prefixed (nail-gallery__*, nail-card__*, nail-lightbox__*)
-   to avoid class collision. Palette leans pastel-pink to feel distinct from Arôme's warm cream. */
-.nail-gallery {
+/* Waxing Gallery - Botanika Waxing
+   Mirrors NailGallery structure; uniquely prefixed (waxing-gallery__*, waxing-card__*, waxing-lightbox__*)
+   to avoid class collision with nail-* / product-* / branch-*. Palette leans warm-honey/cream to feel
+   distinct from Nail Studio's pastel pink while staying in the same soft-tonal family. */
+.waxing-gallery {
   position: relative;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -10,11 +11,11 @@
 }
 
 /* Viewport wraps the scroll strip. */
-.nail-gallery__viewport {
+.waxing-gallery__viewport {
   position: relative;
 }
 
-.nail-gallery__scroll {
+.waxing-gallery__scroll {
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -25,16 +26,16 @@
   cursor: grab;
 }
 
-.nail-gallery__scroll::-webkit-scrollbar {
+.waxing-gallery__scroll::-webkit-scrollbar {
   display: none;
 }
 
-.nail-gallery__scroll:active {
+.waxing-gallery__scroll:active {
   cursor: grabbing;
 }
 
-/* Nail Card */
-.nail-card {
+/* Waxing Card */
+.waxing-card {
   flex: 0 0 auto;
   width: 280px;
   background: rgba(255, 255, 255, 0.95);
@@ -50,7 +51,7 @@
   position: relative;
 }
 
-.nail-card::before {
+.waxing-card::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -69,14 +70,14 @@
   pointer-events: none;
 }
 
-.nail-card:hover {
+.waxing-card:hover {
   transform: translateY(-12px) scale(1.02);
   box-shadow:
     0 20px 40px rgba(27, 94, 58, 0.15),
     0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
-.nail-card--active {
+.waxing-card--active {
   transform: translateY(-4px);
   box-shadow:
     0 12px 32px rgba(27, 94, 58, 0.12),
@@ -84,18 +85,18 @@
 }
 
 /* Image wrapper with floating effect */
-.nail-card__image-wrapper {
+.waxing-card__image-wrapper {
   width: 100%;
   height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--accent-color, #F5DDEB);
+  background: var(--accent-color, #F5E6CC);
   position: relative;
   overflow: hidden;
 }
 
-.nail-card__image-wrapper::after {
+.waxing-card__image-wrapper::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -107,8 +108,8 @@
 }
 
 /* Floating animation container */
-.nail-card__float-effect {
-  animation: nailFloatGentle 6s ease-in-out infinite;
+.waxing-card__float-effect {
+  animation: waxingFloatGentle 6s ease-in-out infinite;
   transform-origin: center center;
   display: flex;
   align-items: center;
@@ -117,13 +118,13 @@
   height: 100%;
 }
 
-.nail-card:nth-child(1) .nail-card__float-effect { animation-delay: 0s; }
-.nail-card:nth-child(2) .nail-card__float-effect { animation-delay: -1.2s; }
-.nail-card:nth-child(3) .nail-card__float-effect { animation-delay: -2.4s; }
-.nail-card:nth-child(4) .nail-card__float-effect { animation-delay: -3.6s; }
-.nail-card:nth-child(5) .nail-card__float-effect { animation-delay: -4.8s; }
+.waxing-card:nth-child(1) .waxing-card__float-effect { animation-delay: 0s; }
+.waxing-card:nth-child(2) .waxing-card__float-effect { animation-delay: -1.2s; }
+.waxing-card:nth-child(3) .waxing-card__float-effect { animation-delay: -2.4s; }
+.waxing-card:nth-child(4) .waxing-card__float-effect { animation-delay: -3.6s; }
+.waxing-card:nth-child(5) .waxing-card__float-effect { animation-delay: -4.8s; }
 
-@keyframes nailFloatGentle {
+@keyframes waxingFloatGentle {
   0%, 100% {
     transform: translateY(0) rotate(0deg);
   }
@@ -138,8 +139,8 @@
   }
 }
 
-.nail-card__image {
-  /* Nail flyer crops are photographic squares — fill the tile cleanly. */
+.waxing-card__image {
+  /* Waxing source photos are pre-shot squares — fill the tile cleanly. */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -147,18 +148,18 @@
   filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.1));
 }
 
-.nail-card:hover .nail-card__image {
+.waxing-card:hover .waxing-card__image {
   transform: scale(1.08);
 }
 
 /* Card content */
-.nail-card__content {
+.waxing-card__content {
   padding: 20px 24px 24px;
   text-align: center;
   background: white;
 }
 
-.nail-card__name {
+.waxing-card__name {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.25rem;
   font-weight: 600;
@@ -167,7 +168,7 @@
   line-height: 1.3;
 }
 
-.nail-card__tagline {
+.waxing-card__tagline {
   font-family: var(--font-body, system-ui);
   font-size: 0.9rem;
   color: rgba(27, 94, 58, 0.7);
@@ -177,14 +178,14 @@
 }
 
 /* Dot indicators */
-.nail-gallery__dots {
+.waxing-gallery__dots {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 8px;
 }
 
-.nail-gallery__dot {
+.waxing-gallery__dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -195,19 +196,19 @@
   padding: 0;
 }
 
-.nail-gallery__dot:hover {
+.waxing-gallery__dot:hover {
   background: rgba(27, 94, 58, 0.4);
   transform: scale(1.2);
 }
 
-.nail-gallery__dot--active {
+.waxing-gallery__dot--active {
   background: var(--color-deep-green, #1B5E3A);
   transform: scale(1.2);
 }
 
 /* Fade edges */
-.nail-gallery::before,
-.nail-gallery::after {
+.waxing-gallery::before,
+.waxing-gallery::after {
   content: '';
   position: absolute;
   top: 0;
@@ -217,156 +218,139 @@
   pointer-events: none;
 }
 
-.nail-gallery::before {
+.waxing-gallery::before {
   left: 0;
-  background: linear-gradient(to right, rgba(253, 246, 248, 0.95), transparent);
+  background: linear-gradient(to right, rgba(251, 247, 241, 0.95), transparent);
 }
 
-.nail-gallery::after {
+.waxing-gallery::after {
   right: 0;
-  background: linear-gradient(to left, rgba(253, 246, 248, 0.95), transparent);
+  background: linear-gradient(to left, rgba(251, 247, 241, 0.95), transparent);
 }
 
 /* Desktop - fit all 5 cards properly */
 @media (min-width: 1024px) {
-  .nail-gallery {
+  .waxing-gallery {
     overflow: visible;
   }
 
   /* Hide dots on desktop since all cards are visible */
-  .nail-gallery__dots {
+  .waxing-gallery__dots {
     display: none;
   }
 
-  .nail-gallery__scroll {
+  .waxing-gallery__scroll {
     justify-content: center;
     overflow-x: visible;
-    padding: 24px 32px 32px;
+    padding: 24px 40px 32px;
     gap: 16px;
   }
 
-  /* 5 cards across: viewport minus side padding (64) minus 4 gaps (64) ÷ 5 */
-  .nail-card {
-    width: calc((100vw - 64px - 64px) / 5);
+  .waxing-card {
+    /* 5 cards across, with horizontal padding (80) and 4 gaps (64). */
+    width: calc((100vw - 80px - 64px) / 5);
     max-width: 240px;
     min-width: 180px;
   }
 
-  .nail-card__image-wrapper {
+  .waxing-card__image-wrapper {
     height: 220px;
   }
 
-  .nail-gallery::before,
-  .nail-gallery::after {
+  .waxing-gallery::before,
+  .waxing-gallery::after {
     display: none;
   }
 }
 
-/* Large desktop - fixed max widths, capped layout */
+/* Large desktop - fixed max widths */
 @media (min-width: 1280px) {
-  .nail-gallery__scroll {
-    max-width: 1280px;
+  .waxing-gallery__scroll {
+    max-width: 1200px;
     margin: 0 auto;
     padding: 24px 20px 32px;
     gap: 20px;
   }
 
-  .nail-card {
-    width: 232px;
-    max-width: 232px;
+  .waxing-card {
+    width: 220px;
+    max-width: 220px;
   }
 
-  .nail-card__image-wrapper {
-    height: 232px;
-  }
-}
-
-/* Extra-large desktop - allow full 240px cards */
-@media (min-width: 1440px) {
-  .nail-gallery__scroll {
-    max-width: 1320px;
-    gap: 24px;
-  }
-
-  .nail-card {
-    width: 240px;
-    max-width: 240px;
-  }
-
-  .nail-card__image-wrapper {
+  .waxing-card__image-wrapper {
     height: 240px;
   }
 }
 
 /* Tablet - 3 cards visible with scroll hint */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .nail-gallery__scroll {
+  .waxing-gallery__scroll {
     padding: 24px 32px 32px;
     gap: 20px;
   }
 
-  .nail-card {
+  .waxing-card {
     width: 260px;
   }
 
-  .nail-card__image-wrapper {
+  .waxing-card__image-wrapper {
     height: 240px;
   }
 }
 
 /* Mobile adjustments */
 @media (max-width: 767px) {
-  .nail-card {
+  .waxing-card {
     width: 260px;
   }
 
-  .nail-card__image-wrapper {
+  .waxing-card__image-wrapper {
     height: 240px;
   }
 
-  .nail-gallery__scroll {
+  .waxing-gallery__scroll {
     gap: 16px;
     padding: 20px 20px 28px;
   }
 
-  .nail-card__name {
+  .waxing-card__name {
     font-size: 1.15rem;
   }
 
-  .nail-card__content {
+  .waxing-card__content {
     padding: 18px 22px 22px;
   }
 }
 
 /* Small mobile */
 @media (max-width: 576px) {
-  .nail-card {
+  .waxing-card {
     width: 240px;
   }
 
-  .nail-card__image-wrapper {
+  .waxing-card__image-wrapper {
     height: 220px;
   }
 
-  .nail-gallery__scroll {
+  .waxing-gallery__scroll {
     gap: 16px;
     padding: 16px 16px 24px;
   }
 
-  .nail-card__name {
+  .waxing-card__name {
     font-size: 1.1rem;
   }
 
-  .nail-card__content {
+  .waxing-card__content {
     padding: 16px 20px 20px;
   }
 }
 
 /* ============================
-   Nail Lightbox Styles
+   Waxing Lightbox Styles
    ============================ */
 
-.nail-lightbox {
+.waxing-lightbox {
   position: fixed;
   inset: 0;
   width: 100vw;
@@ -384,12 +368,12 @@
   padding: 20px;
 }
 
-.nail-lightbox--open {
+.waxing-lightbox--open {
   opacity: 1;
   visibility: visible;
 }
 
-.nail-lightbox__content {
+.waxing-lightbox__content {
   position: relative;
   max-width: 900px;
   width: 100%;
@@ -404,11 +388,11 @@
     0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.nail-lightbox--open .nail-lightbox__content {
+.waxing-lightbox--open .waxing-lightbox__content {
   transform: scale(1) translateY(0);
 }
 
-.nail-lightbox__close {
+.waxing-lightbox__close {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -426,18 +410,18 @@
   z-index: 10;
 }
 
-.nail-lightbox__close:hover {
+.waxing-lightbox__close:hover {
   background: rgba(27, 94, 58, 0.2);
   transform: rotate(90deg);
 }
 
-.nail-lightbox__grid {
+.waxing-lightbox__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 500px;
 }
 
-.nail-lightbox__image-container {
+.waxing-lightbox__image-container {
   position: relative;
   display: flex;
   align-items: center;
@@ -446,13 +430,13 @@
   overflow: hidden;
 }
 
-.nail-lightbox__image-bg {
+.waxing-lightbox__image-bg {
   position: absolute;
   inset: 0;
   opacity: 0.5;
 }
 
-.nail-lightbox__image {
+.waxing-lightbox__image {
   position: relative;
   z-index: 1;
   width: 100%;
@@ -462,15 +446,15 @@
   object-fit: contain;
   border-radius: 16px;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
-  animation: nailLightboxFloat 4s ease-in-out infinite;
+  animation: waxingLightboxFloat 4s ease-in-out infinite;
 }
 
-@keyframes nailLightboxFloat {
+@keyframes waxingLightboxFloat {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
 
-.nail-lightbox__details {
+.waxing-lightbox__details {
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
@@ -479,7 +463,7 @@
   overflow-y: auto;
 }
 
-.nail-lightbox__name {
+.waxing-lightbox__name {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.75rem;
   font-weight: 600;
@@ -488,31 +472,18 @@
   line-height: 1.3;
 }
 
-.nail-lightbox__description {
+.waxing-lightbox__description {
   font-size: 1rem;
   line-height: 1.7;
   color: #4A5568;
   margin: 0 0 28px;
 }
 
-.nail-lightbox__services {
+.waxing-lightbox__services {
   margin-bottom: 28px;
 }
 
-/* Small italic helper note shown under a services list — currently used by
-   the Manicure & Pedicure Care card to clarify Basic Pedicure scope. */
-.nail-lightbox__helper {
-  margin: 10px 0 0;
-  padding: 0 0 0 28px; /* align under bullet text (icon 16 + 12 gap) */
-  font-family: var(--font-body, system-ui);
-  font-size: 0.82rem;
-  font-style: italic;
-  line-height: 1.5;
-  color: #777;
-  letter-spacing: 0.01em;
-}
-
-.nail-lightbox__services-title {
+.waxing-lightbox__services-title {
   font-family: var(--font-body, system-ui);
   font-size: 0.85rem;
   font-weight: 600;
@@ -522,7 +493,7 @@
   margin: 0 0 16px;
 }
 
-.nail-lightbox__services-list {
+.waxing-lightbox__services-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -531,7 +502,7 @@
   gap: 10px;
 }
 
-.nail-lightbox__service {
+.waxing-lightbox__service {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -539,7 +510,7 @@
   color: #2D3748;
 }
 
-.nail-lightbox__service-icon {
+.waxing-lightbox__service-icon {
   color: var(--color-deep-green, #1B5E3A);
   flex-shrink: 0;
   display: flex;
@@ -547,7 +518,7 @@
   justify-content: center;
 }
 
-.nail-lightbox__badge {
+.waxing-lightbox__badge {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -561,7 +532,7 @@
   margin-top: auto;
 }
 
-.nail-lightbox__badge-icon {
+.waxing-lightbox__badge-icon {
   color: var(--color-deep-green, #1B5E3A);
   display: flex;
   align-items: center;
@@ -569,57 +540,57 @@
 
 /* Lightbox mobile styles */
 @media (max-width: 768px) {
-  .nail-lightbox {
+  .waxing-lightbox {
     padding: 12px;
     align-items: flex-start;
     overflow-y: auto;
   }
 
-  .nail-lightbox__content {
+  .waxing-lightbox__content {
     max-height: none;
     margin: auto 0;
   }
 
-  .nail-lightbox__grid {
+  .waxing-lightbox__grid {
     grid-template-columns: 1fr;
     min-height: auto;
   }
 
-  .nail-lightbox__image-container {
+  .waxing-lightbox__image-container {
     padding: 32px 24px;
     min-height: 280px;
   }
 
-  .nail-lightbox__image {
+  .waxing-lightbox__image {
     max-width: 280px;
     max-height: 350px;
   }
 
-  .nail-lightbox__details {
+  .waxing-lightbox__details {
     padding: 28px 24px 32px;
   }
 
-  .nail-lightbox__name {
+  .waxing-lightbox__name {
     font-size: 1.5rem;
     padding-right: 40px;
   }
 
-  .nail-lightbox__close {
+  .waxing-lightbox__close {
     top: 12px;
     right: 12px;
   }
 }
 
 @media (max-width: 480px) {
-  .nail-lightbox__name {
+  .waxing-lightbox__name {
     font-size: 1.3rem;
   }
 
-  .nail-lightbox__description {
+  .waxing-lightbox__description {
     font-size: 0.95rem;
   }
 
-  .nail-lightbox__service {
+  .waxing-lightbox__service {
     font-size: 0.9rem;
   }
 }
@@ -628,21 +599,21 @@
    Image Zoom Feature
    ============================ */
 
-.nail-lightbox__image-container--zoomable {
+.waxing-lightbox__image-container--zoomable {
   cursor: zoom-in;
   transition: transform 0.3s ease;
 }
 
-.nail-lightbox__image-container--zoomable:hover {
+.waxing-lightbox__image-container--zoomable:hover {
   transform: scale(1.02);
 }
 
-.nail-lightbox__image-container--zoomable:focus {
+.waxing-lightbox__image-container--zoomable:focus {
   outline: 2px solid var(--color-deep-green, #1B5E3A);
   outline-offset: 4px;
 }
 
-.nail-lightbox__zoom-hint {
+.waxing-lightbox__zoom-hint {
   position: absolute;
   bottom: 16px;
   left: 50%;
@@ -663,13 +634,13 @@
   backdrop-filter: blur(4px);
 }
 
-.nail-lightbox__image-container--zoomable:hover .nail-lightbox__zoom-hint,
-.nail-lightbox__image-container--zoomable:focus .nail-lightbox__zoom-hint {
+.waxing-lightbox__image-container--zoomable:hover .waxing-lightbox__zoom-hint,
+.waxing-lightbox__image-container--zoomable:focus .waxing-lightbox__zoom-hint {
   opacity: 1;
   transform: translateX(-50%) translateY(-4px);
 }
 
-.nail-lightbox__zoom-overlay {
+.waxing-lightbox__zoom-overlay {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.95);
@@ -678,16 +649,16 @@
   justify-content: center;
   z-index: 10000;
   cursor: zoom-out;
-  animation: nailZoomFadeIn 0.3s ease;
+  animation: waxingZoomFadeIn 0.3s ease;
   padding: 20px;
 }
 
-@keyframes nailZoomFadeIn {
+@keyframes waxingZoomFadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-.nail-lightbox__zoom-image {
+.waxing-lightbox__zoom-image {
   max-width: 95vw;
   max-height: 90vh;
   width: auto;
@@ -695,11 +666,11 @@
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-  animation: nailZoomImageIn 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  animation: waxingZoomImageIn 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   cursor: default;
 }
 
-@keyframes nailZoomImageIn {
+@keyframes waxingZoomImageIn {
   from {
     transform: scale(0.8);
     opacity: 0;
@@ -710,7 +681,7 @@
   }
 }
 
-.nail-lightbox__zoom-close {
+.waxing-lightbox__zoom-close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -727,13 +698,13 @@
   transition: all 0.3s ease;
 }
 
-.nail-lightbox__zoom-close:hover {
+.waxing-lightbox__zoom-close:hover {
   background: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.5);
   transform: rotate(90deg) scale(1.1);
 }
 
-.nail-lightbox__zoom-instruction {
+.waxing-lightbox__zoom-instruction {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -743,10 +714,10 @@
   font-weight: 400;
   letter-spacing: 0.02em;
   text-align: center;
-  animation: nailFadeInUp 0.5s ease 0.3s both;
+  animation: waxingFadeInUp 0.5s ease 0.3s both;
 }
 
-@keyframes nailFadeInUp {
+@keyframes waxingFadeInUp {
   from {
     opacity: 0;
     transform: translateX(-50%) translateY(10px);
@@ -759,49 +730,49 @@
 
 /* Mobile zoom adjustments */
 @media (max-width: 768px) {
-  .nail-lightbox__zoom-hint {
+  .waxing-lightbox__zoom-hint {
     padding: 8px 14px;
     font-size: 0.8rem;
     bottom: 12px;
   }
 
-  .nail-lightbox__zoom-close {
+  .waxing-lightbox__zoom-close {
     top: 16px;
     right: 16px;
     width: 48px;
     height: 48px;
   }
 
-  .nail-lightbox__zoom-close svg {
+  .waxing-lightbox__zoom-close svg {
     width: 24px;
     height: 24px;
   }
 
-  .nail-lightbox__zoom-instruction {
+  .waxing-lightbox__zoom-instruction {
     bottom: 20px;
     font-size: 0.85rem;
     padding: 0 20px;
   }
 
-  .nail-lightbox__zoom-image {
+  .waxing-lightbox__zoom-image {
     max-width: 100vw;
     max-height: 85vh;
     border-radius: 0;
   }
 
-  .nail-lightbox__zoom-overlay {
+  .waxing-lightbox__zoom-overlay {
     padding: 10px;
   }
 }
 
 /* Touch device adjustments */
 @media (hover: none) and (pointer: coarse) {
-  .nail-lightbox__zoom-hint {
+  .waxing-lightbox__zoom-hint {
     opacity: 0.9;
     transform: translateX(-50%);
   }
 
-  .nail-lightbox__image-container--zoomable:active {
+  .waxing-lightbox__image-container--zoomable:active {
     transform: scale(0.98);
   }
 }

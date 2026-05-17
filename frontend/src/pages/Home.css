@@ -103,6 +103,47 @@
   margin: 0 auto 1rem;
 }
 
+/* Waxing Section */
+.section--waxing {
+  background: linear-gradient(
+    135deg,
+    rgba(251, 247, 241, 1) 0%,
+    rgba(247, 238, 222, 1) 25%,
+    rgba(242, 229, 204, 1) 50%,
+    rgba(245, 234, 213, 1) 75%,
+    rgba(251, 245, 232, 1) 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.section--waxing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 20%, rgba(214, 168, 105, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(27, 94, 58, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.section-title--waxing {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-dark-green);
+  position: relative;
+}
+
+.section--waxing .section-badge--waxing {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 1rem;
+}
+
 .section-subtitle-wrapper {
   text-align: center;
   margin-bottom: 2rem;

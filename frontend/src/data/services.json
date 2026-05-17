@@ -244,12 +244,12 @@
   {
     "id": 12,
     "name": {
-      "en": "Aromatic Hot Stone Therapy",
+      "en": "Aromatic Hot Stone Massage Therapy",
       "th": "นวดหินร้อน",
-      "fr": "Thérapie aux Pierres Chaudes Aromatiques",
-      "es": "Terapia con Piedras Calientes Aromáticas",
-      "zh": "芳香热石疗法",
-      "ko": "아로마틱 핫스톤 테라피"
+      "fr": "Massage Thérapeutique aux Pierres Chaudes Aromatiques",
+      "es": "Masaje Terapéutico con Piedras Calientes Aromáticas",
+      "zh": "芳香热石按摩疗法",
+      "ko": "아로마틱 핫스톤 마사지 테라피"
     },
     "description": {
       "en": "Warm Basalt stones with aromatic oil relieve stress, activate detoxification, and decrease cellulite.",
@@ -262,5 +262,49 @@
     "durations": [60, 90, 120],
     "image": "Hot Stone.jpg",
     "animation": "hot-stone"
+  },
+  {
+    "id": 13,
+    "name": {
+      "en": "Uplifting Facial Treatment with Collagen Mask",
+      "th": "ทรีตเมนต์หน้าลิฟติ้ง พร้อมมาส์กคอลลาเจน",
+      "fr": "Soin Visage Liftant avec Masque au Collagène",
+      "es": "Tratamiento Facial Reafirmante con Mascarilla de Colágeno",
+      "zh": "胶原蛋白面膜提拉面部护理",
+      "ko": "콜라겐 마스크 리프팅 페이셜 트리트먼트"
+    },
+    "description": {
+      "en": "Make-up remover, deep cleansing, scrub, facial massage, collagen mask, moisturizing.",
+      "th": "เช็ดเครื่องสำอาง ทำความสะอาดล้ำลึก สครับ นวดหน้า มาส์กคอลลาเจน บำรุงผิว",
+      "fr": "Démaquillant, nettoyage en profondeur, gommage, massage du visage, masque au collagène, hydratation.",
+      "es": "Desmaquillante, limpieza profunda, exfoliante, masaje facial, mascarilla de colágeno, hidratación.",
+      "zh": "卸妆、深层清洁、磨砂、面部按摩、胶原蛋白面膜、保湿。",
+      "ko": "메이크업 리무버, 딥 클렌징, 스크럽, 페이셜 마사지, 콜라겐 마스크, 보습."
+    },
+    "durations": [60],
+    "image": "Body Scrub.jpg",
+    "animation": "spa-facial"
+  },
+  {
+    "id": 14,
+    "name": {
+      "en": "Natural Purifying Facial Treatment with Aloe Vera",
+      "th": "ทรีตเมนต์หน้าให้ผิวบริสุทธิ์ พร้อมว่านหางจระเข้",
+      "fr": "Soin Visage Purifiant Naturel à l'Aloe Vera",
+      "es": "Tratamiento Facial Purificante Natural con Aloe Vera",
+      "zh": "芦荟天然净化面部护理",
+      "ko": "알로에 베라 내추럴 퓨리파잉 페이셜 트리트먼트"
+    },
+    "description": {
+      "en": "Make-up remover, deep cleansing, scrub, facial massage, aloe vera mask, moisturizing.",
+      "th": "เช็ดเครื่องสำอาง ทำความสะอาดล้ำลึก สครับ นวดหน้า มาส์กว่านหางจระเข้ บำรุงผิว",
+      "fr": "Démaquillant, nettoyage en profondeur, gommage, massage du visage, masque à l'aloe vera, hydratation.",
+      "es": "Desmaquillante, limpieza profunda, exfoliante, masaje facial, mascarilla de aloe vera, hidratación.",
+      "zh": "卸妆、深层清洁、磨砂、面部按摩、芦荟面膜、保湿。",
+      "ko": "메이크업 리무버, 딥 클렌징, 스크럽, 페이셜 마사지, 알로에 베라 마스크, 보습."
+    },
+    "durations": [60],
+    "image": "Body Scrub.jpg",
+    "animation": "spa-facial"
   }
 ]

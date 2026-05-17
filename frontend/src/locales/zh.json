@@ -5,6 +5,7 @@
     "locations": "分店",
     "aromeCollection": "香氛系列",
     "nailStudio": "美甲工作室",
+    "waxing": "脱毛",
     "contact": "联系"
   },
   "hero": {
@@ -65,11 +66,15 @@
       "description": "经典手部与足部护理 — 修甲皮、磨砂、面膜、护手霜，以及 Spa QTICA 和 Footlogix 疗程。",
       "services": [
         "基础美甲",
-        "修足",
+        "基础修足",
         "Baby 足部磨砂",
         "Spa QTICA（手部 / 足部 / 套装）",
-        "Spa Footlogix"
-      ]
+        "Spa Footlogix",
+        "普通有机指甲油",
+        "有机 / O.P.I 指甲油 — 手",
+        "有机 / O.P.I 指甲油 — 脚"
+      ],
+      "helperBasicPedicure": "不包含磨脚跟 — 脚跟护理请参阅 Baby Foot Scrub 或 Spa Footlogix"
     },
     "gelPolish": {
       "name": "凝胶指甲油",
@@ -110,6 +115,70 @@
         "Gel Art",
         "French Tip Color",
         "额外凝胶色彩"
+      ]
+    },
+    "gelPolishRemoval": {
+      "name": "卸除凝胶指甲油",
+      "tagline": "安全、无残留",
+      "description": "使用电动打磨钻头专业卸除凝胶指甲油 — 温和呵护天然指甲，无需浸泡。",
+      "services": [
+        "卸除凝胶指甲油（手部）",
+        "卸除凝胶指甲油（足部）"
+      ]
+    }
+  },
+  "waxing": {
+    "title": "Botanika 脱毛",
+    "subtitle": "面部 · 身体 · 手臂 · 腿部 · 比基尼",
+    "availableAtSelectBranches": "仅在是隆、是隆13和帕蓬分店提供",
+    "servicesIncluded": "服务项目",
+    "facial": {
+      "name": "面部脱毛",
+      "tagline": "精致眉形与唇部塑形",
+      "description": "精致的眉形与唇部塑形，呈现干净分明的轮廓。",
+      "services": [
+        "眉毛",
+        "上唇"
+      ]
+    },
+    "body": {
+      "name": "身体脱毛",
+      "tagline": "光滑胸部、背部与腋下",
+      "description": "为胸部、背部、腹部、肚脐和腋下打造光滑肌肤。",
+      "services": [
+        "胸部",
+        "腹部",
+        "肚脐",
+        "整背",
+        "腋下"
+      ]
+    },
+    "arm": {
+      "name": "手臂脱毛",
+      "tagline": "快速洁净 — 全臂或半臂",
+      "description": "快速洁净 — 可选全臂或半臂。",
+      "services": [
+        "全臂",
+        "半臂"
+      ]
+    },
+    "legs": {
+      "name": "腿部脱毛",
+      "tagline": "沙龙级光滑双腿",
+      "description": "沙龙级光滑双腿 — 全腿或半腿。",
+      "services": [
+        "全腿",
+        "半腿"
+      ]
+    },
+    "bikini": {
+      "name": "比基尼脱毛",
+      "tagline": "私密卫生 — 三种风格",
+      "description": "私密卫生 — 三种风格任您选择。",
+      "services": [
+        "Hollywood",
+        "Bikini Line",
+        "Brazilian"
       ]
     }
   },

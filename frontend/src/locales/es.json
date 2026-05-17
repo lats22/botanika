@@ -5,6 +5,7 @@
     "locations": "Ubicaciones",
     "aromeCollection": "Colección Arôme",
     "nailStudio": "Estudio de Uñas",
+    "waxing": "Depilación",
     "contact": "Contacto"
   },
   "hero": {
@@ -65,11 +66,15 @@
       "description": "Cuidado clásico de manos y pies — corte de cutícula, exfoliante, mascarilla, crema y tratamientos Spa QTICA y Footlogix.",
       "services": [
         "Manicura Básica",
-        "Pedicura",
+        "Pedicura Básica",
         "Exfoliante Baby Foot",
         "Spa QTICA (Manicura / Pedicura / Set)",
-        "Spa Footlogix"
-      ]
+        "Spa Footlogix",
+        "Esmalte de Uñas Orgánico Normal",
+        "Esmalte Orgánico / O.P.I — Mano",
+        "Esmalte Orgánico / O.P.I — Pie"
+      ],
+      "helperBasicPedicure": "no incluye lima de talón — vea Baby Foot Scrub o Spa Footlogix para cuidado del talón"
     },
     "gelPolish": {
       "name": "Esmalte en Gel",
@@ -110,6 +115,70 @@
         "Gel Art",
         "French Tip Color",
         "Colores de gel adicionales"
+      ]
+    },
+    "gelPolishRemoval": {
+      "name": "Remoción de Esmalte en Gel",
+      "tagline": "Seguro y sin residuos",
+      "description": "Remoción profesional de esmalte en gel con fresa eléctrica — suave con la uña natural, sin necesidad de remojo.",
+      "services": [
+        "Remoción de Esmalte en Gel (Mano)",
+        "Remoción de Esmalte en Gel (Pie)"
+      ]
+    }
+  },
+  "waxing": {
+    "title": "Botanika Depilación",
+    "subtitle": "Facial · Cuerpo · Brazos · Piernas · Bikini",
+    "availableAtSelectBranches": "Disponible en Silom, Silom 13 y Patpong",
+    "servicesIncluded": "Servicios",
+    "facial": {
+      "name": "Depilación Facial",
+      "tagline": "Diseño Preciso de Cejas y Labio",
+      "description": "Diseño preciso de cejas y labio para un acabado limpio y definido.",
+      "services": [
+        "Cejas",
+        "Labio Superior"
+      ]
+    },
+    "body": {
+      "name": "Depilación Corporal",
+      "tagline": "Piel Suave: Pecho, Espalda y Axilas",
+      "description": "Piel suave para pecho, espalda, abdomen, ombligo y axilas.",
+      "services": [
+        "Pecho",
+        "Abdomen",
+        "Ombligo",
+        "Espalda Completa",
+        "Axilas"
+      ]
+    },
+    "arm": {
+      "name": "Depilación de Brazos",
+      "tagline": "Rápido y Limpio — Brazo Entero o Medio",
+      "description": "Rápido y limpio — elige brazo entero o medio.",
+      "services": [
+        "Brazo Entero",
+        "Medio Brazo"
+      ]
+    },
+    "legs": {
+      "name": "Depilación de Piernas",
+      "tagline": "Piernas Suaves Estilo Salón",
+      "description": "Piernas suaves estilo salón — pierna entera o media pierna.",
+      "services": [
+        "Pierna Entera",
+        "Media Pierna"
+      ]
+    },
+    "bikini": {
+      "name": "Depilación Bikini",
+      "tagline": "Discreto e Higiénico — Tres Estilos",
+      "description": "Discreto e higiénico — elige entre tres estilos.",
+      "services": [
+        "Hollywood",
+        "Línea del Bikini",
+        "Brasileño"
       ]
     }
   },

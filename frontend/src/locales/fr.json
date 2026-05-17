@@ -5,6 +5,7 @@
     "locations": "Nos Adresses",
     "aromeCollection": "Collection Arôme",
     "nailStudio": "Studio Ongles",
+    "waxing": "Épilation",
     "contact": "Contact"
   },
   "hero": {
@@ -65,11 +66,15 @@
       "description": "Soins classiques des mains et des pieds — cuticules, gommage, masque, crème et soins Spa QTICA & Footlogix.",
       "services": [
         "Manucure Basique",
-        "Pédicure",
+        "Pédicure Basique",
         "Gommage Baby Foot",
         "Spa QTICA (Manucure / Pédicure / Set)",
-        "Spa Footlogix"
-      ]
+        "Spa Footlogix",
+        "Vernis à Ongles Organique Normal",
+        "Vernis Organique / O.P.I — Main",
+        "Vernis Organique / O.P.I — Pied"
+      ],
+      "helperBasicPedicure": "ne comprend pas le limage des talons — voir Baby Foot Scrub ou Spa Footlogix pour les soins des talons"
     },
     "gelPolish": {
       "name": "Vernis Gel",
@@ -110,6 +115,70 @@
         "Gel Art",
         "French Tip Color",
         "Couleurs gel supplémentaires"
+      ]
+    },
+    "gelPolishRemoval": {
+      "name": "Dépose de Vernis Gel",
+      "tagline": "Sûr et sans résidu",
+      "description": "Dépose professionnelle du vernis gel à la ponceuse électrique — douce pour l'ongle naturel, sans trempage requis.",
+      "services": [
+        "Dépose de Vernis Gel (Mains)",
+        "Dépose de Vernis Gel (Pieds)"
+      ]
+    }
+  },
+  "waxing": {
+    "title": "Botanika Épilation",
+    "subtitle": "Visage · Corps · Bras · Jambes · Maillot",
+    "availableAtSelectBranches": "Disponible à Silom, Silom 13 & Patpong",
+    "servicesIncluded": "Services",
+    "facial": {
+      "name": "Épilation Visage",
+      "tagline": "Sourcils & Lèvres Précis",
+      "description": "Mise en forme précise des sourcils et de la lèvre pour un fini net et défini.",
+      "services": [
+        "Sourcils",
+        "Lèvre Supérieure"
+      ]
+    },
+    "body": {
+      "name": "Épilation Corps",
+      "tagline": "Peau Lisse : Torse, Dos & Aisselles",
+      "description": "Peau lisse pour le torse, le dos, le ventre, le nombril et les aisselles.",
+      "services": [
+        "Torse",
+        "Ventre",
+        "Nombril",
+        "Dos Complet",
+        "Aisselles"
+      ]
+    },
+    "arm": {
+      "name": "Épilation Bras",
+      "tagline": "Rapide & Net — Bras Entier ou Demi-Bras",
+      "description": "Rapide et net — choisissez bras entier ou demi-bras.",
+      "services": [
+        "Bras Entier",
+        "Demi-Bras"
+      ]
+    },
+    "legs": {
+      "name": "Épilation Jambes",
+      "tagline": "Jambes Lisses — Style Salon",
+      "description": "Jambes lisses style salon — jambe entière ou demi-jambe.",
+      "services": [
+        "Jambe Entière",
+        "Demi-Jambe"
+      ]
+    },
+    "bikini": {
+      "name": "Épilation Maillot",
+      "tagline": "Discret & Hygiénique — Trois Styles",
+      "description": "Discret et hygiénique — choisissez parmi trois styles.",
+      "services": [
+        "Hollywood",
+        "Ligne du Maillot",
+        "Brésilien"
       ]
     }
   },

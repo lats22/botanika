@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import { createPortal } from 'react-dom'
-import './NailGallery.css'
+import './WaxingGallery.css'
 
 const AUTO_SCROLL_INTERVAL = 4000
 const RESUME_DELAY = 5000
@@ -9,33 +9,33 @@ const CLICK_DRAG_THRESHOLD = 5
 
 const categories = [
   {
-    id: 'manicurePedicure',
-    image: '/images/nails/manicure-pedicure.jpg',
-    accentColor: '#F4E6DA'
-  },
-  {
-    id: 'gelPolish',
-    image: '/images/nails/gel-polish.jpg',
+    id: 'facial',
+    image: '/images/waxing/facial.jpg',
     accentColor: '#F8E1E4'
   },
   {
-    id: 'nailExtensions',
-    image: '/images/nails/nail-extensions.jpg',
-    accentColor: '#E3E8EE'
+    id: 'body',
+    image: '/images/waxing/body.jpg',
+    accentColor: '#E6EEF6'
   },
   {
-    id: 'nailArt',
-    image: '/images/nails/nail-art.jpg',
+    id: 'arm',
+    image: '/images/waxing/arm.jpg',
+    accentColor: '#F4E6DA'
+  },
+  {
+    id: 'legs',
+    image: '/images/waxing/legs.jpg',
+    accentColor: '#F5E6CC'
+  },
+  {
+    id: 'bikini',
+    image: '/images/waxing/bikini.jpg',
     accentColor: '#F5DDEB'
-  },
-  {
-    id: 'gelPolishRemoval',
-    image: '/images/nails/gel-polish-removal.jpg',
-    accentColor: '#DDEEE0'
   },
 ]
 
-function NailLightbox({ category, onClose, t }) {
+function WaxingLightbox({ category, onClose, t }) {
   const lightboxRef = useRef(null)
   const closeButtonRef = useRef(null)
   const [isZoomed, setIsZoomed] = useState(false)
@@ -93,29 +93,23 @@ function NailLightbox({ category, onClose, t }) {
     setIsZoomed(false)
   }
 
-  const categoryName = t(`nails.${category.id}.name`)
-  const categoryDescription = t(`nails.${category.id}.description`)
-  const categoryServices = t(`nails.${category.id}.services`, { returnObjects: true })
-  // Helper text shown only for the Manicure & Pedicure card — clarifies the
-  // Basic Pedicure scope (no heel file). Returns the literal key string if
-  // missing, so we treat that as "no helper" and render nothing.
-  const helperKey = `nails.${category.id}.helperBasicPedicure`
-  const helperText = t(helperKey)
-  const hasHelper = category.id === 'manicurePedicure' && helperText && helperText !== helperKey
+  const categoryName = t(`waxing.${category.id}.name`)
+  const categoryDescription = t(`waxing.${category.id}.description`)
+  const categoryServices = t(`waxing.${category.id}.services`, { returnObjects: true })
 
   const lightboxContent = (
     <div
       ref={lightboxRef}
-      className="nail-lightbox nail-lightbox--open"
+      className="waxing-lightbox waxing-lightbox--open"
       onClick={handleBackdropClick}
       role="dialog"
       aria-modal="true"
       aria-label={categoryName}
     >
-      <div className="nail-lightbox__content">
+      <div className="waxing-lightbox__content">
         <button
           ref={closeButtonRef}
-          className="nail-lightbox__close"
+          className="waxing-lightbox__close"
           onClick={onClose}
           aria-label={t('lightbox.close')}
         >
@@ -125,9 +119,9 @@ function NailLightbox({ category, onClose, t }) {
           </svg>
         </button>
 
-        <div className="nail-lightbox__grid">
+        <div className="waxing-lightbox__grid">
           <div
-            className="nail-lightbox__image-container nail-lightbox__image-container--zoomable"
+            className="waxing-lightbox__image-container waxing-lightbox__image-container--zoomable"
             onClick={handleImageClick}
             role="button"
             tabIndex={0}
@@ -135,15 +129,15 @@ function NailLightbox({ category, onClose, t }) {
             onKeyDown={(e) => e.key === 'Enter' && handleImageClick(e)}
           >
             <div
-              className="nail-lightbox__image-bg"
+              className="waxing-lightbox__image-bg"
               style={{ backgroundColor: category.accentColor }}
             />
             <img
-              className="nail-lightbox__image"
+              className="waxing-lightbox__image"
               src={category.image}
               alt={categoryName}
             />
-            <div className="nail-lightbox__zoom-hint">
+            <div className="waxing-lightbox__zoom-hint">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -154,18 +148,18 @@ function NailLightbox({ category, onClose, t }) {
             </div>
           </div>
 
-          <div className="nail-lightbox__details">
-            <h3 className="nail-lightbox__name">{categoryName}</h3>
-            <p className="nail-lightbox__description">{categoryDescription}</p>
+          <div className="waxing-lightbox__details">
+            <h3 className="waxing-lightbox__name">{categoryName}</h3>
+            <p className="waxing-lightbox__description">{categoryDescription}</p>
 
-            <div className="nail-lightbox__services">
-              <h4 className="nail-lightbox__services-title">
-                {t('nails.servicesIncluded')}
+            <div className="waxing-lightbox__services">
+              <h4 className="waxing-lightbox__services-title">
+                {t('waxing.servicesIncluded')}
               </h4>
-              <ul className="nail-lightbox__services-list">
+              <ul className="waxing-lightbox__services-list">
                 {Array.isArray(categoryServices) && categoryServices.map((service, index) => (
-                  <li key={index} className="nail-lightbox__service">
-                    <span className="nail-lightbox__service-icon">
+                  <li key={index} className="waxing-lightbox__service">
+                    <span className="waxing-lightbox__service-icon">
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                         <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm3.7 6.3l-4 4c-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-2-2c-.4-.4-.4-1 0-1.4s1-.4 1.4 0L7 8.2l3.3-3.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4z"/>
                       </svg>
@@ -174,19 +168,16 @@ function NailLightbox({ category, onClose, t }) {
                   </li>
                 ))}
               </ul>
-              {hasHelper && (
-                <p className="nail-lightbox__helper">{helperText}</p>
-              )}
             </div>
 
-            <div className="nail-lightbox__badge">
-              <span className="nail-lightbox__badge-icon">
+            <div className="waxing-lightbox__badge">
+              <span className="waxing-lightbox__badge-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
               </span>
-              {t('nails.availableAtSelectBranches')}
+              {t('waxing.availableAtSelectBranches')}
             </div>
           </div>
         </div>
@@ -194,7 +185,7 @@ function NailLightbox({ category, onClose, t }) {
         {/* Zoom Overlay */}
         {isZoomed && (
           <div
-            className="nail-lightbox__zoom-overlay"
+            className="waxing-lightbox__zoom-overlay"
             onClick={handleZoomClose}
             role="button"
             tabIndex={0}
@@ -202,13 +193,13 @@ function NailLightbox({ category, onClose, t }) {
             onKeyDown={(e) => e.key === 'Enter' && handleZoomClose()}
           >
             <img
-              className="nail-lightbox__zoom-image"
+              className="waxing-lightbox__zoom-image"
               src={category.image}
               alt={`${categoryName} - Zoomed view`}
               onClick={(e) => e.stopPropagation()}
             />
             <button
-              className="nail-lightbox__zoom-close"
+              className="waxing-lightbox__zoom-close"
               onClick={handleZoomClose}
               aria-label={t('lightbox.closeZoom')}
             >
@@ -217,7 +208,7 @@ function NailLightbox({ category, onClose, t }) {
                 <line x1="6" y1="6" x2="18" y2="18"></line>
               </svg>
             </button>
-            <div className="nail-lightbox__zoom-instruction">
+            <div className="waxing-lightbox__zoom-instruction">
               {t('lightbox.zoomInstruction')}
             </div>
           </div>
@@ -229,7 +220,7 @@ function NailLightbox({ category, onClose, t }) {
   return createPortal(lightboxContent, document.body)
 }
 
-function NailGallery() {
+function WaxingGallery() {
   const { t } = useTranslation()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedCategory, setSelectedCategory] = useState(null)
@@ -249,7 +240,7 @@ function NailGallery() {
 
   const getImageWidth = useCallback(() => {
     if (!scrollRef.current) return 300
-    const firstCard = scrollRef.current.querySelector('.nail-card')
+    const firstCard = scrollRef.current.querySelector('.waxing-card')
     if (!firstCard) return 300
     const style = window.getComputedStyle(scrollRef.current)
     const gap = parseFloat(style.gap) || 24
@@ -398,16 +389,16 @@ function NailGallery() {
 
   return (
     <div
-      className="nail-gallery"
+      className="waxing-gallery"
       role="region"
-      aria-label={t('nails.title')}
+      aria-label={t('waxing.title')}
       onMouseEnter={handleContainerMouseEnter}
       onMouseLeave={handleContainerMouseLeave}
     >
-      <div className="nail-gallery__viewport">
+      <div className="waxing-gallery__viewport">
         <div
           ref={scrollRef}
-          className="nail-gallery__scroll"
+          className="waxing-gallery__scroll"
           onScroll={handleScroll}
           onMouseDown={handleMouseDown}
           onMouseLeave={handleMouseLeaveScroll}
@@ -420,27 +411,27 @@ function NailGallery() {
           {categories.map((category, index) => (
             <div
               key={category.id}
-              className={`nail-card ${index === currentIndex ? 'nail-card--active' : ''}`}
+              className={`waxing-card ${index === currentIndex ? 'waxing-card--active' : ''}`}
               onClick={(e) => handleCardClick(e, category)}
               style={{ '--accent-color': category.accentColor }}
             >
-              <div className="nail-card__image-wrapper">
-                <div className="nail-card__float-effect">
+              <div className="waxing-card__image-wrapper">
+                <div className="waxing-card__float-effect">
                   <img
-                    className="nail-card__image"
+                    className="waxing-card__image"
                     src={category.image}
-                    alt={t(`nails.${category.id}.name`)}
+                    alt={t(`waxing.${category.id}.name`)}
                     loading="lazy"
                     draggable={false}
                     onError={handleImageError}
                   />
                 </div>
               </div>
-              <div className="nail-card__content">
-                <h3 className="nail-card__name">
-                  {t(`nails.${category.id}.name`)}
+              <div className="waxing-card__content">
+                <h3 className="waxing-card__name">
+                  {t(`waxing.${category.id}.name`)}
                 </h3>
-                <p className="nail-card__tagline">{t(`nails.${category.id}.tagline`)}</p>
+                <p className="waxing-card__tagline">{t(`waxing.${category.id}.tagline`)}</p>
               </div>
             </div>
           ))}
@@ -448,19 +439,19 @@ function NailGallery() {
       </div>
 
       {/* Dot indicators */}
-      <div className="nail-gallery__dots">
+      <div className="waxing-gallery__dots">
         {categories.map((category, index) => (
           <button
             key={category.id}
-            className={`nail-gallery__dot ${index === currentIndex ? 'nail-gallery__dot--active' : ''}`}
+            className={`waxing-gallery__dot ${index === currentIndex ? 'waxing-gallery__dot--active' : ''}`}
             onClick={() => goToSlide(index)}
-            aria-label={t('lightbox.goToSlide', { name: t(`nails.${category.id}.name`) })}
+            aria-label={t('lightbox.goToSlide', { name: t(`waxing.${category.id}.name`) })}
           />
         ))}
       </div>
 
       {selectedCategory && (
-        <NailLightbox
+        <WaxingLightbox
           category={selectedCategory}
           onClose={handleLightboxClose}
           t={t}
@@ -470,4 +461,4 @@ function NailGallery() {
   )
 }
 
-export default NailGallery
+export default WaxingGallery

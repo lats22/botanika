@@ -5,6 +5,7 @@
     "locations": "Locations",
     "aromeCollection": "Arôme Collection",
     "nailStudio": "Nail Studio",
+    "waxing": "Waxing",
     "contact": "Contact"
   },
   "hero": {
@@ -65,11 +66,15 @@
       "description": "Classic hand & foot care — cuticle trim, scrub, mask, cream, and Spa QTICA & Footlogix treatments.",
       "services": [
         "Basic Manicure",
-        "Pedicure",
+        "Basic Pedicure",
         "Baby Foot Scrub",
         "Spa QTICA (Manicure / Pedicure / Set)",
-        "Spa Footlogix"
-      ]
+        "Spa Footlogix",
+        "Normal Organic Nail Polish",
+        "Nail Polish Organic / O.P.I Color — Hand",
+        "Nail Polish Organic / O.P.I Color — Foot"
+      ],
+      "helperBasicPedicure": "does not include heel file — see Baby Foot Scrub or Spa Footlogix for heel care"
     },
     "gelPolish": {
       "name": "Gel Polish",
@@ -110,6 +115,70 @@
         "Gel Art",
         "French Tip Color",
         "Extra gel colors"
+      ]
+    },
+    "gelPolishRemoval": {
+      "name": "Gel Polish Removal",
+      "tagline": "Safe, residue-free",
+      "description": "Professional removal of gel polish using e-file drill — gentle on natural nail, no soaking required.",
+      "services": [
+        "Gel-Polish Removal (Hand)",
+        "Gel-Polish Removal (Foot)"
+      ]
+    }
+  },
+  "waxing": {
+    "title": "Botanika Waxing",
+    "subtitle": "Facial · Body · Arm · Legs · Bikini",
+    "availableAtSelectBranches": "Available at Silom, Silom 13 & Patpong",
+    "servicesIncluded": "Services",
+    "facial": {
+      "name": "Facial Waxing",
+      "tagline": "Precise Brow & Lip Shaping",
+      "description": "Precise brow and lip shaping for a clean, defined finish.",
+      "services": [
+        "Eyebrow",
+        "Upper Lip"
+      ]
+    },
+    "body": {
+      "name": "Body Waxing",
+      "tagline": "Smooth Chest, Back & Underarms",
+      "description": "Smooth skin for chest, back, stomach, navel and underarms.",
+      "services": [
+        "Chest",
+        "Stomach",
+        "Navel",
+        "Full Back",
+        "Armpit"
+      ]
+    },
+    "arm": {
+      "name": "Arm Waxing",
+      "tagline": "Quick & Clean — Full or Half Arm",
+      "description": "Quick and clean — choose full-arm or half-arm.",
+      "services": [
+        "Full-Arm",
+        "Half-Arm"
+      ]
+    },
+    "legs": {
+      "name": "Leg Waxing",
+      "tagline": "Salon-Smooth Legs",
+      "description": "Salon-smooth legs — full-leg or half-leg.",
+      "services": [
+        "Full-Leg",
+        "Half-Leg"
+      ]
+    },
+    "bikini": {
+      "name": "Bikini Waxing",
+      "tagline": "Discreet & Hygienic — Three Styles",
+      "description": "Discreet and hygienic — choose from three styles.",
+      "services": [
+        "Hollywood",
+        "Bikini Line",
+        "Brazilian"
       ]
     }
   },
