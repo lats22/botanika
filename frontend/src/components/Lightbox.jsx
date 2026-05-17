@@ -52,6 +52,11 @@ function Lightbox({ isOpen, imageSrc, imageAlt, onClose }) {
   // Don't render anything when closed
   if (!isOpen) return null
 
+  // Compute WebP sibling for <picture> srcset (null for non-JPG sources).
+  const webpSrc = typeof imageSrc === 'string' && /\.(jpe?g)$/i.test(imageSrc)
+    ? imageSrc.replace(/\.(jpe?g)$/i, '.webp')
+    : null
+
   const lightboxContent = (
     <div
       ref={lightboxRef}
@@ -66,11 +71,14 @@ function Lightbox({ isOpen, imageSrc, imageAlt, onClose }) {
           ×
         </button>
         {imageSrc && (
-          <img
-            className="lightbox__image"
-            src={imageSrc}
-            alt={imageAlt || 'Lightbox image'}
-          />
+          <picture>
+            {webpSrc && <source srcSet={webpSrc} type="image/webp" />}
+            <img
+              className="lightbox__image"
+              src={imageSrc}
+              alt={imageAlt || 'Lightbox image'}
+            />
+          </picture>
         )}
       </div>
     </div>

@@ -8,11 +8,17 @@ function ServiceCard({ service, onClick }) {
   const lang = i18n.language?.split('-')[0] || 'en'
 
   const name = service.name[lang] || service.name.en
+  const imgPath = `/images/${service.image}`
+  // Only JPG/JPEG sources have a WebP sibling; PNG service images (e.g. Coconut Oil) skip the <source>.
+  const webpSrc = /\.(jpe?g)$/i.test(imgPath) ? imgPath.replace(/\.(jpe?g)$/i, '.webp') : null
 
   return (
     <article className="service-card" onClick={() => onClick(service)}>
       <div className="service-card__image">
-        <img src={`/images/${service.image}`} alt={name} loading="lazy" />
+        <picture>
+          {webpSrc && <source srcSet={webpSrc} type="image/webp" />}
+          <img src={imgPath} alt={name} loading="lazy" />
+        </picture>
         <div className="service-card__overlay">
           <span>{t('services.viewDetails') || 'View Details'}</span>
         </div>

@@ -7,6 +7,9 @@ const AUTO_SCROLL_INTERVAL = 4000
 const RESUME_DELAY = 5000
 const CLICK_DRAG_THRESHOLD = 5
 
+// Map a JPG/JPEG src to its WebP sibling for <picture> srcset.
+const toWebp = (src) => (typeof src === 'string' ? src.replace(/\.(jpe?g)$/i, '.webp') : null)
+
 const categories = [
   {
     id: 'facial',
@@ -132,11 +135,14 @@ function WaxingLightbox({ category, onClose, t }) {
               className="waxing-lightbox__image-bg"
               style={{ backgroundColor: category.accentColor }}
             />
-            <img
-              className="waxing-lightbox__image"
-              src={category.image}
-              alt={categoryName}
-            />
+            <picture>
+              <source srcSet={toWebp(category.image)} type="image/webp" />
+              <img
+                className="waxing-lightbox__image"
+                src={category.image}
+                alt={categoryName}
+              />
+            </picture>
             <div className="waxing-lightbox__zoom-hint">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <circle cx="11" cy="11" r="8"></circle>
@@ -192,12 +198,15 @@ function WaxingLightbox({ category, onClose, t }) {
             aria-label={t('lightbox.closeZoomAria')}
             onKeyDown={(e) => e.key === 'Enter' && handleZoomClose()}
           >
-            <img
-              className="waxing-lightbox__zoom-image"
-              src={category.image}
-              alt={`${categoryName} - Zoomed view`}
-              onClick={(e) => e.stopPropagation()}
-            />
+            <picture>
+              <source srcSet={toWebp(category.image)} type="image/webp" />
+              <img
+                className="waxing-lightbox__zoom-image"
+                src={category.image}
+                alt={`${categoryName} - Zoomed view`}
+                onClick={(e) => e.stopPropagation()}
+              />
+            </picture>
             <button
               className="waxing-lightbox__zoom-close"
               onClick={handleZoomClose}
@@ -417,14 +426,17 @@ function WaxingGallery() {
             >
               <div className="waxing-card__image-wrapper">
                 <div className="waxing-card__float-effect">
-                  <img
-                    className="waxing-card__image"
-                    src={category.image}
-                    alt={t(`waxing.${category.id}.name`)}
-                    loading="lazy"
-                    draggable={false}
-                    onError={handleImageError}
-                  />
+                  <picture>
+                    <source srcSet={toWebp(category.image)} type="image/webp" />
+                    <img
+                      className="waxing-card__image"
+                      src={category.image}
+                      alt={t(`waxing.${category.id}.name`)}
+                      loading="lazy"
+                      draggable={false}
+                      onError={handleImageError}
+                    />
+                  </picture>
                 </div>
               </div>
               <div className="waxing-card__content">

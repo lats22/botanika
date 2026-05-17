@@ -7,6 +7,10 @@ const AUTO_SCROLL_INTERVAL = 3000
 const RESUME_DELAY = 3000
 const CLICK_DRAG_THRESHOLD = 5 // px movement above which a mousedown is a drag, not a click
 
+// Map a JPG/JPEG src to its WebP sibling for <picture> srcset.
+// Returns null for non-JPG sources so callers can skip the <source>.
+const toWebp = (src) => (typeof src === 'string' ? src.replace(/\.(jpe?g)$/i, '.webp') : null)
+
 function BranchGallery({ images, branchName }) {
   const { t } = useTranslation()
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -335,15 +339,18 @@ function BranchGallery({ images, branchName }) {
         >
           {images.map((src, index) => (
             <div key={src} className="branch-gallery__image-wrapper">
-              <img
-                className="branch-gallery__image"
-                src={src}
-                alt={`${branchName} - Image ${index + 1}`}
-                loading="lazy"
-                draggable={false}
-                onClick={(e) => handleImageClick(e, src)}
-                onError={handleImageError}
-              />
+              <picture>
+                {toWebp(src) && <source srcSet={toWebp(src)} type="image/webp" />}
+                <img
+                  className="branch-gallery__image"
+                  src={src}
+                  alt={`${branchName} - Image ${index + 1}`}
+                  loading="lazy"
+                  draggable={false}
+                  onClick={(e) => handleImageClick(e, src)}
+                  onError={handleImageError}
+                />
+              </picture>
             </div>
           ))}
         </div>
