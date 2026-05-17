@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import LanguageSelector from './LanguageSelector'
-import WhatsAppButton from './WhatsAppButton'
 import './Header.css'
 
 function Header() {
@@ -86,13 +85,11 @@ function Header() {
         <nav ref={navRef} className={`header__nav ${isMobileMenuOpen ? 'header__nav--open' : ''}`}>
           <button onClick={() => scrollToSection('services')}>{t('nav.services')}</button>
           <button onClick={() => scrollToSection('packages')}>{t('nav.packages')}</button>
-          <button onClick={() => scrollToSection('branches')}>{t('nav.locations')}</button>
           <button onClick={() => scrollToSection('products')}>{t('nav.aromeCollection')}</button>
           <button onClick={() => scrollToSection('nails')}>{t('nav.nailStudio')}</button>
           <button onClick={() => scrollToSection('waxing')}>{t('nav.waxing')}</button>
+          <button onClick={() => scrollToSection('branches')}>{t('nav.locations')}</button>
         </nav>
-
-        <WhatsAppButton />
 
         <LanguageSelector />
       </div>

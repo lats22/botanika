@@ -1,0 +1,97 @@
+.floating-whatsapp {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  /* iOS safe-area aware */
+  bottom: max(24px, env(safe-area-inset-bottom));
+  /* Sits above page content & header (1000) but below ServiceModal (2000)
+     and gallery lightboxes (9999), so any open overlay covers the bubble. */
+  z-index: 1500;
+
+  width: 58px;
+  height: 58px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #ffffff;
+  text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15),
+              0 2px 4px rgba(0, 0, 0, 0.08);
+
+  transition: transform var(--transition-fast),
+              box-shadow var(--transition-fast),
+              background-color var(--transition-fast);
+
+  /* Avoid the link being focusable but invisible if number missing — handled in JSX */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.floating-whatsapp__icon {
+  display: block;
+  /* slight downward optical tweak — the WhatsApp glyph has heavier bottom */
+  transform: translateY(0);
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.05);
+  background-color: #1ebe5b;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22),
+              0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.floating-whatsapp:active {
+  transform: scale(0.97);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+}
+
+.floating-whatsapp:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgba(37, 211, 102, 0.45),
+              0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* Subtle pulse to draw the eye on first paint, then settle.
+   Respects reduced motion. */
+@keyframes floating-whatsapp-pulse {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15),
+                0 0 0 0 rgba(37, 211, 102, 0.45);
+  }
+  50% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15),
+                0 0 0 12px rgba(37, 211, 102, 0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .floating-whatsapp {
+    animation: floating-whatsapp-pulse 2.6s ease-out 1.2s 2;
+  }
+}
+
+/* Mobile: keep same corner placement, slightly smaller circle */
+@media (max-width: 480px) {
+  .floating-whatsapp {
+    right: 16px;
+    bottom: max(16px, env(safe-area-inset-bottom));
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-whatsapp,
+  .floating-whatsapp:hover,
+  .floating-whatsapp:active {
+    transition: none;
+    transform: none;
+    animation: none;
+  }
+}

@@ -1,9 +1,11 @@
 # Build stage
 FROM node:18-alpine AS build
 WORKDIR /app
+ARG VITE_WHATSAPP_NUMBER
 COPY package*.json ./
 RUN npm install
 COPY . .
+ENV VITE_WHATSAPP_NUMBER=$VITE_WHATSAPP_NUMBER
 RUN npm run build
 
 # Production stage
