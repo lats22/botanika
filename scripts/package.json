@@ -1,0 +1,9 @@
+{
+  "name": "botanika-image-scripts",
+  "private": true,
+  "version": "0.0.0",
+  "description": "One-off image processing scripts for Botanika (sharp). NOT shipped with frontend.",
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}

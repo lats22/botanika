@@ -3,7 +3,17 @@
   margin-top: 0;
   margin-bottom: 0;
   border-radius: 0 0 var(--border-radius-xl) var(--border-radius-xl);
+  /* FIX #24: keep clipping for the rounded card visual, but reserve horizontal
+     gutter space INSIDE this clip so arrows can sit outside the image strip. */
   overflow: hidden;
+}
+
+/* Viewport wraps the scroll strip + arrows. FIX #24: horizontal padding creates
+   gutters OUTSIDE the scroll/image strip where arrows are positioned. */
+.branch-gallery__viewport {
+  position: relative;
+  padding-left: 52px;
+  padding-right: 52px;
 }
 
 .branch-gallery__scroll {
@@ -45,22 +55,98 @@
   height: 100%;
   object-fit: cover;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
-/* Progress bar */
+/* Arrow nav (desktop only) */
+.branch-gallery__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+  background: rgba(255, 255, 255, 0.65);
+  color: rgba(27, 94, 58, 0.75);          /* deep green chevron, semi-transparent */
+  border: 1px solid rgba(27, 94, 58, 0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.branch-gallery__arrow:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.95);
+  color: rgba(27, 94, 58, 1);
+  border-color: rgba(27, 94, 58, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.branch-gallery__arrow:focus-visible {
+  outline: 2px solid rgba(27, 94, 58, 1);
+  outline-offset: 2px;
+}
+
+.branch-gallery__arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* FIX #24: arrows sit in the viewport gutter, centered on the image strip
+   (not the whole gallery incl. progress). The viewport's 52px padding gives
+   each arrow ~6px breathing room from the image edge and ~6px from gallery edge. */
+.branch-gallery__arrow--prev { left: 6px; }
+.branch-gallery__arrow--next { right: 6px; }
+
+/* FIX #25: hide arrows entirely (not just disabled) when there is no overflow. */
+.branch-gallery__arrow--hidden { display: none; }
+
+@media (max-width: 768px) {
+  .branch-gallery__arrow { display: none; }
+  /* Recover the gutter on mobile so the image strip uses full width. */
+  .branch-gallery__viewport {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Progress bar / scrubber */
 .branch-gallery__progress {
-  height: 3px;
-  background: rgba(27, 94, 58, 0.1);
+  height: 6px;
+  background: rgba(27, 94, 58, 0.12);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.branch-gallery__progress:focus-visible {
+  outline: 2px solid var(--color-deep-green, #1B5E3A);
+  outline-offset: 2px;
+}
+
+.branch-gallery__progress:hover .branch-gallery__progress-fill,
+.branch-gallery__progress:focus-visible .branch-gallery__progress-fill {
+  background: var(--color-dark-green, #154a2e);
 }
 
 .branch-gallery__progress-fill {
   height: 100%;
   background: var(--color-deep-green);
-  transition: width 0.3s ease, left 0.3s ease;
+  transition: width 0.3s ease, left 0.3s ease, background 0.2s ease;
   position: absolute;
+  border-radius: 3px;
 }
+
+/* FIX #25: hide scrubber entirely when there is nothing to scroll. */
+.branch-gallery__progress--hidden { display: none; }
 
 /* Fade edges */
 .branch-gallery::before,

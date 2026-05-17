@@ -4,6 +4,7 @@
     "packages": "패키지",
     "locations": "위치",
     "aromeCollection": "아로메 컬렉션",
+    "nailStudio": "네일 스튜디오",
     "contact": "연락처"
   },
   "hero": {
@@ -53,6 +54,65 @@
       "benefits": ["항염 작용", "다크 스팟 감소", "노화 징후 완화", "건강한 황금빛 광채"]
     }
   },
+  "nails": {
+    "title": "보타니카 네일 스튜디오",
+    "subtitle": "매니큐어 · 페디큐어 · 젤 · 익스텐션 · 아트",
+    "availableAtSelectBranches": "실롬, 실롬 13, 팟퐁 지점에서 이용 가능",
+    "servicesIncluded": "서비스",
+    "manicurePedicure": {
+      "name": "매니큐어 & 페디큐어 케어",
+      "tagline": "클래식 핸드 & 풋 케어",
+      "description": "클래식 핸드 & 풋 케어 — 큐티클 정리, 스크럽, 마스크, 크림, Spa QTICA 및 Footlogix 트리트먼트.",
+      "services": [
+        "베이직 매니큐어",
+        "페디큐어",
+        "베이비 풋 스크럽",
+        "Spa QTICA (매니큐어 / 페디큐어 / 세트)",
+        "Spa Footlogix"
+      ]
+    },
+    "gelPolish": {
+      "name": "젤 폴리시",
+      "tagline": "오래 지속되는 컬러",
+      "description": "손, 발 또는 둘 다에 오래 지속되는 젤 컬러 — 개별 적용 또는 풀 세트를 선택하세요.",
+      "services": [
+        "젤 폴리시 — 손",
+        "젤 폴리시 — 발",
+        "매니큐어 + 젤 폴리시 (손)",
+        "페디큐어 + 젤 폴리시 (발)",
+        "젤 폴리시 — 손 + 발"
+      ]
+    },
+    "nailExtensions": {
+      "name": "네일 익스텐션",
+      "tagline": "빌드, 연장, 마감",
+      "description": "빌드, 연장 및 마감 — 소프트젤, 아크릴/폴리젤, PVC, 필링, 코팅 및 안전한 제거.",
+      "services": [
+        "Softgel Tip",
+        "Softgel Gel",
+        "아크릴 / 폴리젤",
+        "PVC",
+        "네일 필링",
+        "네일 코팅",
+        "익스텐션 제거"
+      ]
+    },
+    "nailArt": {
+      "name": "네일 아트 & 테크닉",
+      "tagline": "Cat-eye, Aurora, French 등",
+      "description": "Cat-eye, aurora/mirror, French, ombre, marble, gel art 및 French tip — 손톱에 생기를 불어넣으세요.",
+      "services": [
+        "Cat-eye",
+        "Aurora / Mirror",
+        "French",
+        "Ombre",
+        "Marble",
+        "Gel Art",
+        "French Tip Color",
+        "추가 젤 컬러"
+      ]
+    }
+  },
   "testimonials": {
     "title": "고객 후기"
   },
@@ -78,5 +138,19 @@
   "whatsapp": {
     "label": "Chat with us",
     "prefillMessage": "Hi Botanika, I'd like to make a reservation."
+  },
+  "lightbox": {
+    "close": "닫기",
+    "zoomImageAria": "클릭하여 이미지 확대",
+    "zoomHint": "클릭하여 확대",
+    "closeZoomAria": "확대된 이미지 닫기",
+    "closeZoom": "확대 닫기",
+    "zoomInstruction": "아무 곳이나 클릭하거나 ESC를 눌러 닫기",
+    "goToSlide": "{{name}}(으)로 이동"
+  },
+  "carousel": {
+    "prev": "이전",
+    "next": "다음",
+    "scrubber": "갤러리 위치"
   }
 }

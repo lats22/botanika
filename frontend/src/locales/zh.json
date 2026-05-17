@@ -4,6 +4,7 @@
     "packages": "套餐",
     "locations": "分店",
     "aromeCollection": "香氛系列",
+    "nailStudio": "美甲工作室",
     "contact": "联系"
   },
   "hero": {
@@ -53,6 +54,65 @@
       "benefits": ["消炎作用", "淡化色斑", "对抗衰老迹象", "呈现健康金色光泽"]
     }
   },
+  "nails": {
+    "title": "Botanika 美甲工作室",
+    "subtitle": "美甲 · 修足 · 凝胶 · 延长 · 美甲艺术",
+    "availableAtSelectBranches": "仅在是隆、是隆13和帕蓬分店提供",
+    "servicesIncluded": "服务项目",
+    "manicurePedicure": {
+      "name": "美甲与修足护理",
+      "tagline": "经典手部与足部护理",
+      "description": "经典手部与足部护理 — 修甲皮、磨砂、面膜、护手霜，以及 Spa QTICA 和 Footlogix 疗程。",
+      "services": [
+        "基础美甲",
+        "修足",
+        "Baby 足部磨砂",
+        "Spa QTICA（手部 / 足部 / 套装）",
+        "Spa Footlogix"
+      ]
+    },
+    "gelPolish": {
+      "name": "凝胶指甲油",
+      "tagline": "持久亮色",
+      "description": "持久凝胶色彩，适用于手部、足部或两者 — 可选择单项应用或完整套装。",
+      "services": [
+        "凝胶指甲油 — 手部",
+        "凝胶指甲油 — 足部",
+        "美甲 + 凝胶指甲油（手部）",
+        "修足 + 凝胶指甲油（足部）",
+        "凝胶指甲油 — 手部 + 足部"
+      ]
+    },
+    "nailExtensions": {
+      "name": "美甲延长",
+      "tagline": "塑形、延长、精修",
+      "description": "塑形、延长和精修 — 软胶、亚克力/polygel、PVC、补甲、涂层及安全卸除。",
+      "services": [
+        "Softgel Tip",
+        "Softgel Gel",
+        "亚克力 / Polygel",
+        "PVC",
+        "补甲",
+        "指甲涂层",
+        "延长甲卸除"
+      ]
+    },
+    "nailArt": {
+      "name": "美甲艺术与技法",
+      "tagline": "Cat-eye、Aurora、French 等",
+      "description": "Cat-eye、aurora/mirror、French、ombre、marble、gel art 与 French tip — 让您的指甲焕发生机。",
+      "services": [
+        "Cat-eye",
+        "Aurora / Mirror",
+        "French",
+        "Ombre",
+        "Marble",
+        "Gel Art",
+        "French Tip Color",
+        "额外凝胶色彩"
+      ]
+    }
+  },
   "testimonials": {
     "title": "客户评价"
   },
@@ -78,5 +138,19 @@
   "whatsapp": {
     "label": "Chat with us",
     "prefillMessage": "Hi Botanika, I'd like to make a reservation."
+  },
+  "lightbox": {
+    "close": "关闭",
+    "zoomImageAria": "点击放大图片",
+    "zoomHint": "点击放大",
+    "closeZoomAria": "关闭放大图片",
+    "closeZoom": "关闭放大",
+    "zoomInstruction": "点击任意位置或按 ESC 键关闭",
+    "goToSlide": "前往 {{name}}"
+  },
+  "carousel": {
+    "prev": "上一张",
+    "next": "下一张",
+    "scrubber": "图库位置"
   }
 }

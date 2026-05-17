@@ -4,6 +4,7 @@
     "packages": "Paquetes",
     "locations": "Ubicaciones",
     "aromeCollection": "Colección Arôme",
+    "nailStudio": "Estudio de Uñas",
     "contact": "Contacto"
   },
   "hero": {
@@ -53,6 +54,65 @@
       "benefits": ["Antiinflamatorio", "Reduce manchas oscuras", "Combate signos de envejecimiento", "Da un brillo dorado saludable"]
     }
   },
+  "nails": {
+    "title": "Botanika Estudio de Uñas",
+    "subtitle": "Manicura · Pedicura · Gel · Extensiones · Arte",
+    "availableAtSelectBranches": "Disponible en Silom, Silom 13 y Patpong",
+    "servicesIncluded": "Servicios",
+    "manicurePedicure": {
+      "name": "Cuidado de Manicura y Pedicura",
+      "tagline": "Cuidado Clásico de Manos y Pies",
+      "description": "Cuidado clásico de manos y pies — corte de cutícula, exfoliante, mascarilla, crema y tratamientos Spa QTICA y Footlogix.",
+      "services": [
+        "Manicura Básica",
+        "Pedicura",
+        "Exfoliante Baby Foot",
+        "Spa QTICA (Manicura / Pedicura / Set)",
+        "Spa Footlogix"
+      ]
+    },
+    "gelPolish": {
+      "name": "Esmalte en Gel",
+      "tagline": "Color de Larga Duración",
+      "description": "Color en gel de larga duración para manos, pies o ambos — elige aplicación individual o set completo.",
+      "services": [
+        "Esmalte en gel — Mano",
+        "Esmalte en gel — Pie",
+        "Manicura + Esmalte en gel (mano)",
+        "Pedicura + Esmalte en gel (pie)",
+        "Esmalte en gel — Mano + Pie"
+      ]
+    },
+    "nailExtensions": {
+      "name": "Extensiones de Uñas",
+      "tagline": "Construir, Alargar, Refinar",
+      "description": "Construir, alargar y refinar — softgel, acrílico/polygel, PVC, rellenos, recubrimientos y remoción segura.",
+      "services": [
+        "Softgel Tip",
+        "Softgel Gel",
+        "Acrílico / Polygel",
+        "PVC",
+        "Relleno de uña",
+        "Recubrimiento de uña",
+        "Remoción de extensión"
+      ]
+    },
+    "nailArt": {
+      "name": "Arte y Técnicas de Uñas",
+      "tagline": "Cat-eye, Aurora, French y Más",
+      "description": "Cat-eye, aurora/espejo, French, ombre, mármol, gel art y French tip — dale vida a tus uñas.",
+      "services": [
+        "Cat-eye",
+        "Aurora / Mirror",
+        "French",
+        "Ombre",
+        "Marble",
+        "Gel Art",
+        "French Tip Color",
+        "Colores de gel adicionales"
+      ]
+    }
+  },
   "testimonials": {
     "title": "Lo Que Dicen Nuestros Clientes"
   },
@@ -78,5 +138,19 @@
   "whatsapp": {
     "label": "Chat with us",
     "prefillMessage": "Hi Botanika, I'd like to make a reservation."
+  },
+  "lightbox": {
+    "close": "Cerrar",
+    "zoomImageAria": "Haz clic para ampliar la imagen",
+    "zoomHint": "Haz clic para ampliar",
+    "closeZoomAria": "Cerrar imagen ampliada",
+    "closeZoom": "Cerrar zoom",
+    "zoomInstruction": "Haz clic en cualquier lugar o pulsa ESC para cerrar",
+    "goToSlide": "Ir a {{name}}"
+  },
+  "carousel": {
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "scrubber": "Posición de la galería"
   }
 }

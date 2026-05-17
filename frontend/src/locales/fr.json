@@ -4,6 +4,7 @@
     "packages": "Forfaits",
     "locations": "Nos Adresses",
     "aromeCollection": "Collection Arôme",
+    "nailStudio": "Studio Ongles",
     "contact": "Contact"
   },
   "hero": {
@@ -53,6 +54,65 @@
       "benefits": ["Anti-inflammatoire", "Reduit les taches sombres", "Combat les signes du vieillissement", "Donne un eclat dore sain"]
     }
   },
+  "nails": {
+    "title": "Botanika Studio Ongles",
+    "subtitle": "Manucure · Pédicure · Gel · Extensions · Art",
+    "availableAtSelectBranches": "Disponible à Silom, Silom 13 & Patpong",
+    "servicesIncluded": "Services",
+    "manicurePedicure": {
+      "name": "Soins Manucure & Pédicure",
+      "tagline": "Soins Classiques Mains & Pieds",
+      "description": "Soins classiques des mains et des pieds — cuticules, gommage, masque, crème et soins Spa QTICA & Footlogix.",
+      "services": [
+        "Manucure Basique",
+        "Pédicure",
+        "Gommage Baby Foot",
+        "Spa QTICA (Manucure / Pédicure / Set)",
+        "Spa Footlogix"
+      ]
+    },
+    "gelPolish": {
+      "name": "Vernis Gel",
+      "tagline": "Couleur Longue Tenue",
+      "description": "Couleur gel longue tenue pour les mains, les pieds, ou les deux — choisissez une application individuelle ou un set complet.",
+      "services": [
+        "Vernis gel — Mains",
+        "Vernis gel — Pieds",
+        "Manucure + Vernis gel (mains)",
+        "Pédicure + Vernis gel (pieds)",
+        "Vernis gel — Mains + Pieds"
+      ]
+    },
+    "nailExtensions": {
+      "name": "Extensions d'Ongles",
+      "tagline": "Construire, Allonger, Affiner",
+      "description": "Construire, allonger et affiner — softgel, acrylique/polygel, PVC, remplissages, revêtements et dépose sécurisée.",
+      "services": [
+        "Softgel Tip",
+        "Softgel Gel",
+        "Acrylique / Polygel",
+        "PVC",
+        "Remplissage d'ongle",
+        "Revêtement d'ongle",
+        "Dépose d'extension"
+      ]
+    },
+    "nailArt": {
+      "name": "Nail Art & Techniques",
+      "tagline": "Cat-eye, Aurora, French & Plus",
+      "description": "Cat-eye, aurora/miroir, French, ombré, marbre, gel art et French tip — donnez vie à vos ongles.",
+      "services": [
+        "Cat-eye",
+        "Aurora / Mirror",
+        "French",
+        "Ombre",
+        "Marble",
+        "Gel Art",
+        "French Tip Color",
+        "Couleurs gel supplémentaires"
+      ]
+    }
+  },
   "testimonials": {
     "title": "Témoignages Clients"
   },
@@ -78,5 +138,19 @@
   "whatsapp": {
     "label": "Chat with us",
     "prefillMessage": "Hi Botanika, I'd like to make a reservation."
+  },
+  "lightbox": {
+    "close": "Fermer",
+    "zoomImageAria": "Cliquez pour agrandir l'image",
+    "zoomHint": "Cliquez pour agrandir",
+    "closeZoomAria": "Fermer l'image agrandie",
+    "closeZoom": "Fermer le zoom",
+    "zoomInstruction": "Cliquez n'importe où ou appuyez sur ÉCHAP pour fermer",
+    "goToSlide": "Aller à {{name}}"
+  },
+  "carousel": {
+    "prev": "Précédent",
+    "next": "Suivant",
+    "scrubber": "Position de la galerie"
   }
 }

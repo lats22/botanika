@@ -88,6 +88,7 @@ function Header() {
           <button onClick={() => scrollToSection('packages')}>{t('nav.packages')}</button>
           <button onClick={() => scrollToSection('branches')}>{t('nav.locations')}</button>
           <button onClick={() => scrollToSection('products')}>{t('nav.aromeCollection')}</button>
+          <button onClick={() => scrollToSection('nails')}>{t('nav.nailStudio')}</button>
         </nav>
 
         <WhatsAppButton />

@@ -6,6 +6,7 @@ import ServiceCard from '../components/ServiceCard'
 import ServiceModal from '../components/ServiceModal'
 import PackageCard from '../components/PackageCard'
 import ProductGallery from '../components/ProductGallery'
+import NailGallery from '../components/NailGallery'
 import TestimonialCarousel from '../components/TestimonialCarousel'
 import BranchCard from '../components/BranchCard'
 import Footer from '../components/Footer'
@@ -62,6 +63,18 @@ function Home() {
             <p className="section-subtitle">{t('products.subtitleLine2')}</p>
           </div>
           <ProductGallery />
+        </div>
+      </section>
+
+      {/* Nail Studio Section */}
+      <section id="nails" className="section section--nails">
+        <div className="container">
+          <h2 className="section-title section-title--nails">{t('nails.title')}</h2>
+          <span className="section-badge section-badge--nails">{t('nails.availableAtSelectBranches')}</span>
+          <div className="section-subtitle-wrapper">
+            <p className="section-subtitle">{t('nails.subtitle')}</p>
+          </div>
+          <NailGallery />
         </div>
       </section>
 

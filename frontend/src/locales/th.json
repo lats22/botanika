@@ -4,6 +4,7 @@
     "packages": "แพ็คเกจ",
     "locations": "สาขา",
     "aromeCollection": "คอลเลกชันอโรม",
+    "nailStudio": "เนลสตูดิโอ",
     "contact": "ติดต่อ"
   },
   "hero": {
@@ -53,6 +54,65 @@
       "benefits": ["ต้านการอักเสบ", "ลดจุดด่างดำ", "ต้านริ้วรอยแห่งวัย", "ผิวเปล่งประกายสุขภาพดี"]
     }
   },
+  "nails": {
+    "title": "บูทานิก้า เนลสตูดิโอ",
+    "subtitle": "ทำเล็บมือ · ทำเล็บเท้า · เจล · ต่อเล็บ · เพ้นท์เล็บ",
+    "availableAtSelectBranches": "บริการที่สาขาสีลม, สีลม 13 และพัฒน์พงศ์",
+    "servicesIncluded": "บริการ",
+    "manicurePedicure": {
+      "name": "ดูแลเล็บมือและเล็บเท้า",
+      "tagline": "ดูแลมือและเท้าแบบคลาสสิก",
+      "description": "ดูแลเล็บมือและเล็บเท้าแบบคลาสสิก — ตัดหนัง สครับ มาส์ก ครีม รวมถึงทรีตเมนต์ Spa QTICA และ Footlogix",
+      "services": [
+        "ทำเล็บมือ (Basic Manicure)",
+        "ทำเล็บเท้า (Pedicure)",
+        "ขัดส้นเท้า (Baby Foot Scrub)",
+        "Spa QTICA (มือ / เท้า / เซ็ต)",
+        "Spa Footlogix"
+      ]
+    },
+    "gelPolish": {
+      "name": "ทาสีเจล",
+      "tagline": "สีติดทนนาน",
+      "description": "สีเจลติดทนนานสำหรับมือ เท้า หรือทั้งสองอย่าง — เลือกเฉพาะส่วนหรือเป็นเซ็ตเต็มรูปแบบ",
+      "services": [
+        "ทาสีเจล — มือ",
+        "ทาสีเจล — เท้า",
+        "ทำเล็บมือ + ทาสีเจล (มือ)",
+        "ทำเล็บเท้า + ทาสีเจล (เท้า)",
+        "ทาสีเจล — มือ + เท้า"
+      ]
+    },
+    "nailExtensions": {
+      "name": "ต่อเล็บ",
+      "tagline": "เสริม ต่อ ตกแต่ง",
+      "description": "เสริม ต่อ และตกแต่งเล็บ — Softgel, Acrylic/Polygel, PVC, เติมโคน เคลือบเล็บ และการถอดเล็บอย่างปลอดภัย",
+      "services": [
+        "Softgel Tip",
+        "Softgel Gel",
+        "Acrylic / Polygel",
+        "PVC",
+        "เติมโคน (Nail filling)",
+        "เคลือบเล็บ (Nail coating)",
+        "ถอดเล็บต่อ"
+      ]
+    },
+    "nailArt": {
+      "name": "เพ้นท์เล็บและเทคนิคพิเศษ",
+      "tagline": "Cat-eye, Aurora, French และอื่นๆ",
+      "description": "Cat-eye, Aurora/Mirror, French, Ombre, Marble, Gel art และ French Tip — เติมชีวิตชีวาให้กับเล็บของคุณ",
+      "services": [
+        "Cat-eye",
+        "Aurora / Mirror",
+        "French",
+        "Ombre",
+        "Marble",
+        "Gel Art",
+        "French Tip Color",
+        "เพิ่มสีเจลพิเศษ"
+      ]
+    }
+  },
   "testimonials": {
     "title": "ลูกค้าพูดถึงเรา"
   },
@@ -78,5 +138,19 @@
   "whatsapp": {
     "label": "แชทกับเรา",
     "prefillMessage": "สวัสดีค่ะ Botanika ต้องการจองนวดค่ะ"
+  },
+  "lightbox": {
+    "close": "ปิด",
+    "zoomImageAria": "คลิกเพื่อขยายภาพ",
+    "zoomHint": "คลิกเพื่อขยาย",
+    "closeZoomAria": "ปิดภาพที่ขยาย",
+    "closeZoom": "ปิดการขยาย",
+    "zoomInstruction": "คลิกที่ใดก็ได้หรือกด ESC เพื่อปิด",
+    "goToSlide": "ไปที่ {{name}}"
+  },
+  "carousel": {
+    "prev": "ก่อนหน้า",
+    "next": "ถัดไป",
+    "scrubber": "ตำแหน่งแกลเลอรี"
   }
 }

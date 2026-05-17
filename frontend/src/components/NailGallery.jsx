@@ -1,36 +1,36 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import { createPortal } from 'react-dom'
-import './ProductGallery.css'
+import './NailGallery.css'
 
 const AUTO_SCROLL_INTERVAL = 4000
 const RESUME_DELAY = 5000
 const CLICK_DRAG_THRESHOLD = 5
 
-const products = [
+const categories = [
   {
-    id: 'jasmineRice',
-    image: '/images/products/jasmine-rice.jpg',
-    accentColor: '#F5E6D3'
+    id: 'manicurePedicure',
+    image: '/images/nails/manicure-pedicure.jpg',
+    accentColor: '#F4E6DA'
   },
   {
-    id: 'rose',
-    image: '/images/products/rose.jpg',
+    id: 'gelPolish',
+    image: '/images/nails/gel-polish.jpg',
     accentColor: '#F8E1E4'
   },
   {
-    id: 'tamarind',
-    image: '/images/products/tamarind.jpg',
-    accentColor: '#E8DDD0'
+    id: 'nailExtensions',
+    image: '/images/nails/nail-extensions.jpg',
+    accentColor: '#E3E8EE'
   },
   {
-    id: 'turmeric',
-    image: '/images/products/turmeric.jpg',
-    accentColor: '#F5E8C8'
+    id: 'nailArt',
+    image: '/images/nails/nail-art.jpg',
+    accentColor: '#F5DDEB'
   },
 ]
 
-function ProductLightbox({ product, onClose, t }) {
+function NailLightbox({ category, onClose, t }) {
   const lightboxRef = useRef(null)
   const closeButtonRef = useRef(null)
   const [isZoomed, setIsZoomed] = useState(false)
@@ -88,23 +88,23 @@ function ProductLightbox({ product, onClose, t }) {
     setIsZoomed(false)
   }
 
-  const productName = t(`products.${product.id}.name`)
-  const productDescription = t(`products.${product.id}.description`)
-  const productBenefits = t(`products.${product.id}.benefits`, { returnObjects: true })
+  const categoryName = t(`nails.${category.id}.name`)
+  const categoryDescription = t(`nails.${category.id}.description`)
+  const categoryServices = t(`nails.${category.id}.services`, { returnObjects: true })
 
   const lightboxContent = (
     <div
       ref={lightboxRef}
-      className="product-lightbox product-lightbox--open"
+      className="nail-lightbox nail-lightbox--open"
       onClick={handleBackdropClick}
       role="dialog"
       aria-modal="true"
-      aria-label={productName}
+      aria-label={categoryName}
     >
-      <div className="product-lightbox__content">
+      <div className="nail-lightbox__content">
         <button
           ref={closeButtonRef}
-          className="product-lightbox__close"
+          className="nail-lightbox__close"
           onClick={onClose}
           aria-label={t('lightbox.close')}
         >
@@ -114,9 +114,9 @@ function ProductLightbox({ product, onClose, t }) {
           </svg>
         </button>
 
-        <div className="product-lightbox__grid">
+        <div className="nail-lightbox__grid">
           <div
-            className="product-lightbox__image-container product-lightbox__image-container--zoomable"
+            className="nail-lightbox__image-container nail-lightbox__image-container--zoomable"
             onClick={handleImageClick}
             role="button"
             tabIndex={0}
@@ -124,15 +124,15 @@ function ProductLightbox({ product, onClose, t }) {
             onKeyDown={(e) => e.key === 'Enter' && handleImageClick(e)}
           >
             <div
-              className="product-lightbox__image-bg"
-              style={{ backgroundColor: product.accentColor }}
+              className="nail-lightbox__image-bg"
+              style={{ backgroundColor: category.accentColor }}
             />
             <img
-              className="product-lightbox__image"
-              src={product.image}
-              alt={productName}
+              className="nail-lightbox__image"
+              src={category.image}
+              alt={categoryName}
             />
-            <div className="product-lightbox__zoom-hint">
+            <div className="nail-lightbox__zoom-hint">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -143,36 +143,36 @@ function ProductLightbox({ product, onClose, t }) {
             </div>
           </div>
 
-          <div className="product-lightbox__details">
-            <h3 className="product-lightbox__name">{productName}</h3>
-            <p className="product-lightbox__description">{productDescription}</p>
+          <div className="nail-lightbox__details">
+            <h3 className="nail-lightbox__name">{categoryName}</h3>
+            <p className="nail-lightbox__description">{categoryDescription}</p>
 
-            <div className="product-lightbox__benefits">
-              <h4 className="product-lightbox__benefits-title">
-                {t('products.skinBenefits')}
+            <div className="nail-lightbox__services">
+              <h4 className="nail-lightbox__services-title">
+                {t('nails.servicesIncluded')}
               </h4>
-              <ul className="product-lightbox__benefits-list">
-                {Array.isArray(productBenefits) && productBenefits.map((benefit, index) => (
-                  <li key={index} className="product-lightbox__benefit">
-                    <span className="product-lightbox__benefit-icon">
+              <ul className="nail-lightbox__services-list">
+                {Array.isArray(categoryServices) && categoryServices.map((service, index) => (
+                  <li key={index} className="nail-lightbox__service">
+                    <span className="nail-lightbox__service-icon">
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                         <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm3.7 6.3l-4 4c-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-2-2c-.4-.4-.4-1 0-1.4s1-.4 1.4 0L7 8.2l3.3-3.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4z"/>
                       </svg>
                     </span>
-                    {benefit}
+                    {service}
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="product-lightbox__badge">
-              <span className="product-lightbox__badge-icon">
+            <div className="nail-lightbox__badge">
+              <span className="nail-lightbox__badge-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
               </span>
-              {t('products.availableAtAllBranches')}
+              {t('nails.availableAtSelectBranches')}
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@ function ProductLightbox({ product, onClose, t }) {
         {/* Zoom Overlay */}
         {isZoomed && (
           <div
-            className="product-lightbox__zoom-overlay"
+            className="nail-lightbox__zoom-overlay"
             onClick={handleZoomClose}
             role="button"
             tabIndex={0}
@@ -188,13 +188,13 @@ function ProductLightbox({ product, onClose, t }) {
             onKeyDown={(e) => e.key === 'Enter' && handleZoomClose()}
           >
             <img
-              className="product-lightbox__zoom-image"
-              src={product.image}
-              alt={`${productName} - Zoomed view`}
+              className="nail-lightbox__zoom-image"
+              src={category.image}
+              alt={`${categoryName} - Zoomed view`}
               onClick={(e) => e.stopPropagation()}
             />
             <button
-              className="product-lightbox__zoom-close"
+              className="nail-lightbox__zoom-close"
               onClick={handleZoomClose}
               aria-label={t('lightbox.closeZoom')}
             >
@@ -203,7 +203,7 @@ function ProductLightbox({ product, onClose, t }) {
                 <line x1="6" y1="6" x2="18" y2="18"></line>
               </svg>
             </button>
-            <div className="product-lightbox__zoom-instruction">
+            <div className="nail-lightbox__zoom-instruction">
               {t('lightbox.zoomInstruction')}
             </div>
           </div>
@@ -215,10 +215,10 @@ function ProductLightbox({ product, onClose, t }) {
   return createPortal(lightboxContent, document.body)
 }
 
-function ProductGallery() {
+function NailGallery() {
   const { t } = useTranslation()
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [selectedProduct, setSelectedProduct] = useState(null)
+  const [selectedCategory, setSelectedCategory] = useState(null)
 
   const scrollRef = useRef(null)
   const autoScrollRef = useRef(null)
@@ -235,7 +235,7 @@ function ProductGallery() {
 
   const getImageWidth = useCallback(() => {
     if (!scrollRef.current) return 300
-    const firstCard = scrollRef.current.querySelector('.product-card')
+    const firstCard = scrollRef.current.querySelector('.nail-card')
     if (!firstCard) return 300
     const style = window.getComputedStyle(scrollRef.current)
     const gap = parseFloat(style.gap) || 24
@@ -251,7 +251,7 @@ function ProductGallery() {
   }, [getImageWidth])
 
   const nextImage = useCallback(() => {
-    const nextIndex = (currentIndex + 1) % products.length
+    const nextIndex = (currentIndex + 1) % categories.length
     setCurrentIndex(nextIndex)
     scrollToIndex(nextIndex)
   }, [currentIndex, scrollToIndex])
@@ -286,7 +286,7 @@ function ProductGallery() {
     const scrollPos = scrollRef.current.scrollLeft
     const imageWidth = getImageWidth()
     const newIndex = Math.round(scrollPos / imageWidth)
-    if (newIndex !== currentIndex && newIndex >= 0 && newIndex < products.length) {
+    if (newIndex !== currentIndex && newIndex >= 0 && newIndex < categories.length) {
       setCurrentIndex(newIndex)
     }
   }, [currentIndex, getImageWidth])
@@ -356,7 +356,7 @@ function ProductGallery() {
     pauseAutoScroll()
   }
 
-  const handleCardClick = (e, product) => {
+  const handleCardClick = (e, category) => {
     if (wasDraggedRef.current) {
       e.preventDefault()
       e.stopPropagation()
@@ -364,11 +364,11 @@ function ProductGallery() {
       return
     }
     pauseAutoScroll()
-    setSelectedProduct(product)
+    setSelectedCategory(category)
   }
 
   const handleLightboxClose = () => {
-    setSelectedProduct(null)
+    setSelectedCategory(null)
     setTimeout(() => startAutoScroll(), 500)
   }
 
@@ -384,16 +384,16 @@ function ProductGallery() {
 
   return (
     <div
-      className="product-gallery"
+      className="nail-gallery"
       role="region"
-      aria-label={t('products.title')}
+      aria-label={t('nails.title')}
       onMouseEnter={handleContainerMouseEnter}
       onMouseLeave={handleContainerMouseLeave}
     >
-      <div className="product-gallery__viewport">
+      <div className="nail-gallery__viewport">
         <div
           ref={scrollRef}
-          className="product-gallery__scroll"
+          className="nail-gallery__scroll"
           onScroll={handleScroll}
           onMouseDown={handleMouseDown}
           onMouseLeave={handleMouseLeaveScroll}
@@ -403,30 +403,30 @@ function ProductGallery() {
           onWheel={handleWheel}
           aria-live="polite"
         >
-          {products.map((product, index) => (
+          {categories.map((category, index) => (
             <div
-              key={product.id}
-              className={`product-card ${index === currentIndex ? 'product-card--active' : ''}`}
-              onClick={(e) => handleCardClick(e, product)}
-              style={{ '--accent-color': product.accentColor }}
+              key={category.id}
+              className={`nail-card ${index === currentIndex ? 'nail-card--active' : ''}`}
+              onClick={(e) => handleCardClick(e, category)}
+              style={{ '--accent-color': category.accentColor }}
             >
-              <div className="product-card__image-wrapper">
-                <div className="product-card__float-effect">
+              <div className="nail-card__image-wrapper">
+                <div className="nail-card__float-effect">
                   <img
-                    className="product-card__image"
-                    src={product.image}
-                    alt={t(`products.${product.id}.name`)}
+                    className="nail-card__image"
+                    src={category.image}
+                    alt={t(`nails.${category.id}.name`)}
                     loading="lazy"
                     draggable={false}
                     onError={handleImageError}
                   />
                 </div>
               </div>
-              <div className="product-card__content">
-                <h3 className="product-card__name">
-                  {t(`products.${product.id}.name`).replace(' Body Scrub Cream', '')}
+              <div className="nail-card__content">
+                <h3 className="nail-card__name">
+                  {t(`nails.${category.id}.name`)}
                 </h3>
-                <p className="product-card__tagline">{t(`products.${product.id}.tagline`)}</p>
+                <p className="nail-card__tagline">{t(`nails.${category.id}.tagline`)}</p>
               </div>
             </div>
           ))}
@@ -434,20 +434,20 @@ function ProductGallery() {
       </div>
 
       {/* Dot indicators */}
-      <div className="product-gallery__dots">
-        {products.map((product, index) => (
+      <div className="nail-gallery__dots">
+        {categories.map((category, index) => (
           <button
-            key={product.id}
-            className={`product-gallery__dot ${index === currentIndex ? 'product-gallery__dot--active' : ''}`}
+            key={category.id}
+            className={`nail-gallery__dot ${index === currentIndex ? 'nail-gallery__dot--active' : ''}`}
             onClick={() => goToSlide(index)}
-            aria-label={t('lightbox.goToSlide', { name: t(`products.${product.id}.name`) })}
+            aria-label={t('lightbox.goToSlide', { name: t(`nails.${category.id}.name`) })}
           />
         ))}
       </div>
 
-      {selectedProduct && (
-        <ProductLightbox
-          product={selectedProduct}
+      {selectedCategory && (
+        <NailLightbox
+          category={selectedCategory}
           onClose={handleLightboxClose}
           t={t}
         />
@@ -456,4 +456,4 @@ function ProductGallery() {
   )
 }
 
-export default ProductGallery
+export default NailGallery
