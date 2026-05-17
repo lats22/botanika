@@ -282,7 +282,7 @@
       "ko": "메이크업 리무버, 딥 클렌징, 스크럽, 페이셜 마사지, 콜라겐 마스크, 보습."
     },
     "durations": [60],
-    "image": "Body Scrub.jpg",
+    "image": "services/collagen-mask.jpg",
     "animation": "spa-facial"
   },
   {
@@ -304,7 +304,7 @@
       "ko": "메이크업 리무버, 딥 클렌징, 스크럽, 페이셜 마사지, 알로에 베라 마스크, 보습."
     },
     "durations": [60],
-    "image": "Body Scrub.jpg",
+    "image": "services/aloe-vera-mask.jpg",
     "animation": "spa-facial"
   }
 ]
